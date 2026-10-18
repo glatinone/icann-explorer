@@ -1,0 +1,1918 @@
+[
+  {
+    "id": "icann-board",
+    "kind": "board",
+    "scope": "icann-internal",
+    "acronym": "Board",
+    "name": {
+      "en": "ICANN Board of Directors",
+      "id": "Dewan Direksi ICANN"
+    },
+    "oneLiner": {
+      "text": {
+        "en": "The ICANN Board of Directors is the body that takes final decisions for ICANN, guided by the community.",
+        "id": "Dewan Direksi ICANN adalah badan yang mengambil keputusan akhir untuk ICANN, dipandu oleh komunitas."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "whyItExists": [
+      {
+        "text": {
+          "en": "The mission of ICANN is carried out by the Board, the community, and ICANN org together, and the Bylaws place decision-making authority with the Board.",
+          "id": "Misi ICANN dijalankan bersama oleh Dewan, komunitas, dan organisasi ICANN; Anggaran Dasar menempatkan wewenang pengambilan keputusan pada Dewan."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "whatItDoes": [
+      {
+        "text": {
+          "en": "The Board provides oversight and approval of policy recommendations developed by the community.",
+          "id": "Dewan mengawasi dan menyetujui rekomendasi kebijakan yang dikembangkan komunitas."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      },
+      {
+        "text": {
+          "en": "The Board appoints and oversees the President and CEO, who leads ICANN org.",
+          "id": "Dewan menunjuk dan mengawasi Presiden dan CEO yang memimpin organisasi ICANN."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      },
+      {
+        "text": {
+          "en": "The Board is composed of voting directors selected by different parts of the community, plus non-voting liaisons.",
+          "id": "Dewan terdiri dari direktur dengan hak suara yang dipilih berbagai bagian komunitas, ditambah liaison tanpa hak suara."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "example": {
+      "text": {
+        "en": "When the GNSO develops a policy recommendation for generic top-level domains, the Board must formally consider and vote on it before it takes effect.",
+        "id": "Saat GNSO mengembangkan rekomendasi kebijakan untuk domain tingkat atas generik, Dewan harus menimbang dan memilihnya secara formal sebelum berlaku."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "officialUrl": "https://www.icann.org/en/board/about",
+    "relatedTermIds": [
+      "board-resolution",
+      "gac"
+    ],
+    "status": "published",
+    "lastReviewed": "2026-10-18"
+  },
+  {
+    "id": "icann-org",
+    "kind": "icann-org",
+    "scope": "icann-internal",
+    "acronym": "ICANN org",
+    "name": {
+      "en": "ICANN organization (staff)",
+      "id": "Organisasi ICANN (staf)"
+    },
+    "oneLiner": {
+      "text": {
+        "en": "ICANN org is the staff organization, led by the President and CEO, that runs ICANN's daily work and implements board decisions.",
+        "id": "Organisasi ICANN adalah organisasi staf yang dipimpin Presiden dan CEO, menjalankan pekerjaan harian ICANN dan menerapkan keputusan Dewan."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "whyItExists": [
+      {
+        "text": {
+          "en": "The community and Board make decisions; the staff organization supports the community and runs daily operations.",
+          "id": "Komunitas dan Dewan memutuskan; organisasi staf mendukung komunitas dan menjalankan operasi."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "whatItDoes": [
+      {
+        "text": {
+          "en": "ICANN org implements policies and decisions adopted by the Board.",
+          "id": "Organisasi ICANN menerapkan kebijakan dan keputusan yang diadopsi Dewan."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      },
+      {
+        "text": {
+          "en": "It organizes the public comment process, ICANN Public Meetings, and supports the Supporting Organizations and Advisory Committees.",
+          "id": "Mereka mengelola proses komentar publik, pertemuan publik ICANN, dan mendukung Supporting Organizations serta Advisory Committees."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "example": {
+      "text": {
+        "en": "The staff's IANA department, through the affiliate PTI, operates the technical functions that keep domain and number services running.",
+        "id": "Departemen IANA di staf, lewat afiliasi PTI, mengoperasikan fungsi teknis yang menjaga layanan domain dan nomor tetap jalan."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "officialUrl": "https://www.icann.org/",
+    "relatedTermIds": [
+      "icann-public-meeting",
+      "public-comment"
+    ],
+    "status": "published",
+    "lastReviewed": "2026-10-18"
+  },
+  {
+    "id": "gnso",
+    "kind": "supporting-organization",
+    "scope": "icann-internal",
+    "acronym": "GNSO",
+    "name": {
+      "en": "Generic Names Supporting Organization",
+      "id": "Organisasi Pendukung Nama Generik"
+    },
+    "oneLiner": {
+      "text": {
+        "en": "The GNSO develops policy recommendations for generic top-level domains (like .com, .org, or .app).",
+        "id": "GNSO mengembangkan rekomendasi kebijakan untuk domain tingkat atas generik (seperti .com, .org, atau .app)."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "whyItExists": [
+      {
+        "text": {
+          "en": "Generic top-level domains are the names most people type, and their rules need a community-defined process.",
+          "id": "Domain tingkat atas generik adalah nama yang paling sering diketik orang, dan aturannya perlu proses yang didefinisikan komunitas."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "whatItDoes": [
+      {
+        "text": {
+          "en": "The GNSO Council manages the Policy Development Process (PDP) for gTLDs.",
+          "id": "Dewan GNSO mengelola Proses Pengembangan Kebijakan (PDP) untuk gTLD."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      },
+      {
+        "text": {
+          "en": "It brings together stakeholders including registries, registrars, businesses, and civil society.",
+          "id": "Mereka menyatukan pemangku kepentingan: registry, registrar, bisnis, dan masyarakat sipil."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "example": {
+      "text": {
+        "en": "After the GDPR, the GNSO ran a special PDP (the EPDP) on registration data for gTLDs, leading to the Temporary Specification and later policy.",
+        "id": "Setelah GDPR, GNSO menjalankan PDP khusus (EPDP) tentang data registrasi gTLD, menghasilkan Temporary Specification dan kemudian kebijakan baru."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "officialUrl": "https://gnso.icann.org/",
+    "relatedTermIds": [
+      "pdp",
+      "gnso-council",
+      "registrar",
+      "registry"
+    ],
+    "status": "published",
+    "lastReviewed": "2026-10-18",
+    "getInvolved": [
+      {
+        "text": {
+          "en": "Join a GNSO working group; most are open to anyone, no membership needed.",
+          "id": "Ikut working group GNSO; kebanyakan terbuka untuk siapa saja tanpa keanggotaan."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "ccnso",
+    "kind": "supporting-organization",
+    "scope": "icann-internal",
+    "acronym": "ccNSO",
+    "name": {
+      "en": "Country Code Names Supporting Organization",
+      "id": "Organisasi Pendukung Nama Kode Negara"
+    },
+    "oneLiner": {
+      "text": {
+        "en": "The ccNSO deals with policy for country-code top-level domains (like .id or .de), but national policy stays with each ccTLD manager.",
+        "id": "ccNSO mengurus kebijakan untuk domain tingkat atas kode negara (seperti .id atau .de), tetapi kebijakan nasional tetap di tangan pengelola ccTLD masing-masing."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "whyItExists": [
+      {
+        "text": {
+          "en": "ccTLDs are operated by national communities, but some cross-border policy questions need coordination.",
+          "id": "ccTLD dijalankan komunitas nasional, tetapi beberapa kebijakan lintas negara butuh koordinasi."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "whatItDoes": [
+      {
+        "text": {
+          "en": "The ccNSO develops global policies for ccTLDs within its narrow scope.",
+          "id": "ccNSO mengembangkan kebijakan global untuk ccTLD dalam lingkup yang sempit."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      },
+      {
+        "text": {
+          "en": "It provides a forum for ccTLD managers to exchange practices.",
+          "id": "Mereka menyediakan forum bagi pengelola ccTLD untuk berbagi praktik."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "example": {
+      "text": {
+        "en": "The ccNSO led the policy work around retiring or re-delegating ccTLDs (the IDN ccTLD policy).",
+        "id": "ccNSO memimpin kerja kebijakan tentang penonaktifan atau pengalihan ccTLD (kebijakan IDN ccTLD)."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "officialUrl": "https://ccnso.icann.org/",
+    "relatedTermIds": [
+      "cctld",
+      "idn"
+    ],
+    "status": "published",
+    "lastReviewed": "2026-10-18"
+  },
+  {
+    "id": "aso",
+    "kind": "supporting-organization",
+    "scope": "icann-internal",
+    "acronym": "ASO",
+    "name": {
+      "en": "Address Supporting Organization",
+      "id": "Organisasi Pendukung Alamat"
+    },
+    "oneLiner": {
+      "text": {
+        "en": "The ASO advises the Board on global policy for IP addresses and coordinates the Regional Internet Registries.",
+        "id": "ASO memberi nasihat kepada Dewan tentang kebijakan global alamat IP dan berkoordinasi dengan Regional Internet Registries."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "whyItExists": [
+      {
+        "text": {
+          "en": "IP address space is managed through a bottom-up process in five regional communities, and ICANN needs a channel into it.",
+          "id": "Ruang alamat IP dikelola bottom-up di lima komunitas regional, dan ICANN perlu kanal ke dalamnya."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "whatItDoes": [
+      {
+        "text": {
+          "en": "The ASO Address Council (the NRO Number Council) reviews and recommends global address policy to the Board.",
+          "id": "Dewan Alamat ASO (NRO Number Council) meninjau dan merekomendasikan kebijakan alamat global ke Dewan."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      },
+      {
+        "text": {
+          "en": "It links ICANN to the five Regional Internet Registries (RIRs).",
+          "id": "Mereka menghubungkan ICANN dengan lima Regional Internet Registries (RIR)."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "example": {
+      "text": {
+        "en": "The ASO carried the community IPv6 allocation policy to the Board for ratification.",
+        "id": "ASO membawa kebijakan alokasi IPv6 komunitas ke Dewan untuk diratifikasi."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "officialUrl": "https://aso.icann.org/",
+    "relatedTermIds": [
+      "ip-address",
+      "rir",
+      "asn"
+    ],
+    "status": "published",
+    "lastReviewed": "2026-10-18"
+  },
+  {
+    "id": "alac",
+    "kind": "advisory-committee",
+    "scope": "icann-internal",
+    "acronym": "ALAC",
+    "name": {
+      "en": "At-Large Advisory Committee",
+      "id": "Komite Penasihat At-Large"
+    },
+    "oneLiner": {
+      "text": {
+        "en": "The ALAC represents the interests of individual Internet users around the world.",
+        "id": "ALAC mewakili kepentingan pengguna internet individu di seluruh dunia."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "whyItExists": [
+      {
+        "text": {
+          "en": "Individual users are not organized like registries or businesses, so they need a dedicated voice.",
+          "id": "Pengguna individu tidak terorganisasi seperti registry atau bisnis, jadi mereka butuh suara khusus."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "whatItDoes": [
+      {
+        "text": {
+          "en": "ALAC advises the ICANN Board on the interests of individual users.",
+          "id": "ALAC memberi nasihat kepada Dewan ICANN tentang kepentingan pengguna individu."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      },
+      {
+        "text": {
+          "en": "It coordinates the regional At-Large Organizations (RALOs) and local structures.",
+          "id": "Mereka mengoordinasikan At-Large Organization regional (RALO) dan struktur lokal."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      },
+      {
+        "text": {
+          "en": "It participates in policy work, such as GNSO working groups, on behalf of individual users.",
+          "id": "Mereka berpartisipasi dalam kerja kebijakan, misalnya working group GNSO, atas nama pengguna individu."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "example": {
+      "text": {
+        "en": "ALAC regularly files comments in ICANN public comment periods on topics like DNS abuse and new gTLD rounds.",
+        "id": "ALAC rutin mengirim komentar dalam periode komentar publik ICANN, misalnya soal DNS abuse dan putaran gTLD baru."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "officialUrl": "https://atlarge.icann.org/",
+    "relatedTermIds": [
+      "ralo",
+      "individual-member",
+      "at-large"
+    ],
+    "status": "published",
+    "lastReviewed": "2026-10-18",
+    "getInvolved": [
+      {
+        "text": {
+          "en": "Join your regional At-Large structure (for Indonesia, APRALO) - open to anyone.",
+          "id": "Gabung struktur At-Large regionalmu (untuk Indonesia: APRALO) - terbuka untuk siapa saja."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "gac",
+    "kind": "advisory-committee",
+    "scope": "icann-internal",
+    "acronym": "GAC",
+    "name": {
+      "en": "Governmental Advisory Committee",
+      "id": "Komite Penasihat Pemerintahan"
+    },
+    "oneLiner": {
+      "text": {
+        "en": "The GAC represents governments and advises the Board on public policy matters related to ICANN's mission.",
+        "id": "GAC mewakili pemerintah dan memberi nasihat kepada Dewan tentang kebijakan publik yang terkait misi ICANN."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "whyItExists": [
+      {
+        "text": {
+          "en": "Governments have legitimate public policy interests in how the internet is run, so they have a formal voice.",
+          "id": "Pemerintah punya kepentingan kebijakan publik yang sah soal cara internet dijalankan, jadi mereka punya suara formal."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "whatItDoes": [
+      {
+        "text": {
+          "en": "GAC provides advice to the Board on public policy matters.",
+          "id": "GAC memberikan nasihat kepada Dewan soal kebijakan publik."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      },
+      {
+        "text": {
+          "en": "GAC advice is not binding, but the Bylaws set a special procedure if the Board intends not to adopt GAC advice on certain topics.",
+          "id": "Nasihat GAC tidak mengikat, tetapi Anggaran Dasar menetapkan prosedur khusus jika Dewan berniat tidak mengikuti nasihat GAC pada topik tertentu."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "example": {
+      "text": {
+        "en": "GAC advice on the New gTLD Program led to safeguards that were incorporated into the 2012 round.",
+        "id": "Nasihat GAC tentang New gTLD Program berujung safeguards yang dimasukkan ke putaran 2012."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "officialUrl": "https://gac.icann.org/",
+    "relatedTermIds": [
+      "gtld",
+      "multistakeholder"
+    ],
+    "status": "published",
+    "lastReviewed": "2026-10-18"
+  },
+  {
+    "id": "ssac",
+    "kind": "advisory-committee",
+    "scope": "icann-internal",
+    "acronym": "SSAC",
+    "name": {
+      "en": "Security and Stability Advisory Committee",
+      "id": "Komite Penasihat Keamanan dan Stabilitas"
+    },
+    "oneLiner": {
+      "text": {
+        "en": "SSAC studies the security and stability of the naming and addressing systems and advises the Board.",
+        "id": "SSAC mengkaji keamanan dan stabilitas sistem penamaan dan pengalamatan, lalu memberi nasihat kepada Dewan."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "whyItExists": [
+      {
+        "text": {
+          "en": "The technical robustness of DNS affects everyone; SSAC exists to surface technical security issues early.",
+          "id": "Ketangguhan teknis DNS memengaruhi semua orang; SSAC ada untuk mengangkat isu keamanan teknis lebih awal."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "whatItDoes": [
+      {
+        "text": {
+          "en": "SSAC investigates and issues reports on naming and addressing security risks.",
+          "id": "SSAC meneliti dan menerbitkan laporan tentang risiko keamanan penamaan dan pengalamatan."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      },
+      {
+        "text": {
+          "en": "It advises the Board and the community on weak points in the DNS ecosystem.",
+          "id": "Mereka memberi nasihat kepada Dewan dan komunitas tentang titik lemah keamanan dalam ekosistem DNS."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "example": {
+      "text": {
+        "en": "SSAC published influential reports that shaped DNSSEC deployment advice for the root zone.",
+        "id": "SSAC menerbitkan laporan berpengaruh yang membentuk saran penerapan DNSSEC untuk zona root."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "officialUrl": "https://www.icann.org/en/ssac",
+    "relatedTermIds": [
+      "dnssec",
+      "dns-abuse"
+    ],
+    "status": "published",
+    "lastReviewed": "2026-10-18"
+  },
+  {
+    "id": "rssac",
+    "kind": "advisory-committee",
+    "scope": "icann-internal",
+    "acronym": "RSSAC",
+    "name": {
+      "en": "Root Server System Advisory Committee",
+      "id": "Komite Penasihat Sistem Server Root"
+    },
+    "oneLiner": {
+      "text": {
+        "en": "The RSSAC advises on the operation and security of the root server system.",
+        "id": "RSSAC memberi nasihat tentang operasi dan keamanan sistem root server."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "whyItExists": [
+      {
+        "text": {
+          "en": "The root servers serve the root zone to the world; their operation and security need expert oversight.",
+          "id": "Root server melayani zona root ke seluruh dunia; operasi dan keamanannya butuh pengawasan ahli."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "whatItDoes": [
+      {
+        "text": {
+          "en": "RSSAC advises the ICANN Board and the root server operators on technical direction and security.",
+          "id": "RSSAC memberi nasihat kepada Dewan ICANN dan operator root server tentang arah teknis dan keamanan."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      },
+      {
+        "text": {
+          "en": "It produces public reports about the root server system architecture.",
+          "id": "Mereka menerbitkan laporan publik tentang arsitektur sistem root server."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "example": {
+      "text": {
+        "en": "RSSAC reports shaped how the community monitors the stability of the root server system.",
+        "id": "Laporan RSSAC membentuk cara komunitas memantau stabilitas sistem root server."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "officialUrl": "https://www.icann.org/en/rssac",
+    "relatedTermIds": [
+      "root-server",
+      "root-zone"
+    ],
+    "status": "published",
+    "lastReviewed": "2026-10-18"
+  },
+  {
+    "id": "nomcom",
+    "kind": "committee",
+    "scope": "icann-internal",
+    "acronym": "NomCom",
+    "name": {
+      "en": "Nominating Committee",
+      "id": "Komite Nominasi"
+    },
+    "oneLiner": {
+      "text": {
+        "en": "The Nominating Committee selects many of the people who serve on ICANN's key structures.",
+        "id": "Komite Nominasi memilih banyak orang yang bertugas di struktur penting ICANN."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "whyItExists": [
+      {
+        "text": {
+          "en": "Some Board and community roles need fair, independent selection rather than an election by a single group.",
+          "id": "Beberapa peran Dewan dan komunitas perlu seleksi yang adil dan independen, bukan pemilihan oleh satu kelompok saja."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "whatItDoes": [
+      {
+        "text": {
+          "en": "NomCom selects voting Board directors assigned to it under the Bylaws.",
+          "id": "NomCom memilih direktur Dewan dengan hak suara yang dialokasikan kepadanya dalam Anggaran Dasar."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      },
+      {
+        "text": {
+          "en": "It selects members of ALAC and of the GNSO and ccNSO councils.",
+          "id": "Mereka memilih sebagian anggota ALAC serta dewan GNSO dan ccNSO."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "example": {
+      "text": {
+        "en": "Every year NomCom selects new members for ALAC seats that are filled by appointment.",
+        "id": "Setiap tahun NomCom memilih anggota baru ALAC untuk kursi yang diisi lewat penunjukan."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "officialUrl": "https://www.icann.org/nomcom",
+    "relatedTermIds": [
+      "multistakeholder"
+    ],
+    "status": "published",
+    "lastReviewed": "2026-10-18"
+  },
+  {
+    "id": "empowered-community",
+    "kind": "mechanism",
+    "scope": "icann-internal",
+    "acronym": "EC",
+    "name": {
+      "en": "Empowered Community",
+      "id": "Komunitas Berdaya (Empowered Community)"
+    },
+    "oneLiner": {
+      "text": {
+        "en": "The Empowered Community is the mechanism through which the ICANN community can exercise checks on the Board.",
+        "id": "Empowered Community adalah mekanisme di mana komunitas ICANN bisa menjalankan pemeriksaan terhadap Dewan."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "whyItExists": [
+      {
+        "text": {
+          "en": "The community wanted formal powers to hold the Board accountable, not just informal influence.",
+          "id": "Komunitas butuh kekuatan formal untuk mengawasi Dewan, bukan sekadar pengaruh tidak formal."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "whatItDoes": [
+      {
+        "text": {
+          "en": "The Empowered Community can remove individual Board directors or reject the ICANN budget under defined procedures.",
+          "id": "Empowered Community dapat memberhentikan direktur Dewan atau menolak anggaran sesuai ketentuan."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      },
+      {
+        "text": {
+          "en": "Its decisional participants include the SOs, ACs, and the Nominating Committee.",
+          "id": "Peserta pengambil keputusan mencakup SO, AC, dan Komite Nominasi."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "example": {
+      "text": {
+        "en": "In 2020 the Empowered Community mechanisms were exercised in the review process around ICANN accountability.",
+        "id": "Mekanisme Empowered Community pernah digunakan dalam pemeriksaan akuntabilitas ICANN."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "officialUrl": "https://www.icann.org/",
+    "relatedTermIds": [
+      "icann-board",
+      "multistakeholder"
+    ],
+    "status": "published",
+    "lastReviewed": "2026-10-18"
+  },
+  {
+    "id": "gnso-stakeholder-groups",
+    "kind": "stakeholder-group",
+    "scope": "icann-internal",
+    "acronym": "SGs & Cs",
+    "name": {
+      "en": "GNSO Stakeholder Groups and Constituencies",
+      "id": "Kelompok Pemangku Kepentingan dan Konstituensi GNSO"
+    },
+    "oneLiner": {
+      "text": {
+        "en": "The GNSO's houses and constituencies: commercial and non-commercial stakeholders, registrars, and registries.",
+        "id": "Rumah dan konstituensi GNSO: pemangku kepentingan komersial dan non-komersial, registry, dan registrar."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "whyItExists": [
+      {
+        "text": {
+          "en": "Policy is made by consensus among stakeholders with different interests, so they organize into groups.",
+          "id": "Kebijakan dibuat lewat konsensus antar pemangku kepentingan yang berbeda, jadi mereka terorganisasi dalam kelompok."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "whatItDoes": [
+      {
+        "text": {
+          "en": "Stakeholder groups and constituencies elect the GNSO Council members who run the PDP.",
+          "id": "Kelompok pemangku kepentingan memilih anggota Dewan GNSO yang menjalankan PDP."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      },
+      {
+        "text": {
+          "en": "They include the Commercial Stakeholder Group (BC, IPC, ISPCP), the Non-Commercial Stakeholder Group (NCUC, NPOC), the Registrar Stakeholder Group, and the Registry Stakeholder Group.",
+          "id": "Termasuk Commercial Stakeholder Group (BC, IPC, ISPCP), Non-Commercial Stakeholder Group (NCUC, NPOC), Registrar SG, dan Registry SG."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "example": {
+      "text": {
+        "en": "The Registrar Stakeholder Group (RrSG) speaks for domain registrars in GNSO policy work.",
+        "id": "Registrar Stakeholder Group (RrSG) berbicara untuk registrar dalam kebijakan GNSO."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "officialUrl": "https://gnso.icann.org/groups/",
+    "relatedTermIds": [
+      "gnsso-council",
+      "registrar",
+      "registry"
+    ],
+    "status": "published",
+    "lastReviewed": "2026-10-18"
+  },
+  {
+    "id": "ralos",
+    "kind": "regional-organization",
+    "scope": "icann-internal",
+    "acronym": "RALOs",
+    "name": {
+      "en": "Regional At-Large Organizations",
+      "id": "Organisasi At-Large Regional"
+    },
+    "oneLiner": {
+      "text": {
+        "en": "RALOs are the five regional At-Large organizations that make up the grassroots layer of the At-Large community.",
+        "id": "RALO adalah lima organisasi At-Large regional yang menjadi bagian komunitas At-Large."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "whyItExists": [
+      {
+        "text": {
+          "en": "Individual users are organized regionally so their voices reach ICANN structures.",
+          "id": "Pengguna individu diorganisasi per regional agar suara mereka sampai ke struktur ICANN."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "whatItDoes": [
+      {
+        "text": {
+          "en": "The five RALOs (AFRALO, APRALO, EURALO, LACRALO, NARALO) coordinate At-Large Structures in their regions.",
+          "id": "Lima RALO (AFRALO, APRALO, EURALO, LACRALO, NARALO) mengoordinasikan At-Large Structure di wilayahnya."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      },
+      {
+        "text": {
+          "en": "They select some ALAC members and feed local concerns into At-Large policy work.",
+          "id": "Mereka memilih sebagian anggota ALAC dan menyampaikan isu lokal ke ALAC."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "example": {
+      "text": {
+        "en": "For Indonesia, APRALO is the entry point for individuals who want to participate in At-Large.",
+        "id": "Untuk Indonesia, APRALO adalah pintu masuk bagi individu yang ingin ikut di At-Large."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "officialUrl": "https://atlarge.icann.org/get-involved",
+    "relatedTermIds": [
+      "at-large",
+      "individual-member"
+    ],
+    "status": "published",
+    "lastReviewed": "2026-10-18",
+    "getInvolved": [
+      {
+        "text": {
+          "en": "Find your regional At-Large Organization (for Indonesia, APRALO) and join a local ALS.",
+          "id": "Temukan At-Large Organization regionalmu (untuk Indonesia: APRALO) dan gabung struktur lokal."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "pti",
+    "kind": "affiliate",
+    "scope": "icann-affiliate",
+    "acronym": "PTI",
+    "name": {
+      "en": "Public Technical Identifiers (PTI / IANA functions)",
+      "id": "Public Technical Identifiers (fungsi IANA)"
+    },
+    "oneLiner": {
+      "text": {
+        "en": "PTI is the ICANN affiliate that performs the IANA functions under contract.",
+        "id": "PTI adalah afiliasi ICANN yang menjalankan fungsi IANA berdasarkan kontrak."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "whyItExists": [
+      {
+        "text": {
+          "en": "The IANA technical functions are performed by a separate affiliate entity, which adds a layer of separation from ICANN org.",
+          "id": "Fungsi teknis IANA dijalankan oleh afiliasi terpisah, sebagai lapisan pemisahan dari organisasi ICANN."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "whatItDoes": [
+      {
+        "text": {
+          "en": "PTI performs the IANA naming functions under an agreement with ICANN.",
+          "id": "PTI menjalankan fungsi IANA di bidang penamaan berdasarkan perjanjian dengan ICANN."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      },
+      {
+        "text": {
+          "en": "The IANA functions include root zone management, protocol registries, and number resources.",
+          "id": "Fungsi IANA meliputi manajemen zona root, registry protokol, dan pengelolaan nomor."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "example": {
+      "text": {
+        "en": "When a ccTLD manager requests a delegation change, IANA (via PTI) processes the request per the procedures.",
+        "id": "IANA (via PTI) memproses permintaan pengalihan ccTLD sesuai prosedur yang berlaku."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "officialUrl": "https://pti.icann.org/",
+    "relatedTermIds": [
+      "iana-functions",
+      "root-zone"
+    ],
+    "status": "published",
+    "lastReviewed": "2026-10-18"
+  },
+  {
+    "id": "rirs",
+    "kind": "external",
+    "scope": "external",
+    "acronym": "RIRs",
+    "name": {
+      "en": "Regional Internet Registries",
+      "id": "Regional Internet Registries (RIR)"
+    },
+    "oneLiner": {
+      "text": {
+        "en": "The five Regional Internet Registries (AFRINIC, APNIC, ARIN, LACNIC, RIPE NCC) allocate IP addresses and ASNs in their regions. They are independent of ICANN.",
+        "id": "Lima Regional Internet Registry (AFRINIC, APNIC, ARIN, LACNIC, RIPE NCC) mengelola alamat IP di wilayahnya masing-masing. Mereka independen, bukan bagian ICANN."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "whyItExists": [
+      {
+        "text": {
+          "en": "IP addresses are allocated regionally, close to the networks that use them.",
+          "id": "Alamat IP dikelola per regional, dekat dengan komunitas yang memakainya."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "whatItDoes": [
+      {
+        "text": {
+          "en": "Each RIR allocates IP address blocks and ASNs to ISPs and organizations in its region.",
+          "id": "Tiap RIR mengalokasikan blok alamat IP dan ASN di wilayahnya."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      },
+      {
+        "text": {
+          "en": "The RIRs coordinate globally through the Number Resource Organization (NRO).",
+          "id": "RIR berkoordinasi global lewat Number Resource Organization (NRO)."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      },
+      {
+        "text": {
+          "en": "Their address policies are developed bottom-up in their own communities, not by ICANN.",
+          "id": "Kebijakan alamat mereka dibuat bottom-up di komunitas masing-masing, bukan oleh ICANN."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "example": {
+      "text": {
+        "en": "An Indonesian ISP gets its IP address block from APNIC, the regional registry for Asia-Pacific, not from ICANN.",
+        "id": "Operator jaringan Indonesia mendapatkan blok alamat IP dari APNIC, registry regional Asia-Pasifik, bukan dari ICANN."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "officialUrl": "https://www.nro.net/",
+    "relatedTermIds": [
+      "ip-address",
+      "asn",
+      "rir"
+    ],
+    "status": "published",
+    "lastReviewed": "2026-10-18"
+  },
+  {
+    "id": "ietf",
+    "kind": "external",
+    "scope": "external",
+    "acronym": "IETF",
+    "name": {
+      "en": "Internet Engineering Task Force",
+      "id": "Internet Engineering Task Force"
+    },
+    "oneLiner": {
+      "text": {
+        "en": "The IETF develops the internet's technical standards, like the protocols that make the internet work.",
+        "id": "IETF adalah badan yang mengembangkan standar teknis internet, seperti protokol yang membuat internet bekerja."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "whyItExists": [
+      {
+        "text": {
+          "en": "The internet needs open technical standards that anyone can implement.",
+          "id": "Internet butuh standar teknis yang terbuka agar bisa dijalankan semua orang."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "whatItDoes": [
+      {
+        "text": {
+          "en": "The IETF develops and maintains internet standards, including DNS protocols.",
+          "id": "IETF mengembangkan dan memelihara standar teknis internet."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      },
+      {
+        "text": {
+          "en": "It works through open working groups anyone can join.",
+          "id": "Mereka bekerja lewat working group terbuka yang bisa diikuti siapa saja."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "example": {
+      "text": {
+        "en": "The IETF defines DNSSEC; IANA (via PTI) maintains the registry of protocol parameters the IETF specifies.",
+        "id": "IETF menetapkan standar DNSSEC; IANA (via PTI) menjaga registry protokol yang didefinisikan IETF."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "officialUrl": "https://www.ietf.org/",
+    "relatedTermIds": [
+      "iana-functions",
+      "dnssec"
+    ],
+    "status": "published",
+    "lastReviewed": "2026-10-18"
+  },
+  {
+    "id": "root-server-operators",
+    "kind": "external",
+    "scope": "external",
+    "acronym": "RSOs",
+    "name": {
+      "en": "Root Server Operators",
+      "id": "Operator Root Server"
+    },
+    "oneLiner": {
+      "text": {
+        "en": "The root server operators run the servers that serve the DNS root zone to the world.",
+        "id": "Operator root server menjalankan server yang melayani zona DNS root ke seluruh dunia."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "whyItExists": [
+      {
+        "text": {
+          "en": "The root of the DNS is served by a set of independent operators who coordinate their own way.",
+          "id": "Root server melayani DNS dari titik akar; operatornya mengelola server secara independen."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "whatItDoes": [
+      {
+        "text": {
+          "en": "They operate the 13 root server identities and their many instances worldwide.",
+          "id": "Mereka mengoperasikan 13 identitas root server dan banyak instansinya di berbagai negara."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      },
+      {
+        "text": {
+          "en": "They coordinate through RSSAC and their own forums, independently of ICANN.",
+          "id": "Mereka berkoordinasi lewat forum sendiri, terkait dengan RSSAC dan ICANN."
+        },
+        "kind": "fact",
+        "citations": [
+          {
+            "sourceId": "icann-bylaws",
+            "verifiedAt": "2026-10-18"
+          }
+        ],
+        "translation": {
+          "original": "en",
+          "reviewed": true
+        }
+      }
+    ],
+    "example": {
+      "text": {
+        "en": "When the root zone is updated, the operators distribute it to their servers worldwide.",
+        "id": "Setiap zona root diperbarui, operator root server menyebarkannya ke jaringan server mereka di seluruh dunia."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "officialUrl": "https://root-servers.org/",
+    "relatedTermIds": [
+      "root-server",
+      "root-zone",
+      "rssac"
+    ],
+    "status": "published",
+    "lastReviewed": "2026-10-18"
+  }
+]

@@ -23,3 +23,7 @@ Jangan mengubah entri lama; tambahkan entri baru di bawah.
 | D-P0-02 | 2026-10-18 | Stack: Next.js 15 (App Router, static export) + pnpm + Tailwind-style CSS variables (tanpa framework CSS) + React Flow (@xyflow/react) + zod | statis, tanpa backend, deploys ke Vercel; Tailwind diganti CSS variables murni biar kontrol penuh dan kecil | builder |
 | D-P0-03 | 2026-10-18 | Router: app dir dengan [locale] segment; konten data di content/*.json divalidasi oleh validator | static export Vercel friendly | builder |
 | D-P0-04 | 2026-10-18 | Terminologi Indonesia mengikuti keputusan owner: policy=kebijakan, advice=nasihat, dsb (lihat README plan methods P1) | konsistensi istilah | builder |
+
+| D-P1-01 | 2026-10-18 | part-of diizinkan untuk icann-affiliate -> icann-internal (PTI bagian struktur ICANN) | fakta struktural Bylaws | builder |
+| D-P1-02 | 2026-10-18 | related-to diizinkan external -> icann-affiliate (IETF <-> IANA functions) | hubungan teknis nyata | builder |
+| D-P1-03 | 2026-10-18 | locator per klaim masih kosong di P1; diisi penuh di P5 audit | P1 fokus struktur + bahasa | builder |

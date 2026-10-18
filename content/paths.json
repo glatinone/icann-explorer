@@ -1,0 +1,441 @@
+[
+  {
+    "id": "beginner",
+    "title": {
+      "en": "Understand ICANN in 30 minutes",
+      "id": "Pahami ICANN dalam 30 menit"
+    },
+    "audience": {
+      "en": "For the curious outsider",
+      "id": "Untuk kamu yang baru kenal"
+    },
+    "estMinutes": 60,
+    "steps": [
+      {
+        "id": "what-is-icann",
+        "title": {
+          "en": "What is ICANN?",
+          "id": "Apa itu ICANN?"
+        },
+        "body": {
+          "en": "ICANN coordinates the internet's naming system. It does not regulate content and it does not run the internet: it coordinates who manages which names and numbers. Look at the map to see the whole ecosystem.",
+          "id": "ICANN mengoordinasikan sistem penamaan internet. ICANN tidak mengatur konten dan tidak menjalankan internet. Mulailah dari peta untuk melihat gambaran besarnya."
+        },
+        "links": [
+          {
+            "type": "entity",
+            "id": "icann-board"
+          },
+          {
+            "type": "term",
+            "id": "icann"
+          }
+        ]
+      },
+      {
+        "id": "three-parts",
+        "title": {
+          "en": "Three building blocks",
+          "id": "Tiga komponen utama"
+        },
+        "body": {
+          "en": "The community (SOs and ACs) develops policy and advice, the Board adopts decisions, and ICANN org implements them. Keep these three apart and everything else falls into place.",
+          "id": "Komunitas (SO dan AC) mengembangkan kebijakan dan nasihat, Dewan mengesahkan keputusan, organisasi ICANN menerapkannya."
+        },
+        "links": [
+          {
+            "type": "entity",
+            "id": "gnso"
+          },
+          {
+            "type": "entity",
+            "id": "alac"
+          },
+          {
+            "type": "entity",
+            "id": "icann-board"
+          },
+          {
+            "type": "entity",
+            "id": "icann-org"
+          }
+        ]
+      },
+      {
+        "id": "who-advises",
+        "title": {
+          "en": "Who advises the Board?",
+          "id": "Siapa yang memberi nasihat?"
+        },
+        "body": {
+          "en": "Four committees advise the Board: ALAC (individual users), GAC (governments), SSAC (security), and RSSAC (root servers). Their advice is not binding.",
+          "id": "Empat komite memberi nasihat kepada Dewan: ALAC (pengguna individu), GAC (pemerintah), SSAC (keamanan), dan RSSAC (root server). Nasihat mereka tidak mengikat."
+        },
+        "links": [
+          {
+            "type": "entity",
+            "id": "alac"
+          },
+          {
+            "type": "entity",
+            "id": "gac"
+          },
+          {
+            "type": "entity",
+            "id": "ssac"
+          },
+          {
+            "type": "entity",
+            "id": "rssac"
+          }
+        ]
+      },
+      {
+        "id": "who-outside",
+        "title": {
+          "en": "Who is outside ICANN?",
+          "id": "Siapa yang di luar ICANN?"
+        },
+        "body": {
+          "en": "The regional IP registries (RIRs), the IETF standards body, and the root server operators are independent organizations. ICANN coordinates with them; it does not run them.",
+          "id": "RIR, IETF, dan operator root server bekerja mandiri di luar struktur ICANN. ICANN berkoordinasi dengan mereka, bukan mengendalikan."
+        },
+        "links": [
+          {
+            "type": "entity",
+            "id": "rirs"
+          },
+          {
+            "type": "entity",
+            "id": "ietf"
+          },
+          {
+            "type": "entity",
+            "id": "root-server-operators"
+          }
+        ]
+      },
+      {
+        "id": "check-yourself",
+        "title": {
+          "en": "Check yourself",
+          "id": "Uji dirimu"
+        },
+        "body": {
+          "en": "A quick question before you move on.",
+          "id": "Satu pertanyaan cepat sebelum lanjut."
+        },
+        "links": [],
+        "check": {
+          "question": {
+            "en": "Who develops policy recommendations for domains like .com?",
+            "id": "Siapa yang mengembangkan rekomendasi kebijakan untuk domain seperti .com?"
+          },
+          "options": [
+            {
+              "en": "The GNSO",
+              "id": "GNSO"
+            },
+            {
+              "en": "The Board",
+              "id": "Dewan"
+            },
+            {
+              "en": "ICANN org",
+              "id": "Organisasi ICANN"
+            }
+          ],
+          "answerIndex": 0,
+          "explanation": {
+            "en": "The GNSO is the Supporting Organization for generic top-level domains.",
+            "id": "GNSO adalah SO yang menangani kebijakan gTLD."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "get-involved",
+    "title": {
+      "en": "Get involved this month",
+      "id": "Mulai berkontribusi bulan ini"
+    },
+    "audience": {
+      "en": "For future contributors",
+      "id": "Untuk calon kontributor"
+    },
+    "estMinutes": 60,
+    "steps": [
+      {
+        "id": "pick-your-group",
+        "title": {
+          "en": "Find your group",
+          "id": "Temukan kelompokmu"
+        },
+        "body": {
+          "en": "Individual users join At-Large (ALAC). Businesses join the GNSO's commercial groups. Governments join the GAC. Technical people often start in the SSAC or via the IETF.",
+          "id": "Pengguna individu masuk lewat At-Large (ALAC). Bisnis lewat GNSO. Pemerintah lewat GAC. Komunitas teknis biasanya lewat SSAC atau IETF."
+        },
+        "links": [
+          {
+            "type": "entity",
+            "id": "alac"
+          },
+          {
+            "type": "entity",
+            "id": "gnso"
+          }
+        ]
+      },
+      {
+        "id": "join-at-large",
+        "title": {
+          "en": "Join At-Large (for Indonesians)",
+          "id": "Gabung At-Large (untuk Indonesia)"
+        },
+        "body": {
+          "en": "For individuals in Indonesia the practical first step is APRALO, the Asia-Pacific regional At-Large organization. Join an existing At-Large Structure or start one.",
+          "id": "Untuk Indonesia, pintu masuknya APRALO. Cari At-Large Structure lokal, atau daftarkan dirimu."
+        },
+        "links": [
+          {
+            "type": "entity",
+            "id": "ralos"
+          },
+          {
+            "type": "term",
+            "id": "appralo"
+          }
+        ]
+      },
+      {
+        "id": "join-working-groups",
+        "title": {
+          "en": "Join working groups",
+          "id": "Ikut working group"
+        },
+        "body": {
+          "en": "Working groups are where policy is actually written. GNSO working groups are open to anyone; you do not need to be a member of a constituency to join most of them.",
+          "id": "Working group adalah tempat kebijakan dikerjakan. Sebagian besar terbuka untuk umum tanpa syarat keanggotaan."
+        },
+        "links": [
+          {
+            "type": "entity",
+            "id": "gnso"
+          }
+        ]
+      },
+      {
+        "id": "attend-a-meeting",
+        "title": {
+          "en": "Attend a public meeting",
+          "id": "Ikuti pertemuan publik"
+        },
+        "body": {
+          "en": "ICANN holds public meetings during the year. First-timers can apply for the Fellowship or NextGen programs. Newcomer sessions on day one explain how everything works.",
+          "id": "ICANN mengadakan pertemuan publik sepanjang tahun. Program Fellowship dan NextGen dirancang untuk peserta baru."
+        },
+        "links": []
+      },
+      {
+        "id": "30-day-plan",
+        "title": {
+          "en": "Your 30-day plan",
+          "id": "Rencana 30 hari"
+        },
+        "body": {
+          "en": "Week 1: pick your group and subscribe to its mailing list. Week 2: read the group's last three drafts. Week 3: comment in a public comment period. Week 4: introduce yourself on a call.",
+          "id": "Minggu 1: pilih kelompokmu. Minggu 2: baca diskusi terakhir. Minggu 3: tulis komentar di konsultasi publik. Minggu 4: perkenalkan diri di rapat."
+        },
+        "links": []
+      }
+    ]
+  },
+  {
+    "id": "policy",
+    "title": {
+      "en": "Follow the policy process",
+      "id": "Ikuti alur kebijakan"
+    },
+    "audience": {
+      "en": "For people who want to influence policy",
+      "id": "Untuk yang mau memahami dan memengaruhi kebijakan"
+    },
+    "estMinutes": 60,
+    "steps": [
+      {
+        "id": "pdp-basics",
+        "title": {
+          "en": "How policy is made",
+          "id": "Cara kebijakan dibuat"
+        },
+        "body": {
+          "en": "A Supporting Organization runs a Policy Development Process: a working group drafts recommendations, the SO council approves them, and the Board considers adopting them.",
+          "id": "Working group menyusun rekomendasi, SO menyetujui, lalu Dewan mempertimbangkan."
+        },
+        "links": [
+          {
+            "type": "term",
+            "id": "pdp"
+          },
+          {
+            "type": "entity",
+            "id": "gnso"
+          }
+        ]
+      },
+      {
+        "id": "gac-role",
+        "title": {
+          "en": "The government voice",
+          "id": "Suara pemerintah"
+        },
+        "body": {
+          "en": "The GAC issues formal advice. The Board usually follows it; when it does not on certain topics, the Bylaws set a special procedure.",
+          "id": "Nasihat GAC tidak mengikat, tetapi ada prosedur khusus kalau Dewan tidak mengikutinya."
+        },
+        "links": [
+          {
+            "type": "entity",
+            "id": "gac"
+          },
+          {
+            "type": "term",
+            "id": "gac-advice"
+          }
+        ]
+      },
+      {
+        "id": "public-comments",
+        "title": {
+          "en": "Public comments",
+          "id": "Komentar publik"
+        },
+        "body": {
+          "en": "Nearly every policy decision has a public comment period. Anyone can submit. Comments that are specific and on time carry the most weight.",
+          "id": "Setiap draf kebijakan dibuka untuk komentar publik. Semua orang boleh memberi masukan."
+        },
+        "links": [
+          {
+            "type": "term",
+            "id": "public-comment"
+          }
+        ]
+      },
+      {
+        "id": "follow-one-issue",
+        "title": {
+          "en": "Follow one real issue",
+          "id": "Ikuti satu isu nyata"
+        },
+        "body": {
+          "en": "Pick one live public comment proceeding on icann.org and read the comments. This is the fastest way to see how the process works.",
+          "id": "Pilih satu isu yang sedang buka komentar publik di icann.org dan baca masukannya."
+        },
+        "links": []
+      }
+    ]
+  },
+  {
+    "id": "technical",
+    "title": {
+      "en": "The technical layer",
+      "id": "Lapisan teknis"
+    },
+    "audience": {
+      "en": "For engineers and operators",
+      "id": "Untuk komunitas teknis"
+    },
+    "estMinutes": 60,
+    "steps": [
+      {
+        "id": "names-and-numbers",
+        "title": {
+          "en": "Names and numbers",
+          "id": "Nama dan nomor"
+        },
+        "body": {
+          "en": "The internet has two coordinated registries: names (DNS) and numbers (IP addresses, ASNs). ICANN coordinates the first through the IANA functions; the RIR communities handle the second.",
+          "id": "ICANN mengoordinasikan penamaan lewat fungsi IANA; alamat IP dikelola komunitas RIR secara mandiri."
+        },
+        "links": [
+          {
+            "type": "term",
+            "id": "dns"
+          },
+          {
+            "type": "term",
+            "id": "ip-address"
+          }
+        ]
+      },
+      {
+        "id": "root",
+        "title": {
+          "en": "The root of the DNS",
+          "id": "Akar DNS"
+        },
+        "body": {
+          "en": "The root zone lists all top-level domains. PTI (the IANA functions) manages it under ICANN; root server operators distribute it worldwide.",
+          "id": "Zona root berisi daftar semua TLD, dikelola lewat fungsi IANA dan disebarkan operator root server."
+        },
+        "links": [
+          {
+            "type": "entity",
+            "id": "pti"
+          },
+          {
+            "type": "term",
+            "id": "root-zone"
+          },
+          {
+            "type": "term",
+            "id": "root-server"
+          }
+        ]
+      },
+      {
+        "id": "standards",
+        "title": {
+          "en": "Standards",
+          "id": "Standar"
+        },
+        "body": {
+          "en": "The IETF develops protocol standards. IANA maintains the registries. ICANN hosts the IANA functions affiliate, but does not set technical standards.",
+          "id": "IETF menetapkan standar; IANA menjaga registry-nya. Keduanya badan yang berbeda."
+        },
+        "links": [
+          {
+            "type": "entity",
+            "id": "ietf"
+          },
+          {
+            "type": "term",
+            "id": "dnssec"
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": {
+          "en": "Security",
+          "id": "Keamanan"
+        },
+        "body": {
+          "en": "SSAC (security) and RSSAC (root servers) study risks and advise the Board. Start with their published reports.",
+          "id": "SSAC dan RSSAC meneliti risiko keamanan dan stabilitas, hasilnya berupa laporan dan nasihat."
+        },
+        "links": [
+          {
+            "type": "entity",
+            "id": "ssac"
+          },
+          {
+            "type": "entity",
+            "id": "rssac"
+          }
+        ]
+      }
+    ]
+  }
+]

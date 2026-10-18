@@ -72,7 +72,7 @@ export const RELATIONSHIP_REGISTRY: Record<RelationshipType, RelationshipTypeInf
   },
   "part-of": {
     family: "membership",
-    allowed: [["icann-internal", "icann-internal"], ["icann-affiliate", "icann-affiliate"]],
+    allowed: [["icann-internal", "icann-internal"], ["icann-affiliate", "icann-affiliate"], ["icann-affiliate", "icann-internal"]],
     label: { id: "bagian dari", en: "part of" },
   },
   "participates-in": {
@@ -92,6 +92,7 @@ export const RELATIONSHIP_REGISTRY: Record<RelationshipType, RelationshipTypeInf
       ["icann-internal", "external"],
       ["icann-affiliate", "external"],
       ["external", "external"],
+      ["external", "icann-affiliate"],
     ],
     label: { id: "berkaitan dengan", en: "related to" },
   },

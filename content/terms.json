@@ -1,0 +1,912 @@
+[
+  {
+    "id": "icann",
+    "term": "ICANN",
+    "definition": {
+      "text": {
+        "en": "The Internet Corporation for Assigned Names and Numbers. A nonprofit that coordinates the naming and addressing systems of the internet. Not a government or a regulator.",
+        "id": "Internet Corporation for Assigned Names and Numbers. Organisasi nirlaba yang mengoordinasikan sistem penamaan dan pengalamatan internet. Bukan pemerintah dan bukan regulator."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [
+      "icann-board",
+      "icann-org"
+    ],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "multistakeholder",
+    "term": "multistakeholder model",
+    "definition": {
+      "text": {
+        "en": "A way of making decisions where governments, businesses, technical experts, and civil society all take part, with no single group in charge.",
+        "id": "Cara pengambilan keputusan di mana pemerintah, bisnis, komunitas teknis, dan masyarakat sipil semua punya suara."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "so",
+    "term": "Supporting Organization (SO)",
+    "definition": {
+      "text": {
+        "en": "A body that develops policy recommendations in a defined area, like domain names or IP addresses.",
+        "id": "Badan yang mengembangkan rekomendasi kebijakan di area tertentu, seperti domain atau alamat IP."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [
+      "gnso",
+      "ccnso",
+      "aso"
+    ],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "ac",
+    "term": "Advisory Committee (AC)",
+    "definition": {
+      "text": {
+        "en": "A body that advises the Board. Advice is not binding.",
+        "id": "Kelompok yang memberi nasihat kepada Dewan; nasihat tidak mengikat."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [
+      "alac",
+      "gac",
+      "ssac",
+      "rssac"
+    ],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "pdp",
+    "term": "Policy Development Process (PDP)",
+    "definition": {
+      "text": {
+        "en": "The structured process a Supporting Organization uses to develop a policy recommendation.",
+        "id": "Proses terstruktur yang dipakai Supporting Organization untuk mengembangkan rekomendasi kebijakan."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [
+      "gnso",
+      "ccnso"
+    ],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "gtld",
+    "term": "gTLD",
+    "definition": {
+      "text": {
+        "en": "A generic top-level domain, like .com, .org, or .app.",
+        "id": "Domain tingkat atas generik, seperti .com, .org, atau .app."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [
+      "gnso"
+    ],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "cctld",
+    "term": "ccTLD",
+    "definition": {
+      "text": {
+        "en": "A country-code top-level domain, like .id or .de, operated by a national manager.",
+        "id": "Domain tingkat atas kode negara, seperti .id atau .de, dikelola pengelola nasional."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [
+      "ccnso"
+    ],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "tld",
+    "term": "top-level domain (TLD)",
+    "definition": {
+      "text": {
+        "en": "The last part of a domain name: .com, .id, .org.",
+        "id": "Bagian terakhir dari sebuah nama domain: .com, .id, dan sebagainya."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "dns",
+    "term": "DNS",
+    "definition": {
+      "text": {
+        "en": "The internet's directory that turns names like example.com into IP addresses.",
+        "id": "Sistem yang menerjemahkan nama domain seperti contoh.com menjadi alamat IP."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "dnssec",
+    "term": "DNSSEC",
+    "definition": {
+      "text": {
+        "en": "Security extensions for the DNS that let answers be verified with digital signatures.",
+        "id": "Ekstensi keamanan DNS yang membuat jawaban DNS bisa diverifikasi dengan tanda tangan digital."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [
+      "ietf"
+    ],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "dns-abuse",
+    "term": "DNS abuse",
+    "definition": {
+      "text": {
+        "en": "Harmful activity enabled by the DNS or domain registrations, like malware, phishing, and botnets.",
+        "id": "Aktivitas berbahaya yang memakai DNS atau pendaftaran domain, seperti malware dan phishing."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "root-server",
+    "term": "root server",
+    "definition": {
+      "text": {
+        "en": "A server that answers DNS queries at the top of the name tree.",
+        "id": "Server yang menjawab pertanyaan DNS di tingkat akar."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [
+      "root-server-operators"
+    ],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "root-zone",
+    "term": "root zone",
+    "definition": {
+      "text": {
+        "en": "The database at the top of the DNS, listing all top-level domains.",
+        "id": "Database di puncak DNS yang berisi daftar semua TLD."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [
+      "pti"
+    ],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "iana-functions",
+    "term": "IANA functions",
+    "definition": {
+      "text": {
+        "en": "The technical registries for names, numbers, and protocol parameters, performed by PTI.",
+        "id": "Fungsi teknis IANA: penamaan, nomor, dan registry protokol. Dijalankan PTI."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [
+      "pti"
+    ],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "ip-address",
+    "term": "IP address",
+    "definition": {
+      "text": {
+        "en": "A number that identifies a device or network on the internet.",
+        "id": "Nomor yang mengidentifikasi perangkat atau jaringan di internet."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "asn",
+    "term": "Autonomous System Number (ASN)",
+    "definition": {
+      "text": {
+        "en": "A number that identifies one network on the internet for routing.",
+        "id": "Nomor yang mengidentifikasi satu jaringan di internet untuk routing."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "registry",
+    "term": "registry",
+    "definition": {
+      "text": {
+        "en": "An organization that operates the database for a top-level domain.",
+        "id": "Badan yang mengoperasikan database sebuah TLD."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "registrar",
+    "term": "registrar",
+    "definition": {
+      "text": {
+        "en": "A company that sells domain names to customers.",
+        "id": "Perusahaan yang menjual nama domain ke pelanggan."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "at-large",
+    "term": "At-Large",
+    "definition": {
+      "text": {
+        "en": "The community of individual internet users in ICANN, coordinated by ALAC.",
+        "id": "Komunitas pengguna internet individu di ICANN, dikoordinasikan ALAC."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [
+      "alac",
+      "ralos"
+    ],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "ralo",
+    "term": "Regional At-Large Organization (RALO)",
+    "definition": {
+      "text": {
+        "en": "A regional At-Large Organization, like APRALO for Asia-Pacific.",
+        "id": "Organisasi At-Large regional, misalnya APRALO untuk Asia-Pasifik."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [
+      "ralos"
+    ],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "individual-user",
+    "term": "individual user",
+    "definition": {
+      "text": {
+        "en": "A person who takes part in ICANN as themselves, not as a government or company representative.",
+        "id": "Orang yang ikut di ICANN sebagai dirinya sendiri, bukan mewakili pemerintah atau perusahaan."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "advice",
+    "term": "advice",
+    "definition": {
+      "text": {
+        "en": "A recommendation given to the Board by an advisory committee. Not binding.",
+        "id": "Rekomendasi dari komite penasihat kepada Dewan. Tidak mengikat."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "gac-advice",
+    "term": "GAC advice",
+    "definition": {
+      "text": {
+        "en": "Formal advice from the GAC to the ICANN Board. Not binding, but with a special Board procedure in some cases.",
+        "id": "Nasihat formal GAC kepada Dewan; tidak mengikat, tetapi ada prosedur khusus jika Dewan tidak mengikutinya."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [
+      "gac"
+    ],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "public-comment",
+    "term": "public comment",
+    "definition": {
+      "text": {
+        "en": "The formal period when anyone can give input on a draft ICANN decision or report.",
+        "id": "Periode ketika semua orang bisa memberi masukan atas draf kebijakan ICANN."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "board-resolution",
+    "term": "Board resolution",
+    "definition": {
+      "text": {
+        "en": "The formal written record of a Board decision.",
+        "id": "Catatan formal keputusan Dewan."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [
+      "icann-board"
+    ],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "idn",
+    "term": "internationalized domain name (IDN)",
+    "definition": {
+      "text": {
+        "en": "A domain name written in non-Latin scripts, like Arabic or Chinese.",
+        "id": "Nama domain yang memakai aksara non-Latin, seperti Arab atau Cina."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "bylaws",
+    "term": "ICANN Bylaws",
+    "definition": {
+      "text": {
+        "en": "The document that defines how ICANN works, like a constitution.",
+        "id": "Dokumen yang mengatur cara kerja ICANN."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "rir",
+    "term": "Regional Internet Registry (RIR)",
+    "definition": {
+      "text": {
+        "en": "A regional registry that allocates IP addresses and ASNs. Independent of ICANN.",
+        "id": "Registry regional yang mengelola alamat IP di wilayahnya. Bukan bagian ICANN."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [
+      "rirs"
+    ],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "nomcom",
+    "term": "NomCom",
+    "definition": {
+      "text": {
+        "en": "The Nominating Committee that selects people for key ICANN roles.",
+        "id": "Komite yang memilih orang untuk berbagai posisi penting ICANN."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [
+      "nomcom"
+    ],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "empowered-community",
+    "term": "Empowered Community",
+    "definition": {
+      "text": {
+        "en": "The mechanism the community uses to exercise defined checks on the Board.",
+        "id": "Mekanisme komunitas untuk menjalankan kontrol tertentu atas Dewan."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [
+      "empowered-community"
+    ],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "stakeholder-group",
+    "term": "Stakeholder group",
+    "definition": {
+      "text": {
+        "en": "A group of stakeholders inside a Supporting Organization, like registrars or non-commercial users.",
+        "id": "Kelompok pemangku kepentingan di dalam SO, misalnya registrar atau pengguna non-komersial."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [
+      "gnso-stakeholder-groups"
+    ],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "appralo",
+    "term": "APRALO",
+    "definition": {
+      "text": {
+        "en": "The Asia-Pacific Regional At-Large Organization. The entry point for Indonesians in At-Large.",
+        "id": "Organisasi At-Large untuk wilayah Asia-Pasifik, termasuk Indonesia."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [
+      "ralos"
+    ],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "fellowship",
+    "term": "Fellowship",
+    "definition": {
+      "text": {
+        "en": "A program that brings first-time participants from underserved regions to ICANN public meetings.",
+        "id": "Program yang membawa peserta baru dari wilayah kurang terwakili untuk mengikuti pertemuan ICANN."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "nextgen",
+    "term": "NextGen",
+    "definition": {
+      "text": {
+        "en": "A program for students and young professionals to attend ICANN public meetings.",
+        "id": "Program untuk mahasiswa dan profesional muda mengikuti pertemuan ICANN."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "udrp",
+    "term": "UDRP",
+    "definition": {
+      "text": {
+        "en": "The Uniform Domain-Name Dispute-Resolution Policy, used to resolve domain disputes like cybersquatting.",
+        "id": "Prosedur penyelesaian sengketa domain, misalnya soal domain yang diregistrasi dengan niat buruk."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [],
+    "relatedTermIds": [],
+    "status": "published"
+  },
+  {
+    "id": "gdpr",
+    "term": "GDPR",
+    "definition": {
+      "text": {
+        "en": "The EU's General Data Protection Regulation, which drove major policy changes on domain registration data.",
+        "id": "Regulasi perlindungan data Uni Eropa yang mendorong perubahan kebijakan data registrasi gTLD."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "verifiedAt": "2026-10-18"
+        }
+      ],
+      "translation": {
+        "original": "en",
+        "reviewed": true
+      }
+    },
+    "relatedEntityIds": [],
+    "relatedTermIds": [],
+    "status": "published"
+  }
+]
