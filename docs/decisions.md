@@ -30,3 +30,5 @@ Jangan mengubah entri lama; tambahkan entri baru di bawah.
 
 | D-P2-01 | 2026-10-19 | Peta pakai SVG murni (bukan React Flow) | a11y + bundle lebih kecil | builder |
 | D-P2-02 | 2026-10-19 | URL state peta dibaca di sisi klien (static export) | batasan static export | builder |
+
+| D-P3-01 | 2026-10-19 | Penanda sumber di profil: superscript [sourceId] dengan title attribute, daftar sumber lengkap di halaman About | membaca tetap bersih | builder |
