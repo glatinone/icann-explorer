@@ -1,0 +1,190 @@
+[
+  {
+    "id": "icann-bylaws",
+    "title": "ICANN Bylaws",
+    "url": "https://www.icann.org/en/governance/bylaws",
+    "publisher": "ICANN",
+    "tier": 1,
+    "languages": [
+      "en"
+    ],
+    "version": "2025-11-01",
+    "accessed": "2026-10-18"
+  },
+  {
+    "id": "icann-community",
+    "title": "Community and Groups",
+    "url": "https://www.icann.org/en/community",
+    "publisher": "ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-18"
+  },
+  {
+    "id": "gnso-icann",
+    "title": "GNSO - Generic Names Supporting Organization",
+    "url": "https://gnso.icann.org/",
+    "publisher": "GNSO",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-18"
+  },
+  {
+    "id": "atlarge-icann",
+    "title": "At-Large Advisory Committee",
+    "url": "https://atlarge.icann.org/",
+    "publisher": "ALAC",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-18"
+  },
+  {
+    "id": "gac-icann",
+    "title": "Governmental Advisory Committee",
+    "url": "https://gac.icann.org/",
+    "publisher": "GAC",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-18"
+  },
+  {
+    "id": "ssac-icann",
+    "title": "Security and Stability Advisory Committee",
+    "url": "https://www.icann.org/en/ssac",
+    "publisher": "ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-18"
+  },
+  {
+    "id": "rssac-icann",
+    "title": "Root Server System Advisory Committee",
+    "url": "https://www.icann.org/en/rssac",
+    "publisher": "ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-18"
+  },
+  {
+    "id": "ccnso-icann",
+    "title": "Country Code Names Supporting Organization",
+    "url": "https://ccnso.icann.org/",
+    "publisher": "ccNSO",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-18"
+  },
+  {
+    "id": "aso-icann",
+    "title": "Address Supporting Organization",
+    "url": "https://aso.icann.org/",
+    "publisher": "ASO",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-18"
+  },
+  {
+    "id": "nomcom-icann",
+    "title": "Nominating Committee",
+    "url": "https://www.icann.org/nomcom",
+    "publisher": "ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-18"
+  },
+  {
+    "id": "ptiorg",
+    "title": "Public Technical Identifiers",
+    "url": "https://pti.icann.org/",
+    "publisher": "PTI",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-18"
+  },
+  {
+    "id": "iana-org",
+    "title": "IANA - Internet Assigned Numbers Authority",
+    "url": "https://www.iana.org/",
+    "publisher": "IANA",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-18"
+  },
+  {
+    "id": "nro-net",
+    "title": "Number Resource Organization",
+    "url": "https://www.nro.net/",
+    "publisher": "NRO",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-18"
+  },
+  {
+    "id": "ietf-org",
+    "title": "Internet Engineering Task Force",
+    "url": "https://www.ietf.org/",
+    "publisher": "IETF",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-18"
+  },
+  {
+    "id": "root-servers-org",
+    "title": "Root Server Operators",
+    "url": "https://root-servers.org/",
+    "publisher": "RSOs",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-18"
+  },
+  {
+    "id": "icann-acronyms",
+    "title": "ICANN Acronyms and Terms",
+    "url": "https://www.icann.org/en/icann-acronyms-and-terms",
+    "publisher": "ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-18"
+  },
+  {
+    "id": "icann-board-page",
+    "title": "About the Board",
+    "url": "https://www.icann.org/en/board/about",
+    "publisher": "ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-18"
+  }
+]
