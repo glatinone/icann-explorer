@@ -234,8 +234,8 @@
     "scope": "icann-internal",
     "acronym": "GNSO",
     "name": {
-      "en": "Generic Names Supporting Organization",
-      "id": "Organisasi Pendukung Nama Generik"
+      "en": "Generic Names Supporting Organization (gTLD policy)",
+      "id": "Organisasi Pendukung Nama Generik (kebijakan gTLD)"
     },
     "oneLiner": {
       "text": {
@@ -574,12 +574,12 @@
     "scope": "icann-internal",
     "acronym": "ALAC",
     "name": {
-      "en": "At-Large Advisory Committee",
-      "id": "Komite Penasihat At-Large"
+      "en": "At-Large Advisory Committee (individual internet users)",
+      "id": "Komite Penasihat At-Large (pengguna internet)"
     },
     "oneLiner": {
       "text": {
-        "en": "The ALAC represents the interests of individual Internet users around the world.",
+        "en": "The ALAC represents the interests of individual Internet users around the world. Represents individual internet users.",
         "id": "ALAC mewakili kepentingan pengguna internet individu di seluruh dunia."
       },
       "kind": "fact",
@@ -1584,8 +1584,8 @@
     "scope": "external",
     "acronym": "RIRs",
     "name": {
-      "en": "Regional Internet Registries",
-      "id": "Regional Internet Registries (RIR)"
+      "en": "Regional Internet Registries (IP address registries)",
+      "id": "Regional Internet Registries (pengelola alamat IP)"
     },
     "oneLiner": {
       "text": {

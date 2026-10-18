@@ -1,6 +1,7 @@
 import type { ReactElement } from "react";
 import { t, type Locale } from "@/i18n";
 import { LanguageToggle } from "./LanguageToggle";
+import SearchButton from "./SearchButton";
 
 const NAV_ITEMS = [
   { key: "site.nav.map", href: "/map/" },
@@ -20,7 +21,10 @@ export function SiteHeader({ locale }: { locale: Locale }): ReactElement {
           </a>
           <p className="site-tagline">{t(locale, "common.label.unofficial")}</p>
         </div>
-        <LanguageToggle locale={locale} />
+        <div className="header-actions">
+          <SearchButton locale={locale} />
+          <LanguageToggle locale={locale} />
+        </div>
       </div>
       <nav aria-label={locale === "id" ? "Navigasi utama" : "Main navigation"}>
         <ul>
