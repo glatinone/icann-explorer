@@ -1,0 +1,45 @@
+{
+  "name": "icann-explorer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Independent, unofficial bilingual (ID/EN) interactive guide to the ICANN ecosystem.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "validate:content": "tsx scripts/validate-content.ts",
+    "check:links": "tsx scripts/check-links.ts",
+    "prebuild": "tsx scripts/validate-content.ts"
+  },
+  "dependencies": {
+    "@xyflow/react": "^12.3.0",
+    "clsx": "^2.1.1",
+    "minisearch": "^7.1.0",
+    "next": "^15.5.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "^15.5.0",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8",
+    "@eslint/eslintrc": "^3.1.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "@next/eslint-plugin-next": "^15.5.0"
+  },
+  "packageManager": "pnpm@12.8.1"
+}
