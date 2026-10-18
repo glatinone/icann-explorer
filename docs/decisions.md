@@ -27,3 +27,6 @@ Jangan mengubah entri lama; tambahkan entri baru di bawah.
 | D-P1-01 | 2026-10-18 | part-of diizinkan untuk icann-affiliate -> icann-internal (PTI bagian struktur ICANN) | fakta struktural Bylaws | builder |
 | D-P1-02 | 2026-10-18 | related-to diizinkan external -> icann-affiliate (IETF <-> IANA functions) | hubungan teknis nyata | builder |
 | D-P1-03 | 2026-10-18 | locator per klaim masih kosong di P1; diisi penuh di P5 audit | P1 fokus struktur + bahasa | builder |
+
+| D-P2-01 | 2026-10-19 | Peta pakai SVG murni (bukan React Flow) | a11y + bundle lebih kecil | builder |
+| D-P2-02 | 2026-10-19 | URL state peta dibaca di sisi klien (static export) | batasan static export | builder |
