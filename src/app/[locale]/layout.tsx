@@ -36,6 +36,9 @@ export default async function LocaleLayout({
         </a>
         <SiteHeader locale={locale} />
         <main id="main-content">{children}</main>
+        <div className="unofficial-strip" aria-hidden="false">
+          {t(locale, "common.label.unofficial")}
+        </div>
         <SiteFooter locale={locale} />
       </body>
     </html>

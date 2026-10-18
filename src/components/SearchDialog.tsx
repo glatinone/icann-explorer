@@ -71,6 +71,9 @@ export default function SearchDialog({
           onChange={(e) => setQ(e.target.value)}
           onKeyDown={(e) => {
             if (e.key === "Escape") onClose();
+            if (e.key === "Enter" && results.length > 0) {
+              window.location.assign(results[0].url);
+            }
           }}
           aria-label={locale === "id" ? "Cari" : "Search"}
         />
