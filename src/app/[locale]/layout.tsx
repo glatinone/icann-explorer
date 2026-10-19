@@ -37,7 +37,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         },
       ],
     },
-    metadataBase: new URL("https://glatinone.github.io/icann-explorer"),
+    metadataBase: new URL(
+      process.env.NEXT_PUBLIC_SITE_URL ??
+        (process.env.VERCEL_PROJECT_PRODUCTION_URL
+          ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+          : "https://glatinone.github.io/icann-explorer"),
+    ),
+    icons: { icon: "/icon.svg" },
   };
 }
 

@@ -53,7 +53,7 @@ export default function MapClient({ locale }: { locale: Locale }): ReactElement 
   return (
     <div className="page map-page">
       <h1>{locale === "id" ? "Peta ekosistem" : "Ecosystem map"}</h1>
-      <div className="view-switcher" role="tablist" aria-label={locale === "id" ? "Tampilan" : "View"}>
+      <nav className="view-switcher" aria-label={locale === "id" ? "Tampilan peta" : "Map view"}>
         {(["map", "tree", "relations"] as const).map((v) => (
           <a
             key={v}
@@ -68,7 +68,7 @@ export default function MapClient({ locale }: { locale: Locale }): ReactElement 
             {viewLabel(v, locale)}
           </a>
         ))}
-      </div>
+      </nav>
       {view === "map" && <MapView locale={locale} selectedNode={selectedNode} onSelectNode={setSelectedNode} />}
       {view === "tree" && <TreeView locale={locale} />}
       {view === "relations" && <RelationsView locale={locale} />}
