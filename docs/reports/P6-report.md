@@ -38,7 +38,7 @@
 | R5 | `check:links` 0 broken | OK | 0 broken (Part A re-verified) |
 | R6 | Lisensi semua aset di ASSETS.md; kode + konten license set | PARTIAL | ASSETS.md lengkap; LICENSE dibuat; `TODO(Kiell)` konfirmasi CC BY |
 | R7 | Label + disclaimer tiap halaman, kedua locale, tanpa imitasi logo | OK | e2e verifikasi; tanpa logo |
-| R8 | Security headers di preview URL, tanpa secret, `pnpm audit` bersih, tanpa tracker | PARTIAL | vercel.json headers ada; `pnpm audit` belum dijalankan ulang, preview belum ada |
+| R8 | Security headers di preview URL, tanpa secret, `pnpm audit` bersih, tanpa tracker | PARTIAL | vercel.json headers ada; `pnpm audit --prod`: 0 known vulns (postcss di-override ke 8.5.30 via pnpm-workspace.yaml); preview URL belum ada untuk cek headers live |
 | R9 | Uji ≥ 5 pemula di preview | NOT STARTED | `docs/reports/user-test.md` template siap |
 | R10 | Lighthouse di preview URL | NOT STARTED | butuh preview URL |
 
