@@ -1,0 +1,35 @@
+name: Translation issue
+description: Report a translation error in Indonesian or English
+title: "[Translation issue] <page or key>"
+labels: ["i18n"]
+body:
+  - type: input
+    id: key
+    attributes:
+      label: Key or page
+      description: The i18n key or page URL that is wrong.
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      options:
+        - Indonesian (ID)
+        - English (EN)
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: Current text
+      description: What the site currently shows.
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: Suggested text
+      description: Your suggested translation, and why it is more natural/correct.
+    validations:
+      required: true

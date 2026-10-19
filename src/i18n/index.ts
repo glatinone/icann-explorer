@@ -1,4 +1,4 @@
-import { locales, defaultLocale, isLocale, otherLocale, type Locale } from "./config";
+import { feedbackUrl, locales, defaultLocale, isLocale, otherLocale, type Locale } from "./config";
 
 import id from "./id.json";
 import en from "./en.json";
@@ -10,5 +10,5 @@ export function t(locale: Locale, key: string): string {
   return dictionaries[locale][key] ?? key;
 }
 
-export { locales, defaultLocale, isLocale, otherLocale };
+export { locales, defaultLocale, isLocale, otherLocale, feedbackUrl };
 export type { Locale };

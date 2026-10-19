@@ -1,0 +1,28 @@
+name: Content error
+description: Report a factual error on a page
+title: "[Content error] <page id>"
+labels: ["content"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The page id or URL where the error appears
+      placeholder: e.g. gnso
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What is wrong?
+      description: Tell us what the page currently says and why it is wrong.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: Official ICANN source (preferred) or trusted reference with URL where the correct fact can be verified.
+      placeholder: https://www.icann.org/...
+    validations:
+      required: true

@@ -16,7 +16,29 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     locale === "id"
       ? "Peta interaktif ekosistem ICANN untuk pemula: siapa melakukan apa, bagaimana kelompok saling terhubung, dan cara mulai berkontribusi. Proyek edukasi independen dan tidak resmi."
       : "An interactive map of the ICANN ecosystem for newcomers: who does what, how groups connect, and where to start contributing.";
-  return { title, description, alternates: { canonical: `/${locale}/`, languages: { id: "/id/", en: "/en/" } } };
+  return {
+    title,
+    description,
+    alternates: { canonical: `/${locale}/`, languages: { id: "/id/", en: "/en/" } },
+    openGraph: {
+      title,
+      description,
+      locale: locale === "id" ? "id_ID" : "en_US",
+      type: "website",
+      images: [
+        {
+          url: `/og/og-${locale}.png`,
+          width: 1200,
+          height: 630,
+          alt:
+            locale === "id"
+              ? "ICANN Explorer: pahami ekosistem ICANN"
+              : "ICANN Explorer: understand the ICANN ecosystem",
+        },
+      ],
+    },
+    metadataBase: new URL("https://glatinone.github.io/icann-explorer"),
+  };
 }
 
 export default async function LocaleLayout({
