@@ -1,169 +1,669 @@
 [
   {
     "id": "icann-bylaws",
-    "title": "ICANN Bylaws",
-    "url": "https://www.icann.org/en/governance/bylaws",
+    "title": "Bylaws for Internet Corporation for Assigned Names and Numbers",
+    "url": "https://www.icann.org/resources/pages/governance/bylaws-en",
     "publisher": "ICANN",
     "tier": 1,
     "languages": [
       "en"
     ],
-    "version": "2025-11-01",
-    "accessed": "2026-10-18"
+    "version": "As amended 3 July 2026",
+    "accessed": "2026-10-20"
   },
   {
-    "id": "icann-community",
-    "title": "Community and Groups",
-    "url": "https://www.icann.org/en/community",
+    "id": "icann-board-directors",
+    "title": "Board Members (ICANN Board of Directors)",
+    "url": "https://www.icann.org/en/board/directors",
     "publisher": "ICANN",
     "tier": 2,
     "languages": [
       "en"
     ],
-    "accessed": "2026-10-18"
+    "accessed": "2026-10-20"
   },
   {
-    "id": "gnso-icann",
-    "title": "GNSO - Generic Names Supporting Organization",
-    "url": "https://gnso.icann.org/",
-    "publisher": "GNSO",
-    "tier": 2,
-    "languages": [
-      "en"
-    ],
-    "accessed": "2026-10-18"
-  },
-  {
-    "id": "atlarge-icann",
-    "title": "At-Large Advisory Committee",
-    "url": "https://atlarge.icann.org/",
-    "publisher": "ALAC",
-    "tier": 2,
-    "languages": [
-      "en"
-    ],
-    "accessed": "2026-10-18"
-  },
-  {
-    "id": "gac-icann",
-    "title": "Governmental Advisory Committee",
-    "url": "https://gac.icann.org/",
-    "publisher": "GAC",
-    "tier": 2,
-    "languages": [
-      "en"
-    ],
-    "accessed": "2026-10-18"
-  },
-  {
-    "id": "ssac-icann",
-    "title": "Security and Stability Advisory Committee",
-    "url": "https://www.icann.org/en/ssac",
+    "id": "icann-who-we-are",
+    "title": "Getting to Know ICANN (About ICANN)",
+    "url": "https://www.icann.org/en/about",
     "publisher": "ICANN",
     "tier": 2,
     "languages": [
       "en"
     ],
-    "accessed": "2026-10-18"
+    "accessed": "2026-10-20"
   },
   {
-    "id": "rssac-icann",
-    "title": "Root Server System Advisory Committee",
-    "url": "https://www.icann.org/en/rssac",
+    "id": "icann-ceo-corner",
+    "title": "CEO Corner",
+    "url": "https://www.icann.org/en/ceo-corner",
     "publisher": "ICANN",
     "tier": 2,
     "languages": [
       "en"
     ],
-    "accessed": "2026-10-18"
+    "accessed": "2026-10-20"
   },
   {
-    "id": "ccnso-icann",
-    "title": "Country Code Names Supporting Organization",
-    "url": "https://ccnso.icann.org/",
-    "publisher": "ccNSO",
+    "id": "icann-ceo-selection-2024",
+    "title": "ICANN Selects Next President and CEO (10 June 2024)",
+    "url": "https://www.icann.org/en/announcements/details/icann-selects-next-president-and-ceo-10-06-2024-en",
+    "publisher": "ICANN",
     "tier": 2,
     "languages": [
       "en"
     ],
-    "accessed": "2026-10-18"
+    "accessed": "2026-10-20"
   },
   {
-    "id": "aso-icann",
-    "title": "Address Supporting Organization",
-    "url": "https://aso.icann.org/",
-    "publisher": "ASO",
+    "id": "icann-board-leadership-release-2025",
+    "title": "Press Release: Tripti Sinha Reappointed Board Chair and Sajid Rahman Appointed Vice Chair of ICANN Board of Directors (30 October 2025)",
+    "url": "https://www.icann.org/resources/press-material/release-2025-10-30-en",
+    "publisher": "ICANN",
     "tier": 2,
     "languages": [
       "en"
     ],
-    "accessed": "2026-10-18"
+    "accessed": "2026-10-20"
   },
   {
-    "id": "nomcom-icann",
-    "title": "Nominating Committee",
+    "id": "icann-nomcom-about",
+    "title": "ICANN Nominating Committee (About NomCom)",
     "url": "https://www.icann.org/nomcom",
     "publisher": "ICANN",
     "tier": 2,
     "languages": [
       "en"
     ],
-    "accessed": "2026-10-18"
+    "accessed": "2026-10-20"
   },
   {
-    "id": "ptiorg",
-    "title": "Public Technical Identifiers",
-    "url": "https://pti.icann.org/",
-    "publisher": "PTI",
+    "id": "icann-nomcom-2026-selections",
+    "title": "ICANN's 2026 Nominating Committee Announces Leadership Selections (12 August 2026)",
+    "url": "https://www.icann.org/en/announcements/details/icanns-2026-nominating-committee-announces-leadership-selections-12-08-2026-en",
+    "publisher": "ICANN",
     "tier": 2,
     "languages": [
       "en"
     ],
-    "accessed": "2026-10-18"
+    "accessed": "2026-10-20"
   },
   {
-    "id": "iana-org",
-    "title": "IANA - Internet Assigned Numbers Authority",
-    "url": "https://www.iana.org/",
-    "publisher": "IANA",
+    "id": "icann-ec-correspondence",
+    "title": "Empowered Community Correspondence",
+    "url": "https://www.icann.org/en/correspondence/empowered-community",
+    "publisher": "ICANN",
     "tier": 2,
     "languages": [
       "en"
     ],
-    "accessed": "2026-10-18"
+    "accessed": "2026-10-20"
   },
   {
-    "id": "nro-net",
-    "title": "Number Resource Organization",
+    "id": "iana-governance",
+    "title": "Governance (IANA)",
+    "url": "https://www.iana.org/about/governance",
+    "publisher": "Internet Assigned Numbers Authority (operated by PTI)",
+    "tier": 3,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "icann-pti-iana-2030-blog",
+    "title": "PTI Board Adopts 2025-30 Strategic Plan and FY26 Operating Plan and Budget (28 April 2025)",
+    "url": "https://www.icann.org/en/blogs/details/pti-board-adopts-202530-strategic-plan-and-fy26-operating-plan-and-budget-28-04-2025-en",
+    "publisher": "ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "gnso-stakeholder-groups-page",
+    "title": "GNSO: Stakeholder Groups and Constituencies",
+    "url": "https://gnso.icann.org/en/about/stakeholders-constituencies",
+    "publisher": "GNSO / ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "gnso-rysg-page",
+    "title": "GNSO: Registries Stakeholder Group",
+    "url": "https://gnso.icann.org/en/about/stakeholders-constituencies/rysg",
+    "publisher": "GNSO / ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "gnso-rrsg-page",
+    "title": "GNSO: Registrar Stakeholder Group",
+    "url": "https://gnso.icann.org/en/about/stakeholders-constituencies/rrsg",
+    "publisher": "GNSO / ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "gnso-csg-page",
+    "title": "GNSO: Commercial Stakeholder Group",
+    "url": "https://gnso.icann.org/en/about/stakeholders-constituencies/csg",
+    "publisher": "GNSO / ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "gnso-ncsg-page",
+    "title": "GNSO: Noncommercial Stakeholder Group",
+    "url": "https://gnso.icann.org/en/about/stakeholders-constituencies/ncsg",
+    "publisher": "GNSO / ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "gnso-volunteer-wg-page",
+    "title": "GNSO: Volunteer for a Working Group",
+    "url": "https://gnso.icann.org/en/about/volunteer-wg.htm",
+    "publisher": "GNSO / ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "gnso-subpro-page",
+    "title": "GNSO: PDP New gTLD Subsequent Procedures",
+    "url": "https://gnso.icann.org/en/group-activities/active/new-gtld-subsequent-procedures",
+    "publisher": "GNSO / ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "board-resolutions-2023-03-16",
+    "title": "Approved Resolutions, Regular Meeting of the ICANN Board, 16 March 2023",
+    "url": "https://www.icann.org/en/board-activities-and-meetings/materials/approved-resolutions-regular-meeting-of-the-icann-board-16-03-2023-en",
+    "publisher": "ICANN Board",
+    "tier": 1,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "ccnso-home",
+    "title": "ccNSO home page",
+    "url": "https://www.icann.org/en/ccnso",
+    "publisher": "ccNSO / ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "ccnso-how-to-join",
+    "title": "ccNSO: How to join",
+    "url": "https://www.icann.org/en/ccnso/members/how-to-join",
+    "publisher": "ccNSO / ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "board-resolutions-2022-09-22",
+    "title": "Approved Resolutions, Regular Meeting of the ICANN Board, 22 September 2022",
+    "url": "https://www.icann.org/en/board-activities-and-meetings/materials/approved-resolutions-regular-meeting-of-the-icann-board-22-09-2022-en",
+    "publisher": "ICANN Board",
+    "tier": 1,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "ccnso-retirement-public-comment-announcement",
+    "title": "ICANN Announcement: ccNSO proposed policy on the retirement of ccTLDs (22 Nov 2021)",
+    "url": "https://www.icann.org/en/announcements/details/ccnso-proposed-policy-on-the-retirement-of-cctlds-22-11-2021-en",
+    "publisher": "ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "ccnso-retirement-public-comment-page",
+    "title": "Public Comment: ccNSO proposed policy on the retirement of ccTLDs",
+    "url": "https://www.icann.org/en/public-comment/proceeding/ccnso-proposed-policy-on-the-retirement-of-cctlds-22-11-2021",
+    "publisher": "ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "aso-home",
+    "title": "Address Supporting Organization (ASO) home page",
+    "url": "https://aso.icann.org/",
+    "publisher": "Address Supporting Organization",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "aso-address-council",
+    "title": "ASO: Address Council",
+    "url": "https://aso.icann.org/aso-ac/",
+    "publisher": "Address Supporting Organization",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "aso-and-nro",
+    "title": "ASO: ASO and NRO",
+    "url": "https://aso.icann.org/about/aso-and-nro/",
+    "publisher": "Address Supporting Organization",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "aso-global-policy",
+    "title": "ASO: Global Policy",
+    "url": "https://aso.icann.org/policy/global/",
+    "publisher": "Address Supporting Organization",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "aso-current-global-policies",
+    "title": "ASO: Current Global Policies",
+    "url": "https://aso.icann.org/policy/global/current-global-policies/",
+    "publisher": "Address Supporting Organization",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "aso-mou-page",
+    "title": "ASO: Memorandums of Understanding",
+    "url": "https://aso.icann.org/documents/memorandums-of-understanding/",
+    "publisher": "Address Supporting Organization",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "atlarge-home",
+    "title": "At-Large Community home page",
+    "url": "https://atlarge.icann.org/",
+    "publisher": "ICANN At-Large",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "atlarge-alac-structure",
+    "title": "ALAC Structure",
+    "url": "https://atlarge.icann.org/about/alac-structure",
+    "publisher": "ICANN At-Large",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "atlarge-apralo",
+    "title": "APRALO: Asia, Australia and Pacific Islands Regional At-Large Organization",
+    "url": "https://atlarge.icann.org/ralos/apralo",
+    "publisher": "ICANN At-Large",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "atlarge-join-us",
+    "title": "Join Us (How to join the At-Large Community)",
+    "url": "https://atlarge.icann.org/get-involved/join-us",
+    "publisher": "ICANN At-Large",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "atlarge-individual-member",
+    "title": "Individual Members (At-Large)",
+    "url": "https://atlarge.icann.org/get-involved/individual-member",
+    "publisher": "ICANN At-Large",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "atlarge-statement-dns-abuse-pdp1",
+    "title": "ALAC Statement on DNS Abuse Mitigation PDP1 Initial Report",
+    "url": "https://atlarge.icann.org/advice_statements/14093",
+    "publisher": "ICANN At-Large",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "version": "Published 28 Sep 2026",
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "gac-home",
+    "title": "GAC home page",
+    "url": "https://gac.icann.org/",
+    "publisher": "ICANN GAC",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "gac-members",
+    "title": "GAC Members",
+    "url": "https://gac.icann.org/about/gac-members",
+    "publisher": "ICANN GAC",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "gac-join",
+    "title": "Join the GAC",
+    "url": "https://gac.icann.org/join",
+    "publisher": "ICANN GAC",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "gac-icann86-communique",
+    "title": "GAC Communique, ICANN86 Seville (listing page)",
+    "url": "https://gac.icann.org/contentMigrated/icann86-seville-communique",
+    "publisher": "ICANN GAC",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "version": "15 June 2026",
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "ssac-page",
+    "title": "Security and Stability Advisory Committee (SSAC)",
+    "url": "https://www.icann.org/en/ssac",
+    "publisher": "ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "ssac-publications",
+    "title": "SSAC Publications",
+    "url": "https://www.icann.org/en/ssac/publications",
+    "publisher": "ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "rssac-page",
+    "title": "Root Server System Advisory Committee (RSSAC)",
+    "url": "https://www.icann.org/en/rssac",
+    "publisher": "ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "rssac-publications",
+    "title": "RSSAC Publications",
+    "url": "https://www.icann.org/en/rssac/publications",
+    "publisher": "ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "nro-about",
+    "title": "About the NRO",
+    "url": "https://www.nro.net/about/",
+    "publisher": "Number Resource Organization",
+    "tier": 3,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "nro-home",
+    "title": "NRO home page",
     "url": "https://www.nro.net/",
-    "publisher": "NRO",
-    "tier": 2,
+    "publisher": "Number Resource Organization",
+    "tier": 3,
     "languages": [
       "en"
     ],
-    "accessed": "2026-10-18"
+    "accessed": "2026-10-20"
   },
   {
-    "id": "ietf-org",
-    "title": "Internet Engineering Task Force",
-    "url": "https://www.ietf.org/",
-    "publisher": "IETF",
-    "tier": 2,
+    "id": "nro-rirs",
+    "title": "The Regional Internet Registries",
+    "url": "https://www.nro.net/about/rirs/",
+    "publisher": "Number Resource Organization",
+    "tier": 3,
     "languages": [
       "en"
     ],
-    "accessed": "2026-10-18"
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "apnic-about",
+    "title": "About APNIC",
+    "url": "https://www.apnic.net/about-apnic/",
+    "publisher": "APNIC",
+    "tier": 3,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "apnic-policy-process",
+    "title": "APNIC Policy Development Process",
+    "url": "https://www.apnic.net/community/policy/process/",
+    "publisher": "APNIC",
+    "tier": 3,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "ietf-introduction",
+    "title": "Introduction to the IETF",
+    "url": "https://www.ietf.org/about/introduction/",
+    "publisher": "IETF",
+    "tier": 3,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "ietf-iab",
+    "title": "Internet Architecture Board",
+    "url": "https://www.ietf.org/about/groups/iab/",
+    "publisher": "IETF",
+    "tier": 3,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "iab-icann-liaison-call",
+    "title": "Call for nominations: IETF Liaison to ICANN Board of Directors",
+    "url": "https://www.iab.org/announcements/nominations-ietf-liaison-to-icann-board/",
+    "publisher": "Internet Architecture Board",
+    "tier": 3,
+    "languages": [
+      "en"
+    ],
+    "version": "2026-06-09",
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "rfc-2860",
+    "title": "RFC 2860: Memorandum of Understanding Concerning the Technical Work of the Internet Assigned Numbers Authority",
+    "url": "https://www.rfc-editor.org/rfc/rfc2860.html",
+    "publisher": "RFC Editor / IETF",
+    "tier": 3,
+    "languages": [
+      "en"
+    ],
+    "version": "June 2000",
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "iana-protocol-registries",
+    "title": "Protocol Registries",
+    "url": "https://www.iana.org/protocols",
+    "publisher": "IANA",
+    "tier": 3,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
   },
   {
     "id": "root-servers-org",
-    "title": "Root Server Operators",
+    "title": "Root Server Technical Operations Association: root-servers.org",
     "url": "https://root-servers.org/",
-    "publisher": "RSOs",
+    "publisher": "Root Server Operators",
+    "tier": 3,
+    "languages": [
+      "en"
+    ],
+    "version": "instance count as of 2026-10-20T01:23:01Z",
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "root-servers-faq",
+    "title": "root-servers.org FAQ",
+    "url": "https://root-servers.org/faq/",
+    "publisher": "Root Server Operators",
+    "tier": 3,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "icann-board-about",
+    "title": "About the ICANN Board",
+    "url": "https://www.icann.org/en/board/about",
+    "publisher": "ICANN",
     "tier": 2,
     "languages": [
       "en"
     ],
-    "accessed": "2026-10-18"
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "icann-rssac-page",
+    "title": "Root Server System Advisory Committee (RSSAC)",
+    "url": "https://www.icann.org/en/groups/rssac",
+    "publisher": "ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "iana-about",
+    "title": "About IANA / PTI",
+    "url": "https://www.iana.org/about",
+    "publisher": "IANA / PTI",
+    "tier": 3,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "nro-policy",
+    "title": "NRO: Policy and global policies",
+    "url": "https://www.nro.net/policy/",
+    "publisher": "Number Resource Organization",
+    "tier": 3,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
   },
   {
     "id": "icann-acronyms",
@@ -172,19 +672,79 @@
     "publisher": "ICANN",
     "tier": 2,
     "languages": [
-      "en"
+      "en",
+      "ar",
+      "zh",
+      "fr",
+      "ru",
+      "es"
     ],
-    "accessed": "2026-10-18"
+    "accessed": "2026-10-20"
   },
   {
-    "id": "icann-board-page",
-    "title": "About the Board",
-    "url": "https://www.icann.org/en/board/about",
+    "id": "icann-fellowship",
+    "title": "ICANN Fellowship Program",
+    "url": "https://www.icann.org/fellowshipprogram",
     "publisher": "ICANN",
     "tier": 2,
     "languages": [
       "en"
     ],
-    "accessed": "2026-10-18"
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "icann-nextgen",
+    "title": "NextGen@ICANN Program",
+    "url": "https://www.icann.org/nextgen",
+    "publisher": "ICANN",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "iana-root-zone-management",
+    "title": "Root Zone Management",
+    "url": "https://www.iana.org/domains/root",
+    "publisher": "IANA",
+    "tier": 3,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "gac-first-meeting",
+    "title": "Attending your first GAC meeting",
+    "url": "https://gac.icann.org/meeting-services/attending-your-first-gac-meeting",
+    "publisher": "ICANN GAC",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "apnic-nirs",
+    "title": "National Internet Registries (NIRs)",
+    "url": "https://www.apnic.net/about-apnic/organization/apnic-region/national-internet-registries/",
+    "publisher": "APNIC",
+    "tier": 3,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "iana-root-servers",
+    "title": "Root Servers",
+    "url": "https://www.iana.org/domains/root/servers",
+    "publisher": "IANA",
+    "tier": 3,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
   }
 ]

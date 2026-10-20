@@ -1,34 +1,40 @@
-import { describe, it, expect } from "vitest";
-import { buildSearchIndex } from "@/lib/search";
+import { describe, expect, it } from "vitest";
+import { GET } from "@/app/search-index.json/route";
+import { createIndex, searchIds } from "@/lib/search";
+import type { SearchDoc } from "@/lib/search-docs";
 
-/** The 10 spec queries with their expected top entity/term. */
-const EXPECTED: Array<{ query: string; expectId: string }> = [
-  { query: "gnso", expectId: "e-gnso" },
-  { query: "alac", expectId: "e-alac" },
-  { query: "pengguna internet", expectId: "e-alac" },
-  { query: "kebijakan gtld", expectId: "e-gnso" },
-  { query: "dnssec", expectId: "t-dnssec" },
-  { query: "root", expectId: "e-root-server-operators" },
-  { query: "fellowship", expectId: "t-fellowship" },
-  { query: "ip address", expectId: "e-rirs" },
-  { query: "pemerintah", expectId: "e-gac" },
-  { query: "udrp", expectId: "t-udrp" },
-];
+const docs = (await GET().json()) as SearchDoc[];
+const index = createIndex(docs);
+const top = (q: string, n = 3): string[] => searchIds(index, q).slice(0, n);
 
-describe("search index", () => {
-  const index = buildSearchIndex("id");
+describe("search", () => {
+  it("indexes every organization, term and path", () => {
+    expect(docs.filter((d) => d.type === "entity").length).toBe(17);
+    expect(docs.filter((d) => d.type === "term").length).toBeGreaterThanOrEqual(30);
+    expect(docs.filter((d) => d.type === "path").length).toBe(4);
+  });
 
-  for (const { query, expectId } of EXPECTED) {
-    it(`"${query}" returns ${expectId} in the top results`, () => {
-      const hits = index.search(query, { boost: { title: 2 }, fuzzy: 0.2 });
-      expect(hits.length).toBeGreaterThan(0);
-      const ids = hits.map((h) => h.id);
-      expect(ids.slice(0, 5)).toContain(expectId);
-    });
-  }
+  it.each([
+    ["gnso", "entity-gnso"],
+    ["alac", "entity-alac"],
+    ["ssac", "entity-ssac"],
+    ["udrp", "term-udrp"],
+    ["dnssec", "term-dnssec"],
+    ["fellowship", "term-fellowship"],
+  ])("puts %s first", (q, id) => {
+    expect(top(q, 1)).toEqual([id]);
+  });
 
-  it("ranks the acronym itself first for acronym queries", () => {
-    const hits = index.search("alac", { boost: { title: 2 } });
-    expect(hits[0]?.id).toBe("e-alac");
+  it.each([
+    ["pemerintah", "entity-gac"],
+    ["governments", "entity-gac"],
+    ["nomor IP", "entity-rirs"],
+    ["root server", "entity-root-server-operators"],
+  ])("finds %s by topic in either language", (q, id) => {
+    expect(searchIds(index, q).slice(0, 5)).toContain(id);
+  });
+
+  it("tolerates a typo in longer words", () => {
+    expect(searchIds(index, "registar").slice(0, 3)).toContain("term-registrar");
   });
 });

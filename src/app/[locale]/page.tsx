@@ -1,71 +1,124 @@
+import Link from "next/link";
 import type { ReactElement } from "react";
-import { t, type Locale } from "@/i18n";
+import { EntityChip } from "@/components/EntityChip";
+import { entities, entitiesByKind, getEntity, paths } from "@/lib/content";
+import { t, toLocale } from "@/i18n";
+
+const COMMUNITY = ["gnso", "ccnso", "aso", "alac", "gac", "ssac", "rssac"];
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }): Promise<ReactElement> {
-  const { locale: loc } = await params;
-  const locale = (loc === "en" ? "en" : "id") as Locale;
+  const locale = toLocale((await params).locale);
+  const community = COMMUNITY.map(getEntity).filter((e) => e !== undefined);
+  const board = getEntity("icann-board");
+  const org = getEntity("icann-org");
+
   return (
-    <div className="page">
-      <section className="hero" aria-labelledby="home-title">
-        <h1 id="home-title">{t(locale, "home.title")}</h1>
-        <p>{t(locale, "home.subtitle")}</p>
-        <div className="hero-ctas">
-          <a className="button button-primary" href={`/${locale}/map/`}>
-            {t(locale, "home.cta.map")}
-          </a>
-          <a className="button button-secondary" href={`/${locale}/paths/beginner/`}>
-            {t(locale, "home.cta.beginner")}
-          </a>
+    <div className="home">
+      <section className="hero">
+        <p className="eyebrow">{t(locale, "site.unofficial")}</p>
+        <h1>{t(locale, "home.title")}</h1>
+        <p className="lede">{t(locale, "home.lede")}</p>
+        <div className="actions">
+          <Link className="button button-primary" href={`/${locale}/map/`}>
+            {t(locale, "home.ctaMap")}
+          </Link>
+          <Link className="button" href={`/${locale}/paths/${paths[0]?.id ?? ""}/`}>
+            {t(locale, "home.ctaStart")}
+          </Link>
         </div>
       </section>
-      <section aria-labelledby="three-parts-heading">
-        <h2 id="three-parts-heading">{t(locale, "home.threeParts.title")}</h2>
-        <p>{t(locale, "home.threeParts.subtitle")}</p>
-        <div className="card-grid">
-          <article className="card">
-            <h3>{t(locale, "home.threeParts.community")}</h3>
-            <p>{t(locale, "home.threeParts.communityDesc")}</p>
-          </article>
-          <article className="card">
-            <h3>{t(locale, "home.threeParts.board")}</h3>
-            <p>{t(locale, "home.threeParts.boardDesc")}</p>
-          </article>
-          <article className="card">
-            <h3>{t(locale, "home.threeParts.org")}</h3>
-            <p>{t(locale, "home.threeParts.orgDesc")}</p>
-          </article>
+
+      <section className="parts" aria-labelledby="parts-title">
+        <div className="section-head">
+          <h2 id="parts-title">{t(locale, "home.partsTitle")}</h2>
+          <p>{t(locale, "home.partsLede")}</p>
         </div>
+        <ol className="parts-flow">
+          <li className="part part-community">
+            <h3>{t(locale, "home.part.community")}</h3>
+            <p>{t(locale, "home.part.communityText")}</p>
+            <ul className="chip-list">
+              {community.map((e) => (
+                <li key={e.id}>
+                  <EntityChip entity={e} locale={locale} />
+                </li>
+              ))}
+            </ul>
+          </li>
+          <li className="part-arrow" aria-hidden="true">
+            <span>{t(locale, "home.flow.proposes")}</span>
+          </li>
+          <li className="part part-board">
+            <h3>{t(locale, "home.part.board")}</h3>
+            <p>{t(locale, "home.part.boardText")}</p>
+            {board && (
+              <ul className="chip-list">
+                <li>
+                  <EntityChip entity={board} locale={locale} />
+                </li>
+              </ul>
+            )}
+          </li>
+          <li className="part-arrow" aria-hidden="true">
+            <span>{t(locale, "home.flow.implements")}</span>
+          </li>
+          <li className="part part-org">
+            <h3>{t(locale, "home.part.org")}</h3>
+            <p>{t(locale, "home.part.orgText")}</p>
+            {org && (
+              <ul className="chip-list">
+                <li>
+                  <EntityChip entity={org} locale={locale} />
+                </li>
+              </ul>
+            )}
+          </li>
+        </ol>
       </section>
-      <section aria-labelledby="where-start-heading">
-        <h2 id="where-start-heading">{t(locale, "home.whereToStart")}</h2>
-        <div className="card-grid">
-          <article className="card">
-            <h3>{t(locale, "home.start.curious")}</h3>
-            <p>{t(locale, "home.start.curious.desc")}</p>
-            <a href={`/${locale}/paths/beginner/`}>{t(locale, "home.cta.beginner")}</a>
-          </article>
-          <article className="card">
-            <h3>{t(locale, "home.start.attending")}</h3>
-            <p>{t(locale, "home.start.attending.desc")}</p>
-            <a href={`/${locale}/paths/`}>{t(locale, "paths.title")}</a>
-          </article>
-          <article className="card">
-            <h3>{t(locale, "home.start.contributor")}</h3>
-            <p>{t(locale, "home.start.contributor.desc")}</p>
-            <a href={`/${locale}/paths/get-involved/`}>{t(locale, "home.start.contributor")}</a>
-          </article>
+
+      <section aria-labelledby="paths-title">
+        <div className="section-head">
+          <h2 id="paths-title">{t(locale, "home.pathsTitle")}</h2>
         </div>
-      </section>
-      <section aria-labelledby="popular-heading">
-        <h2 id="popular-heading">{t(locale, "home.popularGroups")}</h2>
-        <ul className="chip-row">
-          {["gnso", "alac", "gac", "ssac"].map((id) => (
-            <li key={id}>
-              <a href={`/${locale}/organizations/${id}/`}>{id.toUpperCase()}</a>
+        <ul className="path-list">
+          {paths.map((p, i) => (
+            <li key={p.id}>
+              <Link href={`/${locale}/paths/${p.id}/`} className="path-row">
+                <span className="path-index">{String(i + 1).padStart(2, "0")}</span>
+                <span className="path-text">
+                  <span className="path-title">{p.title[locale]}</span>
+                  <span className="path-audience">{p.audience[locale]}</span>
+                </span>
+                <span className="path-meta">{t(locale, "minutes", { n: p.estMinutes })}</span>
+              </Link>
             </li>
           ))}
         </ul>
-        <p>{t(locale, "footer.disclaimer")}</p>
+      </section>
+
+      <section aria-labelledby="groups-title">
+        <div className="section-head">
+          <h2 id="groups-title">{t(locale, "home.groupsTitle")}</h2>
+          <Link href={`/${locale}/organizations/`}>
+            {t(locale, "home.groupsAll")} ({entities.length})
+          </Link>
+        </div>
+        <div className="group-columns">
+          {entitiesByKind().map(({ kind, entities: list }) => (
+            <div key={kind} className="group-block">
+              <h3 className="group-label">{t(locale, `group.${kind}`)}</h3>
+              <ul>
+                {list.map((e) => (
+                  <li key={e.id}>
+                    <Link href={`/${locale}/organizations/${e.id}/`}>
+                      <b>{e.acronym}</b> <span>{e.name[locale]}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </section>
     </div>
   );

@@ -1,701 +1,1111 @@
 [
   {
-    "id": "board-oversees-icann-org",
-    "from": "icann-board",
-    "to": "icann-org",
-    "type": "oversees",
-    "label": {
-      "en": "oversees",
-      "id": "mengawasi"
-    },
-    "explanation": {
-      "text": {
-        "en": "The Board provides oversight of ICANN org, including appointing and evaluating the President and CEO.",
-        "id": "Dewan mengawasi organisasi ICANN, termasuk menunjuk dan mengevaluasi Presiden dan CEO."
-      },
-      "kind": "fact",
-      "citations": [
-        {
-          "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
-        }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
-    },
-    "status": "published"
-  },
-  {
-    "id": "gnso-develops-policy",
-    "from": "gnso",
+    "id": "icann-org--reports-to--icann-board",
+    "from": "icann-org",
     "to": "icann-board",
-    "type": "develops-policy-for",
-    "label": {
-      "en": "develops policy recommendations considered by",
-      "id": "mengembangkan rekomendasi kebijakan untuk"
-    },
+    "type": "reports-to",
     "explanation": {
       "text": {
-        "en": "The GNSO develops policy recommendations for gTLDs that the Board considers.",
-        "id": "GNSO mengembangkan rekomendasi kebijakan gTLD yang ditimbang Dewan."
+        "id": "Staf ICANN dipimpin Presiden yang juga menjabat CEO, dan semua staf lain melapor kepadanya. Presiden dipilih tiap tahun oleh Dewan dan dapat diberhentikan Dewan dengan suara dua pertiga dari seluruh Direktur.",
+        "en": "ICANN org is led by the President, who is also the CEO, and all other staff report to the President. The Board elects the President each year and can remove the President by a two-thirds vote of all Directors."
       },
       "kind": "fact",
       "citations": [
         {
           "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
-        }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
-    },
-    "status": "published"
-  },
-  {
-    "id": "ccnso-develops-policy",
-    "from": "ccnso",
-    "to": "icann-board",
-    "type": "develops-policy-for",
-    "label": {
-      "en": "develops policy recommendations for",
-      "id": "mengembangkan rekomendasi kebijakan untuk"
-    },
-    "explanation": {
-      "text": {
-        "en": "The ccNSO develops global policy recommendations for ccTLDs within its scope.",
-        "id": "ccNSO mengembangkan rekomendasi kebijakan untuk ccTLD dalam lingkupnya."
-      },
-      "kind": "fact",
-      "citations": [
+          "locator": "Art. 15, Sec. 15.4",
+          "quote": "All other officers and staff shall report to the President or his or her delegate, unless stated otherwise in these Bylaws.",
+          "verifiedAt": "2026-10-20"
+        },
         {
           "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
-        }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
-    },
-    "status": "published"
-  },
-  {
-    "id": "aso-advises-board",
-    "from": "aso",
-    "to": "icann-board",
-    "type": "advises",
-    "label": {
-      "en": "advises",
-      "id": "memberi nasihat kepada"
-    },
-    "explanation": {
-      "text": {
-        "en": "The ASO Address Council advises the Board on global IP address policy.",
-        "id": "Dewan Alamat ASO memberi nasihat kepada Dewan tentang kebijakan alamat IP global."
-      },
-      "kind": "fact",
-      "citations": [
+          "locator": "Art. 15, Sec. 15.2",
+          "quote": "The officers of ICANN shall be elected annually by the Board",
+          "verifiedAt": "2026-10-20"
+        },
         {
           "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
+          "locator": "Art. 15, Sec. 15.3",
+          "quote": "Any Officer may be removed, either with or without cause, by a two-thirds (2/3) majority vote of all Directors.",
+          "verifiedAt": "2026-10-20"
         }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
+      ]
     },
     "status": "published"
   },
   {
-    "id": "alac-advises-board",
-    "from": "alac",
-    "to": "icann-board",
-    "type": "advises",
-    "label": {
-      "en": "ALAC advises",
-      "id": "memberi nasihat"
-    },
-    "explanation": {
-      "text": {
-        "en": "ALAC advises the ICANN Board; advice is not a command.",
-        "id": "ALAC memberi nasihat kepada Dewan; nasihat bukan perintah."
-      },
-      "kind": "fact",
-      "citations": [
-        {
-          "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
-        }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
-    },
-    "status": "published"
-  },
-  {
-    "id": "gac-advises-board",
-    "from": "gac",
-    "to": "icann-board",
-    "type": "advises",
-    "label": {
-      "en": "GAC advises",
-      "id": "memberi nasihat"
-    },
-    "explanation": {
-      "text": {
-        "en": "GAC advises the ICANN Board; advice is not a command.",
-        "id": "GAC memberi nasihat kepada Dewan; nasihat bukan perintah."
-      },
-      "kind": "fact",
-      "citations": [
-        {
-          "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
-        }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
-    },
-    "status": "published"
-  },
-  {
-    "id": "ssac-advises-board",
-    "from": "ssac",
-    "to": "icann-board",
-    "type": "advises",
-    "label": {
-      "en": "SSAC advises",
-      "id": "memberi nasihat"
-    },
-    "explanation": {
-      "text": {
-        "en": "SSAC advises the ICANN Board; advice is not a command.",
-        "id": "SSAC memberi nasihat kepada Dewan; nasihat bukan perintah."
-      },
-      "kind": "fact",
-      "citations": [
-        {
-          "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
-        }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
-    },
-    "status": "published"
-  },
-  {
-    "id": "rssac-advises-board",
-    "from": "rssac",
-    "to": "icann-board",
-    "type": "advises",
-    "label": {
-      "en": "RSSAC advises",
-      "id": "memberi nasihat"
-    },
-    "explanation": {
-      "text": {
-        "en": "RSSAC advises the ICANN Board; advice is not a command.",
-        "id": "RSSAC memberi nasihat kepada Dewan; nasihat bukan perintah."
-      },
-      "kind": "fact",
-      "citations": [
-        {
-          "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
-        }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
-    },
-    "status": "published"
-  },
-  {
-    "id": "ec-gnso",
-    "from": "empowered-community",
-    "to": "gnso",
-    "type": "participates-in",
-    "label": {
-      "en": "participates in Empowered Community",
-      "id": "berpartisipasi dalam Empowered Community"
-    },
-    "explanation": {
-      "text": {
-        "en": "This group is one of the decisional participants of the Empowered Community.",
-        "id": "Kelompok ini adalah salah satu peserta pengambil keputusan Empowered Community."
-      },
-      "kind": "fact",
-      "citations": [
-        {
-          "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
-        }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
-    },
-    "status": "published"
-  },
-  {
-    "id": "ec-ccnso",
-    "from": "empowered-community",
-    "to": "ccnso",
-    "type": "participates-in",
-    "label": {
-      "en": "participates in Empowered Community",
-      "id": "berpartisipasi dalam Empowered Community"
-    },
-    "explanation": {
-      "text": {
-        "en": "This group is one of the decisional participants of the Empowered Community.",
-        "id": "Kelompok ini adalah salah satu peserta pengambil keputusan Empowered Community."
-      },
-      "kind": "fact",
-      "citations": [
-        {
-          "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
-        }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
-    },
-    "status": "published"
-  },
-  {
-    "id": "ec-alac",
-    "from": "empowered-community",
-    "to": "alac",
-    "type": "participates-in",
-    "label": {
-      "en": "participates in Empowered Community",
-      "id": "berpartisipasi dalam Empowered Community"
-    },
-    "explanation": {
-      "text": {
-        "en": "This group is one of the decisional participants of the Empowered Community.",
-        "id": "Kelompok ini adalah salah satu peserta pengambil keputusan Empowered Community."
-      },
-      "kind": "fact",
-      "citations": [
-        {
-          "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
-        }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
-    },
-    "status": "published"
-  },
-  {
-    "id": "ec-gac",
-    "from": "empowered-community",
-    "to": "gac",
-    "type": "participates-in",
-    "label": {
-      "en": "participates in Empowered Community",
-      "id": "berpartisipasi dalam Empowered Community"
-    },
-    "explanation": {
-      "text": {
-        "en": "This group is one of the decisional participants of the Empowered Community.",
-        "id": "Kelompok ini adalah salah satu peserta pengambil keputusan Empowered Community."
-      },
-      "kind": "fact",
-      "citations": [
-        {
-          "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
-        }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
-    },
-    "status": "published"
-  },
-  {
-    "id": "ec-ssac",
-    "from": "empowered-community",
-    "to": "ssac",
-    "type": "participates-in",
-    "label": {
-      "en": "participates in Empowered Community",
-      "id": "berpartisipasi dalam Empowered Community"
-    },
-    "explanation": {
-      "text": {
-        "en": "This group is one of the decisional participants of the Empowered Community.",
-        "id": "Kelompok ini adalah salah satu peserta pengambil keputusan Empowered Community."
-      },
-      "kind": "fact",
-      "citations": [
-        {
-          "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
-        }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
-    },
-    "status": "published"
-  },
-  {
-    "id": "ec-rssac",
-    "from": "empowered-community",
-    "to": "rssac",
-    "type": "participates-in",
-    "label": {
-      "en": "participates in Empowered Community",
-      "id": "berpartisipasi dalam Empowered Community"
-    },
-    "explanation": {
-      "text": {
-        "en": "This group is one of the decisional participants of the Empowered Community.",
-        "id": "Kelompok ini adalah salah satu peserta pengambil keputusan Empowered Community."
-      },
-      "kind": "fact",
-      "citations": [
-        {
-          "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
-        }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
-    },
-    "status": "published"
-  },
-  {
-    "id": "ec-nomcom",
-    "from": "empowered-community",
-    "to": "nomcom",
-    "type": "participates-in",
-    "label": {
-      "en": "participates in Empowered Community",
-      "id": "berpartisipasi dalam Empowered Community"
-    },
-    "explanation": {
-      "text": {
-        "en": "This group is one of the decisional participants of the Empowered Community.",
-        "id": "Kelompok ini adalah salah satu peserta pengambil keputusan Empowered Community."
-      },
-      "kind": "fact",
-      "citations": [
-        {
-          "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
-        }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
-    },
-    "status": "published"
-  },
-  {
-    "id": "icann-org-implements-board-decisions",
+    "id": "icann-org--implements--icann-board",
     "from": "icann-org",
     "to": "icann-board",
     "type": "implements",
-    "label": {
-      "en": "implements decisions of",
-      "id": "menerapkan keputusan"
-    },
     "explanation": {
       "text": {
-        "en": "ICANN org implements the decisions adopted by the Board.",
-        "id": "Organisasi ICANN menerapkan keputusan yang diambil Dewan."
+        "id": "Bylaws menyatakan urusan ICANN dijalankan oleh atau di bawah arahan Dewan. Dalam praktiknya, staf ICANN menjalankan keputusan yang disetujui Dewan, sementara Dewan mengawasi arah strategis dan kinerjanya.",
+        "en": "The Bylaws say ICANN's affairs are conducted by or under the direction of the Board. In practice, ICANN org carries out what the Board approves, while the Board oversees its strategy and performance."
+      },
+      "kind": "interpretation",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 2, Sec. 2.1",
+          "quote": "its business and affairs conducted by or under the direction of, the Board",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-board-about",
+          "locator": "section \"Board Oversight\"",
+          "quote": "The Board provides the ICANN organization's strategic oversight, ensuring that it acts within its mission and operates effectively, efficiently, and ethically.",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "gnso--develops-policy-for--icann-board",
+    "from": "gnso",
+    "to": "icann-board",
+    "type": "develops-policy-for",
+    "explanation": {
+      "text": {
+        "id": "GNSO bertanggung jawab mengembangkan dan merekomendasikan kepada Dewan kebijakan substantif tentang generic top-level domain (gTLD). Prosesnya dikelola GNSO Council, yang punya 21 kursi.",
+        "en": "The GNSO develops and recommends to the Board substantive policies on generic top-level domains (gTLDs). Its Council, which has 21 seats, manages the policy development process."
       },
       "kind": "fact",
       "citations": [
         {
           "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
+          "locator": "Art. 11, Sec. 11.1",
+          "quote": "responsible for developing and recommending to the Board substantive policies relating to generic top-level domains",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 11, Sec. 11.2(d)",
+          "quote": "A GNSO Council responsible for managing the policy development process of the GNSO",
+          "verifiedAt": "2026-10-20"
         }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
+      ]
     },
     "status": "published"
   },
   {
-    "id": "pti-part-of-icann-org",
-    "from": "pti",
-    "to": "icann-org",
-    "type": "part-of",
-    "label": {
-      "en": "is an affiliate of",
-      "id": "adalah afiliasi dari"
-    },
+    "id": "ccnso--develops-policy-for--icann-board",
+    "from": "ccnso",
+    "to": "icann-board",
+    "type": "develops-policy-for",
     "explanation": {
       "text": {
-        "en": "PTI is the ICANN affiliate that performs the IANA functions.",
-        "id": "PTI adalah afiliasi ICANN yang menjalankan fungsi IANA."
+        "id": "ccNSO bertugas mengembangkan dan merekomendasikan kepada Dewan kebijakan global tentang country-code top-level domain (ccTLD), melalui ccNSO Policy-Development Process (ccPDP).",
+        "en": "The ccNSO develops and recommends to the Board global policies on country-code top-level domains (ccTLDs), following the ccNSO Policy-Development Process (ccPDP)."
       },
       "kind": "fact",
       "citations": [
         {
           "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
+          "locator": "Art. 10, Sec. 10.1(a)",
+          "quote": "developing and recommending to the Board global policies relating to country-code top-level domains",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 10, Sec. 10.6(b)",
+          "quote": "the ccNSO shall follow the ccNSO Policy-Development Process",
+          "verifiedAt": "2026-10-20"
         }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
+      ]
     },
     "status": "published"
   },
   {
-    "id": "nomcom-selects-board",
+    "id": "aso--advises--icann-board",
+    "from": "aso",
+    "to": "icann-board",
+    "type": "advises",
+    "explanation": {
+      "text": {
+        "id": "Bylaws menulis peran ASO sebagai pemberi nasihat: ASO \"advise the Board\" soal isu kebijakan terkait pengoperasian, penugasan, dan pengelolaan alamat Internet. Bylaws tidak menyebut ASO \"mengembangkan dan merekomendasikan kebijakan kepada Dewan\" seperti pada GNSO dan ccNSO, sehingga hubungannya dimodelkan sebagai nasihat.",
+        "en": "The Bylaws give the ASO an advisory role: it \"shall advise the Board\" on policy issues relating to the operation, assignment, and management of Internet addresses. The Bylaws do not describe the ASO as developing and recommending policy to the Board the way they do for the GNSO and ccNSO, so the link is modeled as advice."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 9, Sec. 9.1(a)",
+          "quote": "shall advise the Board with respect to policy issues relating to the operation, assignment, and management of Internet addresses.",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "aso-home",
+          "locator": "home page, \"What is the ASO\"",
+          "quote": "advise the ICANN Board on policy issues relating to the operation, assignment, and management of IP addresses.",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "alac--advises--icann-board",
+    "from": "alac",
+    "to": "icann-board",
+    "type": "advises",
+    "explanation": {
+      "text": {
+        "id": "ALAC memberi pertimbangan dan nasihat tentang kegiatan ICANN sejauh menyangkut kepentingan pengguna Internet individu, termasuk kebijakan yang dibuat Supporting Organization. Seperti semua Advisory Committee, ALAC tidak punya kewenangan hukum untuk bertindak atas nama ICANN dan melaporkan temuannya kepada Dewan.",
+        "en": "The ALAC considers and advises on ICANN activities that affect individual Internet users, including policies created by the Supporting Organizations. Like all Advisory Committees, it has no legal authority to act for ICANN and reports its findings and recommendations to the Board."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 12, Sec. 12.2(d)(i)",
+          "quote": "The role of the ALAC shall be to consider and provide advice on the activities of ICANN, insofar as they relate to the interests of individual Internet users.",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 12, Sec. 12.1",
+          "quote": "Advisory Committees shall have no legal authority to act for ICANN, but shall report their findings and recommendations to the Board.",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "gac--advises--icann-board",
+    "from": "gac",
+    "to": "icann-board",
+    "type": "advises",
+    "explanation": {
+      "text": {
+        "id": "GAC memberi nasihat tentang kegiatan ICANN yang menyangkut kepentingan pemerintah dan kebijakan publik. Dewan wajib mempertimbangkan nasihat itu dengan saksama. Jika Dewan memutuskan tidak mengikutinya, Dewan harus memberi tahu GAC dan menyampaikan alasannya.",
+        "en": "The GAC advises on ICANN activities that relate to the concerns of governments and public policy. The Board must duly take that advice into account. If the Board decides not to follow it, the Board must tell the GAC and state its reasons."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 12, Sec. 12.2(a)(i)",
+          "quote": "should consider and provide advice on the activities of ICANN as they relate to concerns of governments",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 12, Sec. 12.2(a)(x)",
+          "quote": "The advice of the Governmental Advisory Committee on public policy matters shall be duly taken into account, both in the formulation and adoption of policies.",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "ssac--advises--icann-board",
+    "from": "ssac",
+    "to": "icann-board",
+    "type": "advises",
+    "explanation": {
+      "text": {
+        "id": "SSAC memberi nasihat kepada komunitas ICANN dan Dewan tentang keamanan dan integritas sistem penamaan dan alokasi alamat Internet.",
+        "en": "The SSAC advises the ICANN community and the Board on the security and integrity of the Internet's naming and address allocation systems."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 12, Sec. 12.2(b)(i)",
+          "quote": "is to advise the ICANN community and Board on matters relating to the security and integrity of the Internet's naming and address allocation systems.",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "rssac--advises--icann-board",
+    "from": "rssac",
+    "to": "icann-board",
+    "type": "advises",
+    "explanation": {
+      "text": {
+        "id": "RSSAC memberi nasihat kepada komunitas ICANN dan Dewan tentang pengoperasian, administrasi, keamanan, dan integritas Root Server System. RSSAC juga wajib melapor berkala kepada Dewan.",
+        "en": "The RSSAC advises the ICANN community and the Board on the operation, administration, security, and integrity of the Root Server System. It must also report periodically to the Board."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 12, Sec. 12.2(c)(i)",
+          "quote": "is to advise the ICANN community and Board on matters relating to the operation, administration, security, and integrity of the Internet's Root Server System.",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 12, Sec. 12.2(c)(i)(E)",
+          "quote": "Report periodically to the Board on its activities.",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "empowered-community--exercises-powers-over--icann-board",
+    "from": "empowered-community",
+    "to": "icann-board",
+    "type": "exercises-powers-over",
+    "explanation": {
+      "text": {
+        "id": "Empowered Community (EC) dapat mengangkat dan memberhentikan Direktur satu per satu (kecuali Presiden), memberhentikan seluruh Dewan, menolak Anggaran dan Operating Plan ICANN, serta menyetujui perubahan Fundamental Bylaw.",
+        "en": "The Empowered Community (EC) can appoint and remove individual Directors (except the President), recall the entire Board, reject ICANN Budgets and Operating Plans, and approve Fundamental Bylaw amendments."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 6, Sec. 6.2(a)",
+          "quote": "(i) Appoint and remove individual Directors (other than the President); (ii) Recall the entire Board;",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 6, Sec. 6.2(a)",
+          "quote": "(iii) Reject ICANN Budgets, IANA Budgets, Operating Plans",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 6, Sec. 6.2(a)",
+          "quote": "(v) Approve Fundamental Bylaw Amendments",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "aso--participates-in--empowered-community",
+    "from": "aso",
+    "to": "empowered-community",
+    "type": "participates-in",
+    "explanation": {
+      "text": {
+        "id": "ASO adalah satu dari lima Decisional Participant di Empowered Community, bersama ASO, ccNSO, GNSO, ALAC, dan GAC.",
+        "en": "The ASO is one of the five Decisional Participants of the Empowered Community: the ASO, ccNSO, GNSO, ALAC, and GAC."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 6, Sec. 6.1(a)",
+          "quote": "consisting of the ASO, the ccNSO (as defined in Section 10.1), the GNSO (as defined in Section 11.1), the ALAC (as defined in Section 12.2(d)(i)) and the GAC",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "ccnso--participates-in--empowered-community",
+    "from": "ccnso",
+    "to": "empowered-community",
+    "type": "participates-in",
+    "explanation": {
+      "text": {
+        "id": "ccNSO adalah satu dari lima Decisional Participant di Empowered Community, bersama ASO, ccNSO, GNSO, ALAC, dan GAC.",
+        "en": "The ccNSO is one of the five Decisional Participants of the Empowered Community: the ASO, ccNSO, GNSO, ALAC, and GAC."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 6, Sec. 6.1(a)",
+          "quote": "consisting of the ASO, the ccNSO (as defined in Section 10.1), the GNSO (as defined in Section 11.1), the ALAC (as defined in Section 12.2(d)(i)) and the GAC",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "gnso--participates-in--empowered-community",
+    "from": "gnso",
+    "to": "empowered-community",
+    "type": "participates-in",
+    "explanation": {
+      "text": {
+        "id": "GNSO adalah satu dari lima Decisional Participant di Empowered Community, bersama ASO, ccNSO, GNSO, ALAC, dan GAC.",
+        "en": "The GNSO is one of the five Decisional Participants of the Empowered Community: the ASO, ccNSO, GNSO, ALAC, and GAC."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 6, Sec. 6.1(a)",
+          "quote": "consisting of the ASO, the ccNSO (as defined in Section 10.1), the GNSO (as defined in Section 11.1), the ALAC (as defined in Section 12.2(d)(i)) and the GAC",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "alac--participates-in--empowered-community",
+    "from": "alac",
+    "to": "empowered-community",
+    "type": "participates-in",
+    "explanation": {
+      "text": {
+        "id": "ALAC adalah satu dari lima Decisional Participant di Empowered Community, bersama ASO, ccNSO, GNSO, ALAC, dan GAC.",
+        "en": "The ALAC is one of the five Decisional Participants of the Empowered Community: the ASO, ccNSO, GNSO, ALAC, and GAC."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 6, Sec. 6.1(a)",
+          "quote": "consisting of the ASO, the ccNSO (as defined in Section 10.1), the GNSO (as defined in Section 11.1), the ALAC (as defined in Section 12.2(d)(i)) and the GAC",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "gac--participates-in--empowered-community",
+    "from": "gac",
+    "to": "empowered-community",
+    "type": "participates-in",
+    "explanation": {
+      "text": {
+        "id": "GAC adalah satu dari lima Decisional Participant di Empowered Community, bersama ASO, ccNSO, GNSO, ALAC, dan GAC. Ada pengecualian: jika resolusi Dewan konsisten dengan GAC Consensus Advice yang menjadi faktor material, GAC tidak ikut mengambil keputusan saat EC menggugat penerapan nasihat itu dan hanya boleh berperan sebagai penasihat (GAC Carve-out).",
+        "en": "The GAC is one of the five Decisional Participants of the Empowered Community: the ASO, ccNSO, GNSO, ALAC, and GAC. Carve-out: when a Board resolution follows GAC Consensus Advice that was a material factor, the GAC does not take part as a decision-maker if the EC challenges the Board's implementation of that advice. It may only participate in an advisory capacity (the GAC Carve-out)."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 6, Sec. 6.1(a)",
+          "quote": "consisting of the ASO, the ccNSO (as defined in Section 10.1), the GNSO (as defined in Section 11.1), the ALAC (as defined in Section 12.2(d)(i)) and the GAC",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 3, Sec. 3.6(e)(i)",
+          "quote": "the Governmental Advisory Committee shall not participate as a decision-maker in the EC's exercise of its right to challenge the Board's implementation of such GAC Consensus Advice.",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "nomcom--selects-members-of--icann-board",
     "from": "nomcom",
     "to": "icann-board",
     "type": "selects-members-of",
-    "label": {
-      "en": "selects directors of",
-      "id": "memilih direktur"
-    },
     "explanation": {
       "text": {
-        "en": "NomCom selects a defined number of voting Board directors.",
-        "id": "NomCom memilih sebagian direktur Dewan dengan hak suara."
+        "id": "NomCom menominasikan 8 dari 16 Direktur berhak suara (Seat 1 sampai 8). Penunjukan resminya dilakukan Empowered Community, yang menjadi satu-satunya designator Direktur selain Presiden.",
+        "en": "The NomCom nominates 8 of the 16 voting Directors (Seats 1 to 8). The Empowered Community then formally designates them, as the sole designator of all Directors except the President."
       },
       "kind": "fact",
       "citations": [
         {
           "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
+          "locator": "Art. 7, Sec. 7.1",
+          "quote": "shall consist of sixteen voting directors",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 7, Sec. 7.2(a)(i)",
+          "quote": "Eight Directors nominated by the Nominating Committee to be designated as Directors by the EC.",
+          "verifiedAt": "2026-10-20"
         }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
+      ]
     },
     "status": "published"
   },
   {
-    "id": "nomcom-selects-alac",
+    "id": "aso--selects-members-of--icann-board",
+    "from": "aso",
+    "to": "icann-board",
+    "type": "selects-members-of",
+    "explanation": {
+      "text": {
+        "id": "Address Council ASO menominasikan 2 Direktur (Seat 9 dan 10). Penunjukan resminya dilakukan Empowered Community.",
+        "en": "The ASO's Address Council nominates 2 Directors (Seats 9 and 10). The Empowered Community formally designates them."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 7, Sec. 7.2(a)(ii)",
+          "quote": "Two Directors nominated by the ASO to be designated as Directors by the EC.",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 9, Sec. 9.2(b)",
+          "quote": "The Address Council shall nominate individuals to fill Seats 9 and 10 on the Board.",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "ccnso--selects-members-of--icann-board",
+    "from": "ccnso",
+    "to": "icann-board",
+    "type": "selects-members-of",
+    "explanation": {
+      "text": {
+        "id": "ccNSO menominasikan 2 Direktur (Seat 11 dan 12). Penunjukan resminya dilakukan Empowered Community.",
+        "en": "The ccNSO nominates 2 Directors (Seats 11 and 12). The Empowered Community formally designates them."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 7, Sec. 7.2(a)(iii)",
+          "quote": "Two Directors nominated by the ccNSO to be designated as Directors by the EC.",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 10, Sec. 10.1(d)",
+          "quote": "Nominating individuals to fill Seats 11 and 12 on the Board",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "gnso--selects-members-of--icann-board",
+    "from": "gnso",
+    "to": "icann-board",
+    "type": "selects-members-of",
+    "explanation": {
+      "text": {
+        "id": "GNSO menominasikan 2 Direktur (Seat 13 dan 14). Penunjukan resminya dilakukan Empowered Community.",
+        "en": "The GNSO nominates 2 Directors (Seats 13 and 14). The Empowered Community formally designates them."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 7, Sec. 7.2(a)(iv)",
+          "quote": "Two Directors nominated by the GNSO to be designated as Directors by the EC.",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "alac--selects-members-of--icann-board",
+    "from": "alac",
+    "to": "icann-board",
+    "type": "selects-members-of",
+    "explanation": {
+      "text": {
+        "id": "At-Large Community menominasikan 1 Direktur (Seat 15). ALAC, bekerja sama dengan RALO, mengoordinasikan nominasi itu dan ketua ALAC menyampaikannya. Penunjukan resminya dilakukan Empowered Community.",
+        "en": "The At-Large Community nominates 1 Director (Seat 15). The ALAC, working with the RALOs, coordinates the nomination, and the ALAC Chair submits it. The Empowered Community formally designates the Director."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 7, Sec. 7.2(a)(v)",
+          "quote": "One Director nominated by the At-Large Community to be designated as Directors by the EC.",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 12, Sec. 12.2(d)(x)(A)",
+          "quote": "working in conjunction with the RALOs, for coordinating the following activities: (A) Nominating individuals to fill Seat 15 on the Board.",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "nomcom--selects-members-of--alac",
     "from": "nomcom",
     "to": "alac",
     "type": "selects-members-of",
-    "label": {
-      "en": "selects members of",
-      "id": "memilih anggota"
-    },
     "explanation": {
       "text": {
-        "en": "NomCom selects some ALAC members.",
-        "id": "NomCom memilih sebagian anggota ALAC."
+        "id": "NomCom memilih 5 dari 15 anggota ALAC, satu warga negara dari masing-masing lima Geographic Region. Sepuluh anggota lain dipilih RALO.",
+        "en": "The NomCom selects 5 of the ALAC's 15 members, one citizen from each of the five Geographic Regions. The other 10 are selected by the RALOs."
       },
       "kind": "fact",
       "citations": [
         {
           "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
+          "locator": "Art. 12, Sec. 12.2(d)(ii)",
+          "quote": "(B) five members selected by the Nominating Committee.",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 12, Sec. 12.2(d)(ii)",
+          "quote": "The five members selected by the Nominating Committee shall include one citizen of a country within each of the five Geographic Regions",
+          "verifiedAt": "2026-10-20"
         }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
+      ]
     },
     "status": "published"
   },
   {
-    "id": "sg-elect-council",
-    "from": "gnso-stakeholder-groups",
+    "id": "nomcom--selects-members-of--gnso",
+    "from": "nomcom",
     "to": "gnso",
     "type": "selects-members-of",
-    "label": {
-      "en": "elects councilors to",
-      "id": "memilih anggota dewan"
-    },
     "explanation": {
       "text": {
-        "en": "Stakeholder groups and constituencies elect the GNSO Council.",
-        "id": "Kelompok pemangku kepentingan memilih anggota Dewan GNSO."
+        "id": "NomCom memilih 3 dari 21 anggota GNSO Council. Satu di antaranya tidak berhak suara, dan satu perwakilan NomCom yang berhak suara ditempatkan di masing-masing dari dua House.",
+        "en": "The NomCom selects 3 of the 21 members of the GNSO Council. One of the three is non-voting, and each of the two Houses gets one voting NomCom appointee."
       },
       "kind": "fact",
       "citations": [
         {
           "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
+          "locator": "Art. 11, Sec. 11.3(a)(v)",
+          "quote": "three representatives selected by the ICANN Nominating Committee, one of which shall be non-voting",
+          "verifiedAt": "2026-10-20"
         }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
+      ]
     },
     "status": "published"
   },
   {
-    "id": "ralos-participate-alac",
+    "id": "nomcom--selects-members-of--ccnso",
+    "from": "nomcom",
+    "to": "ccnso",
+    "type": "selects-members-of",
+    "explanation": {
+      "text": {
+        "id": "NomCom memilih 3 anggota ccNSO Council. Anggota Council lainnya dipilih oleh anggota ccNSO di tiap Geographic Region, tiga orang per region.",
+        "en": "The NomCom selects 3 members of the ccNSO Council. The ccNSO members select three Council members in each Geographic Region."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 10, Sec. 10.3(a)",
+          "quote": "three ccNSO Council members selected by the ICANN Nominating Committee",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 10, Sec. 10.3(a)",
+          "quote": "three ccNSO Council members selected by the ccNSO members within each of ICANN's Geographic Regions",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "ralos--selects-members-of--alac",
     "from": "ralos",
     "to": "alac",
-    "type": "participates-in",
-    "label": {
-      "en": "participates in",
-      "id": "berpartisipasi dalam"
-    },
+    "type": "selects-members-of",
     "explanation": {
       "text": {
-        "en": "RALOs are the regional base of the At-Large community that ALAC coordinates.",
-        "id": "RALO adalah bagian komunitas At-Large yang dikoordinasikan ALAC."
+        "id": "Tiap RALO memilih 2 anggota ALAC. Ada satu RALO untuk setiap dari lima Geographic Region, jadi RALO memilih 10 dari 15 anggota ALAC.",
+        "en": "Each RALO selects 2 members of the ALAC. There is one RALO for each of the five Geographic Regions, so the RALOs select 10 of the ALAC's 15 members."
       },
       "kind": "fact",
       "citations": [
         {
           "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
+          "locator": "Art. 12, Sec. 12.2(d)(ii)",
+          "quote": "two members selected by each of the Regional At-Large Organizations",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 12, Sec. 12.2(d)(vii)",
+          "quote": "There shall be one RALO for each Geographic Region",
+          "verifiedAt": "2026-10-20"
         }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
+      ]
     },
     "status": "published"
   },
   {
-    "id": "pti-performs-for-icann-org",
+    "id": "gac--appoints-liaison-to--icann-board",
+    "from": "gac",
+    "to": "icann-board",
+    "type": "appoints-liaison-to",
+    "explanation": {
+      "text": {
+        "id": "GAC mengangkat 1 liaison (penghubung tanpa hak suara) ke Dewan. Liaison boleh hadir dan ikut berdiskusi di rapat Dewan, tetapi tidak memiliki hak Direktur.",
+        "en": "The GAC appoints 1 non-voting liaison to the Board. Liaisons can attend Board meetings and join discussions, but have none of the other rights of Directors."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 7, Sec. 7.9(a)(i)",
+          "quote": "One appointed by the Governmental Advisory Committee;",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 7, Sec. 7.9(d)",
+          "quote": "entitled to attend Board meetings, participate in Board discussions and deliberations",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "ssac--appoints-liaison-to--icann-board",
+    "from": "ssac",
+    "to": "icann-board",
+    "type": "appoints-liaison-to",
+    "explanation": {
+      "text": {
+        "id": "SSAC mengangkat 1 liaison (penghubung tanpa hak suara) ke Dewan setiap tahun. Liaison boleh hadir dan ikut berdiskusi di rapat Dewan, tetapi tidak memiliki hak Direktur.",
+        "en": "The SSAC appoints 1 non-voting liaison to the Board each year. Liaisons can attend Board meetings and join discussions, but have none of the other rights of Directors."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 7, Sec. 7.9(a)(iii)",
+          "quote": "One appointed by the Security and Stability Advisory Committee established by Section 12.2(b);",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 12, Sec. 12.2(b)(iii)",
+          "quote": "The SSAC shall annually appoint a Liaison to the Board",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 7, Sec. 7.9(d)",
+          "quote": "entitled to attend Board meetings, participate in Board discussions and deliberations",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "rssac--appoints-liaison-to--icann-board",
+    "from": "rssac",
+    "to": "icann-board",
+    "type": "appoints-liaison-to",
+    "explanation": {
+      "text": {
+        "id": "RSSAC mengangkat 1 liaison (penghubung tanpa hak suara) ke Dewan setiap tahun. Liaison boleh hadir dan ikut berdiskusi di rapat Dewan, tetapi tidak memiliki hak Direktur.",
+        "en": "The RSSAC appoints 1 non-voting liaison to the Board each year. Liaisons can attend Board meetings and join discussions, but have none of the other rights of Directors."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 7, Sec. 7.9(a)(ii)",
+          "quote": "One appointed by the Root Server System Advisory Committee established by Section 12.2(c);",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 12, Sec. 12.2(c)(iii)",
+          "quote": "The RSSAC shall annually appoint a Liaison to the Board",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 7, Sec. 7.9(d)",
+          "quote": "entitled to attend Board meetings, participate in Board discussions and deliberations",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "gnso-stakeholder-groups--part-of--gnso",
+    "from": "gnso-stakeholder-groups",
+    "to": "gnso",
+    "type": "part-of",
+    "explanation": {
+      "text": {
+        "id": "GNSO terdiri dari empat Stakeholder Group (Registries, Registrars, Commercial, Non-Commercial) yang tersusun dalam dua House. Mereka memilih 18 dari 21 anggota GNSO Council: 3, 3, 6, dan 6 kursi.",
+        "en": "The GNSO consists of four Stakeholder Groups (Registries, Registrars, Commercial, Non-Commercial) organized within two Houses. They select 18 of the 21 GNSO Council members: 3, 3, 6, and 6 seats respectively."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 11, Sec. 11.2(b)",
+          "quote": "Four Stakeholder Groups organized within Houses as described in Section 11.5;",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 11, Sec. 11.3(a)",
+          "quote": "three representatives selected from the Registries Stakeholder Group; (ii) three representatives selected from the Registrars Stakeholder Group;",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "pti--performs-functions-for--icann-org",
     "from": "pti",
     "to": "icann-org",
     "type": "performs-functions-for",
-    "label": {
-      "en": "performs the IANA functions for",
-      "id": "menjalankan fungsi IANA untuk"
-    },
     "explanation": {
       "text": {
-        "en": "PTI is the ICANN affiliate that performs the IANA naming functions.",
-        "id": "PTI adalah afiliasi ICANN yang menjalankan fungsi IANA di bidang penamaan."
+        "id": "ICANN membentuk PTI sebagai badan hukum terpisah dan menjadi satu-satunya member PTI. PTI menyediakan layanan IANA, termasuk fungsi penamaan IANA berdasarkan IANA Naming Function Contract.",
+        "en": "ICANN maintains PTI as a separate legal entity and is its sole member. PTI provides IANA services, including the IANA naming function under the IANA Naming Function Contract."
       },
       "kind": "fact",
       "citations": [
         {
           "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
+          "locator": "Art. 16, Sec. 16.1",
+          "quote": "for the purpose of providing IANA services, including providing IANA naming function services pursuant to the IANA Naming Function Contract",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 16, Sec. 16.1",
+          "quote": "ICANN shall at all times be the sole member of PTI",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "iana-about",
+          "locator": "page introduction",
+          "quote": "Public Technical Identifiers, a purpose-built affiliate of ICANN dedicated exclusively to delivering the IANA services.",
+          "verifiedAt": "2026-10-20"
         }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
+      ]
     },
     "status": "published"
   },
   {
-    "id": "rirs-participate-aso",
+    "id": "pti--related-to--rirs",
+    "from": "pti",
+    "to": "rirs",
+    "type": "related-to",
+    "explanation": {
+      "text": {
+        "id": "Kebijakan global menentukan cara PTI menerbitkan sumber daya nomor Internet kepada RIR. PTI menjalankan fungsi IANA, dan RIR menerima alokasi nomor itu.",
+        "en": "Global policies govern how PTI issues Internet number resources to the RIRs. PTI performs the IANA functions, and the RIRs receive the allocations."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "nro-policy",
+          "locator": "section \"Global Policy\"",
+          "quote": "Global policies govern how Public Technical Identifiers (PTI), the organization charged with performing the IANA functions, issues Internet number resources to the RIRs.",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "pti--related-to--ietf",
+    "from": "pti",
+    "to": "ietf",
+    "type": "related-to",
+    "explanation": {
+      "text": {
+        "id": "Layanan IANA, yang disediakan PTI, mencatat parameter protokol hanya sesuai kriteria dan prosedur yang ditetapkan dalam RFC IETF. Dasar hubungan ICANN dan IETF ini adalah RFC 2860.",
+        "en": "The IANA services, provided by PTI, register protocol parameters only as directed by the criteria and procedures in IETF RFCs. The ICANN-IETF arrangement is set out in RFC 2860."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "rfc-2860",
+          "locator": "Sec. 4.1",
+          "quote": "The IANA will assign and register Internet protocol parameters only as directed by the criteria and procedures specified in RFCs",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "iana-about",
+          "locator": "page introduction",
+          "quote": "the IANA functions coordinate the Internet's globally unique identifiers, and are provided by Public Technical Identifiers, an affiliate of ICANN.",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "rirs--participates-in--aso",
     "from": "rirs",
     "to": "aso",
     "type": "participates-in",
-    "label": {
-      "en": "participate in",
-      "id": "berpartisipasi dalam"
-    },
     "explanation": {
       "text": {
-        "en": "The RIRs participate in the ASO through the NRO Number Council.",
-        "id": "RIR berpartisipasi dalam ASO lewat NRO Number Council."
+        "id": "ASO dibentuk lewat Memorandum of Understanding antara ICANN dan Number Resource Organization (NRO), organisasi para RIR. Address Council ASO terdiri atas anggota NRO Number Council.",
+        "en": "The ASO was established by a Memorandum of Understanding between ICANN and the Number Resource Organization (NRO), an organization of the RIRs. The ASO's Address Council consists of the members of the NRO Number Council."
       },
       "kind": "fact",
       "citations": [
         {
           "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
-        }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
-    },
-    "status": "published"
-  },
-  {
-    "id": "ietf-related-iana",
-    "from": "ietf",
-    "to": "pti",
-    "type": "related-to",
-    "label": {
-      "en": "specifies protocols managed by",
-      "id": "menetapkan protokol yang diregistry oleh"
-    },
-    "explanation": {
-      "text": {
-        "en": "The IETF specifies protocols; the IANA functions (via PTI) maintain the registries.",
-        "id": "IETF menetapkan protokol; fungsi IANA (via PTI) menjaga registry-nya."
-      },
-      "kind": "fact",
-      "citations": [
+          "locator": "Art. 9, Sec. 9.1(b)",
+          "quote": "established by the Memorandum of Understanding entered on 21 October 2004 between ICANN and the Number Resource Organization",
+          "verifiedAt": "2026-10-20"
+        },
         {
           "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
+          "locator": "Art. 9, Sec. 9.2(a)",
+          "quote": "The ASO shall have an Address Council, consisting of the members of the NRO Number Council.",
+          "verifiedAt": "2026-10-20"
         }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
+      ]
     },
     "status": "published"
   },
   {
-    "id": "rso-related-rssac",
+    "id": "root-server-operators--participates-in--rssac",
     "from": "root-server-operators",
     "to": "rssac",
     "type": "participates-in",
-    "label": {
-      "en": "coordinate through",
-      "id": "berkoordinasi melalui"
-    },
     "explanation": {
       "text": {
-        "en": "Root server operators participate in RSSAC discussions.",
-        "id": "Operator root server berpartisipasi dalam RSSAC."
+        "id": "RSSAC beranggotakan perwakilan organisasi root server operator, ditambah liaison dari organisasi mitra yang terlibat dalam pengelolaan teknis dan operasional root zone.",
+        "en": "The RSSAC consists of representatives from the root server operator organizations, plus liaisons from partner organizations involved in the technical and operational management of the root zone."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-rssac-page",
+          "locator": "page introduction",
+          "quote": "The RSSAC consists of representatives from the root server operator organizations and liaisons from the partner organizations involved in the technical and operational management of the root zone.",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "aso--selects-members-of--nomcom",
+    "from": "aso",
+    "to": "nomcom",
+    "type": "selects-members-of",
+    "explanation": {
+      "text": {
+        "id": "Address Council ASO memilih 1 delegasi berhak suara untuk NomCom.",
+        "en": "The ASO's Address Council selects 1 voting delegate to the NomCom."
       },
       "kind": "fact",
       "citations": [
         {
           "sourceId": "icann-bylaws",
-          "verifiedAt": "2026-10-18"
+          "locator": "Art. 8, Sec. 8.2(c)",
+          "quote": "One voting delegate each selected by the following entities: The Address Council of the Address Supporting Organization established by Section 9.2",
+          "verifiedAt": "2026-10-20"
         }
-      ],
-      "translation": {
-        "original": "en",
-        "reviewed": true
-      }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "ccnso--selects-members-of--nomcom",
+    "from": "ccnso",
+    "to": "nomcom",
+    "type": "selects-members-of",
+    "explanation": {
+      "text": {
+        "id": "Council ccNSO memilih 1 delegasi berhak suara untuk NomCom.",
+        "en": "The ccNSO Council selects 1 voting delegate to the NomCom."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 8, Sec. 8.2(c)",
+          "quote": "The Council of the Country Code Names Supporting Organization established by Section 10.3",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "gac--selects-members-of--nomcom",
+    "from": "gac",
+    "to": "nomcom",
+    "type": "selects-members-of",
+    "explanation": {
+      "text": {
+        "id": "GAC memilih 1 delegasi berhak suara untuk NomCom.",
+        "en": "The GAC selects 1 voting delegate to the NomCom."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 8, Sec. 8.2(c)",
+          "quote": "The Governmental Advisory Committee established by Section 12.2(a)",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "ssac--selects-members-of--nomcom",
+    "from": "ssac",
+    "to": "nomcom",
+    "type": "selects-members-of",
+    "explanation": {
+      "text": {
+        "id": "SSAC memilih 1 delegasi berhak suara untuk NomCom.",
+        "en": "The SSAC selects 1 voting delegate to the NomCom."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 8, Sec. 8.2(c)",
+          "quote": "The Security and Stability Advisory Committee established by Section 12.2(b);",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "rssac--selects-members-of--nomcom",
+    "from": "rssac",
+    "to": "nomcom",
+    "type": "selects-members-of",
+    "explanation": {
+      "text": {
+        "id": "RSSAC memilih 1 delegasi berhak suara untuk NomCom.",
+        "en": "The RSSAC selects 1 voting delegate to the NomCom."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 8, Sec. 8.2(c)",
+          "quote": "The Root Server System Advisory Committee established by Section 12.2(c);",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "alac--selects-members-of--nomcom",
+    "from": "alac",
+    "to": "nomcom",
+    "type": "selects-members-of",
+    "explanation": {
+      "text": {
+        "id": "ALAC memilih 5 delegasi berhak suara untuk NomCom.",
+        "en": "The ALAC selects 5 voting delegates to the NomCom."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 8, Sec. 8.2(d)",
+          "quote": "Five voting delegates selected by the At-Large Advisory Committee established by Section 12.2(d);",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "gnso--selects-members-of--nomcom",
+    "from": "gnso",
+    "to": "nomcom",
+    "type": "selects-members-of",
+    "explanation": {
+      "text": {
+        "id": "GNSO memilih 7 delegasi berhak suara untuk NomCom: 1 dari Registries Stakeholder Group, 1 dari Registrars Stakeholder Group, 2 dari Business Constituency, 1 dari ISP and Connectivity Providers Constituency, 1 dari Intellectual Property Constituency, dan 1 dari kelompok konsumen dan masyarakat sipil.",
+        "en": "The GNSO selects 7 voting delegates to the NomCom: 1 from the Registries Stakeholder Group, 1 from the Registrars Stakeholder Group, 2 from the Business Constituency, 1 from the ISP and Connectivity Providers Constituency, 1 from the Intellectual Property Constituency, and 1 from consumer and civil society groups."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 8, Sec. 8.2(e)",
+          "quote": "Seven voting delegates to the Nominating Committee shall be selected from the Generic Names Supporting Organization established by Article 11",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "ietf--appoints-liaison-to--icann-board",
+    "from": "ietf",
+    "to": "icann-board",
+    "type": "appoints-liaison-to",
+    "explanation": {
+      "text": {
+        "id": "IETF menunjuk satu liaison (penghubung tanpa hak suara) ke Dewan ICANN. Liaison boleh menghadiri rapat Dewan dan ikut berdiskusi, tetapi tidak memiliki hak Direktur.",
+        "en": "The IETF appoints one non-voting liaison to the ICANN Board. The liaison may attend Board meetings and take part in discussions, but does not have the rights of a Director."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 7, Sec. 7.9(a)(iv)",
+          "quote": "One appointed by the Internet Engineering Task Force.",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 7, Sec. 7.9(d)",
+          "quote": "but shall otherwise not have any of the rights and privileges of Directors",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
+    },
+    "status": "published"
+  },
+  {
+    "id": "ietf--selects-members-of--nomcom",
+    "from": "ietf",
+    "to": "nomcom",
+    "type": "selects-members-of",
+    "explanation": {
+      "text": {
+        "id": "IETF memilih satu delegasi dengan hak suara di NomCom, bersama Address Council ASO, Council ccNSO, GAC, SSAC, dan RSSAC.",
+        "en": "The IETF selects one voting delegate to the NomCom, alongside the ASO Address Council, the ccNSO Council, the GAC, the SSAC and the RSSAC."
+      },
+      "kind": "fact",
+      "citations": [
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 8, Sec. 8.2(c)",
+          "quote": "One voting delegate each selected by the following entities:",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "icann-bylaws",
+          "locator": "Art. 8, Sec. 8.2(c)",
+          "quote": "and The Internet Engineering Task Force.",
+          "verifiedAt": "2026-10-20"
+        }
+      ]
     },
     "status": "published"
   }

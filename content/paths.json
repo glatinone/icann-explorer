@@ -2,55 +2,183 @@
   {
     "id": "beginner",
     "title": {
-      "en": "Understand ICANN in 30 minutes",
-      "id": "Pahami ICANN dalam 30 menit"
+      "id": "ICANN dalam 20 menit",
+      "en": "ICANN in 20 minutes"
     },
     "audience": {
-      "en": "For the curious outsider",
-      "id": "Untuk kamu yang baru kenal"
+      "id": "Kamu baru mengenal ICANN dan ingin gambaran utuh sebelum masuk ke detail.",
+      "en": "You are new to ICANN and want the whole picture before the details."
     },
-    "estMinutes": 60,
+    "summary": {
+      "id": "Dari apa yang dikoordinasikan ICANN dan tiga bagiannya, sampai perbedaan kebijakan dan nasihat serta tempat Indonesia muncul.",
+      "en": "From what ICANN coordinates and its three parts, to policy versus advice and where Indonesia shows up."
+    },
+    "estMinutes": 20,
     "steps": [
       {
-        "id": "what-is-icann",
+        "id": "what-icann-coordinates",
         "title": {
-          "en": "What is ICANN?",
-          "id": "Apa itu ICANN?"
+          "id": "Apa yang dikoordinasikan ICANN",
+          "en": "What ICANN coordinates"
         },
         "body": {
-          "en": "ICANN coordinates the internet's naming system. It does not regulate content and it does not run the internet: it coordinates who manages which names and numbers. Look at the map to see the whole ecosystem.",
-          "id": "ICANN mengoordinasikan sistem penamaan internet. ICANN tidak mengatur konten dan tidak menjalankan internet. Mulailah dari peta untuk melihat gambaran besarnya."
+          "id": "Setiap perangkat di Internet butuh alamat yang unik, dan setiap situs butuh nama yang menunjuk ke alamat itu. ICANN dibentuk tahun 1998 untuk membantu mengoordinasikan nama dan angka unik tersebut. Bylaws ICANN (anggaran dasar) merumuskan misinya dalam satu kalimat: operasi sistem pengenal unik Internet yang stabil dan aman.\n\nDalam praktiknya ada tiga area: nama domain, sumber daya angka seperti alamat IP, dan kode-kode yang dipakai protokol Internet. Public Technical Identifiers (PTI), afiliasi ICANN, mengerjakan tugas teknisnya dengan nama fungsi IANA.\n\nPerhatikan apa yang tidak ada di kalimat misi itu: tidak ada yang menyebut isi situs web. ICANN mengurus sistem penamaan dan penomoran, bukan konten.",
+          "en": "Every device on the Internet needs a unique address, and every website needs a name that points to it. ICANN was formed in 1998 to help coordinate those unique names and numbers. The Bylaws put its mission in one sentence: the stable and secure operation of the Internet's unique identifier systems.\n\nIn practice that covers three areas: domain names, number resources such as IP addresses, and the codes used in Internet protocols. Public Technical Identifiers (PTI), an ICANN affiliate, does the hands-on work under the name IANA functions.\n\nNotice what the mission sentence leaves out: nothing in it mentions website content. ICANN works on the naming and numbering systems, not on content."
         },
-        "links": [
+        "claims": [
           {
-            "type": "entity",
-            "id": "icann-board"
+            "text": {
+              "id": "ICANN adalah korporasi nirlaba kepentingan publik yang dibentuk pada 1998 untuk membantu mengoordinasikan nama dan nomor unik di Internet. Bylaws ICANN (anggaran dasar) menetapkan misinya: memastikan sistem pengidentifikasi unik Internet beroperasi secara stabil dan aman.",
+              "en": "ICANN is a not-for-profit public-benefit corporation formed in 1998 to help coordinate the Internet's unique names and numbers. Its Bylaws set its mission: to ensure the stable and secure operation of the Internet's unique identifier systems."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: Internet Corporation for Assigned Names and Numbers (ICANN)",
+                "quote": "ICANN was formed in 1998 as a not-for-profit public-benefit corporation with a community of participants from all over the world.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/internet-corporation-for-assigned-names-and-numbers-en"
+              },
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 1, Sec. 1.1(a)",
+                "quote": "to ensure the stable and secure operation of the Internet's unique identifier systems",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
           },
+          {
+            "text": {
+              "id": "Fungsi IANA mengoordinasikan pengidentifikasi dan kode unik yang menjaga Internet tetap berjalan. Cakupannya: sumber daya nomor Internet, root zone DNS, dan registri kode serta nomor yang dipakai protokol Internet. Pelaksananya adalah Public Technical Identifiers (PTI), afiliasi ICANN.",
+              "en": "The IANA functions coordinate the unique identifiers and codes that keep the Internet running. They cover Internet number resources, the DNS root zone, and the registries of codes and numbers used in Internet protocols. Public Technical Identifiers (PTI), an ICANN affiliate, performs them."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: Internet Assigned Numbers Authority functions (IANA functions)",
+                "quote": "IANA functions include management of Internet number resources, management of the Domain Name System root zone, and maintenance of the authoritative registries for many of the codes and numbers used in the Internet protocols.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/internet-assigned-numbers-authority-functions-en"
+              },
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: Internet Assigned Numbers Authority functions (IANA functions)",
+                "quote": "The IANA functions are performed by Public Technical Identifiers, an affiliate of ICANN.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/internet-assigned-numbers-authority-functions-en"
+              }
+            ]
+          }
+        ],
+        "links": [
           {
             "type": "term",
             "id": "icann"
+          },
+          {
+            "type": "term",
+            "id": "iana-functions"
+          },
+          {
+            "type": "entity",
+            "id": "pti"
+          },
+          {
+            "type": "term",
+            "id": "dns"
           }
         ]
       },
       {
         "id": "three-parts",
         "title": {
-          "en": "Three building blocks",
-          "id": "Tiga komponen utama"
+          "id": "Tiga bagian ICANN",
+          "en": "The three parts of ICANN"
         },
         "body": {
-          "en": "The community (SOs and ACs) develops policy and advice, the Board adopts decisions, and ICANN org implements them. Keep these three apart and everything else falls into place.",
-          "id": "Komunitas (SO dan AC) mengembangkan kebijakan dan nasihat, Dewan mengesahkan keputusan, organisasi ICANN menerapkannya."
+          "id": "ICANN punya tiga bagian. Pertama, komunitas: tiga Supporting Organization (SO) yang menyusun rekomendasi kebijakan, dan empat Advisory Committee (AC) yang memberi nasihat. Tiga SO itu mengurus angka (ASO), domain kode negara (ccNSO), dan domain generik (GNSO).\n\nKedua, Dewan (Direksi) ICANN, atau Dewan. Anggotanya 16 Direktur dengan hak suara dan empat liaison (penghubung tanpa hak suara). Dewan mempertimbangkan rekomendasi kebijakan dari komunitas.\n\nKetiga, ICANN org: staf yang dipimpin Presiden dan CEO. Mereka mendukung komunitas dan Dewan, serta menjalankan kebijakan yang disusun komunitas. Yang menyusun kebijakan adalah komunitas, bukan staf.",
+          "en": "ICANN has three parts. First, the community: three Supporting Organizations (SOs) that develop policy recommendations, and four Advisory Committees (ACs) that advise. The three SOs cover numbers (ASO), country-code domains (ccNSO) and generic domains (GNSO).\n\nSecond, the Board. It has 16 voting Directors and four non-voting liaisons, and it considers the policy recommendations from the community.\n\nThird, ICANN org: the staff led by the President and CEO. It supports the community and the Board and implements the policies the community develops. The community, not staff, does the policy development."
         },
+        "claims": [
+          {
+            "text": {
+              "id": "Supporting Organization adalah badan yang diakui dalam Bylaws untuk menyusun rekomendasi kebijakan di satu bidang kerja ICANN. Ada tiga: ASO (nomor), ccNSO (domain kode negara), dan GNSO (domain generik).",
+              "en": "A Supporting Organization is a body recognized in the Bylaws that develops policy recommendations for one area of ICANN's work. There are three: the ASO (numbers), the ccNSO (country-code domains) and the GNSO (generic domains)."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: Supporting Organization (SO)",
+                "quote": "A formally recognized body under the ICANN Bylaws that is charged with developing policy recommendations for a particular area of ICANN's operations.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/supporting-organization-en"
+              },
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: Supporting Organization (SO)",
+                "quote": "Besides developing policy recommendations, SOs select directors for designated seats on the ICANN Board and participate in the nominating process to fill open Board positions.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/supporting-organization-en"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Advisory Committee adalah badan yang diakui dalam Bylaws untuk memberi nasihat kepada Dewan (Direksi) ICANN tentang kebijakan dalam misi dan lingkup ICANN. Ada empat: ALAC, GAC, RSSAC, dan SSAC.",
+              "en": "An Advisory Committee is a body recognized in the Bylaws that advises the ICANN Board on policies within ICANN's mission and scope. There are four: ALAC, GAC, RSSAC and SSAC."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: Advisory Committee (AC)",
+                "quote": "A formally recognized body under the ICANN Bylaws that is charged with advising the ICANN Board on policies within ICANN’s mission and scope.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/advisory-committee-en"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Dewan Direksi punya 16 Direktur dengan hak suara dan empat liaison tanpa hak suara. Dewan mengawasi ICANN org dan mempertimbangkan rekomendasi kebijakan dari komunitas.",
+              "en": "The Board has 16 voting Directors and four non-voting liaisons. It oversees the ICANN organization and considers policy recommendations from the community."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-board-directors",
+                "locator": "Board Members, introduction",
+                "quote": "A globally diverse Board of Directors oversees the ICANN organization and considers community-developed policy recommendations. The Board has 16 voting members and four nonvoting liaison representatives.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "ICANN org adalah staf ICANN di bawah Presiden dan CEO. Staf ini mendukung komunitas dan Dewan serta menerapkan kebijakan yang dikembangkan komunitas.",
+              "en": "ICANN org is the ICANN staff led by the President and CEO. It supports the community and the Board and implements policies the community develops."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-who-we-are",
+                "locator": "ICANN is made up of three parts: ICANN Organization",
+                "quote": "The ICANN organization provides staff and resources to support the ICANN community and Board, and implements policies developed by the community.",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 15, Sec. 15.4",
+                "quote": "All other officers and staff shall report to the President or his or her delegate",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          }
+        ],
         "links": [
-          {
-            "type": "entity",
-            "id": "gnso"
-          },
-          {
-            "type": "entity",
-            "id": "alac"
-          },
           {
             "type": "entity",
             "id": "icann-board"
@@ -58,48 +186,384 @@
           {
             "type": "entity",
             "id": "icann-org"
+          },
+          {
+            "type": "term",
+            "id": "so"
+          },
+          {
+            "type": "term",
+            "id": "ac"
+          },
+          {
+            "type": "term",
+            "id": "multistakeholder"
           }
         ]
       },
       {
-        "id": "who-advises",
+        "id": "policy-vs-advice",
         "title": {
-          "en": "Who advises the Board?",
-          "id": "Siapa yang memberi nasihat?"
+          "id": "Kebijakan dan nasihat",
+          "en": "Policy versus advice"
         },
         "body": {
-          "en": "Four committees advise the Board: ALAC (individual users), GAC (governments), SSAC (security), and RSSAC (root servers). Their advice is not binding.",
-          "id": "Empat komite memberi nasihat kepada Dewan: ALAC (pengguna individu), GAC (pemerintah), SSAC (keamanan), dan RSSAC (root server). Nasihat mereka tidak mengikat."
+          "id": "Pemula sering menyamakan dua hal ini. Rekomendasi kebijakan datang dari SO. GNSO, misalnya, menyusun dan merekomendasikan ke Dewan kebijakan untuk top-level domain generik (gTLD).\n\nNasihat datang dari AC. Advisory Committee tidak punya wewenang hukum untuk bertindak atas nama ICANN, jadi nasihatnya adalah masukan yang dipertimbangkan Dewan, bukan keputusan.\n\nContoh nasihat yang paling kuat datang dari GAC. Dewan wajib mempertimbangkan GAC Advice dengan semestinya, dan kalau GAC menyetujuinya secara konsensus, Dewan hanya bisa menolaknya lewat suara minimal 60% anggota Dewan. Meski begitu, itu tetap nasihat: yang memutuskan adalah Dewan.",
+          "en": "Newcomers often mix these two up. Policy recommendations come from the SOs. The GNSO, for example, develops and recommends to the Board policies on generic top-level domains (gTLDs).\n\nAdvice comes from the ACs. Advisory Committees have no legal authority to act for ICANN, so their advice is input the Board considers, not a decision.\n\nThe strongest example of advice comes from the GAC. The Board must take GAC Advice duly into account, and if the GAC adopts it by consensus, the Board can reject it only by a vote of at least 60% of the Board. Even then it is advice: the Board decides."
         },
+        "claims": [
+          {
+            "text": {
+              "id": "Nasihat adalah temuan dan rekomendasi yang diberikan sebuah Advisory Committee kepada Dewan ICANN. Advisory Committee tidak punya kewenangan hukum untuk bertindak atas nama ICANN, jadi nasihat adalah masukan yang dipertimbangkan Dewan, bukan keputusan.",
+              "en": "Advice is the findings and recommendations an Advisory Committee gives the ICANN Board. Advisory Committees have no legal authority to act for ICANN, so advice is input the Board considers, not a decision."
+            },
+            "kind": "interpretation",
+            "citations": [
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 12, Sec. 12.1",
+                "quote": "Advisory Committees shall have no legal authority to act for ICANN, but shall report their findings and recommendations to the Board.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Nasihat GAC adalah nasihat tentang urusan kebijakan publik dari Governmental Advisory Committee. Dewan wajib mempertimbangkannya dengan semestinya. Jika GAC menyepakatinya secara konsensus, Dewan hanya dapat menolaknya dengan suara sedikitnya 60% dari Dewan.",
+              "en": "GAC Advice is advice on public policy matters from the Governmental Advisory Committee. The Board must take it duly into account. If the GAC adopts it by consensus, the Board can reject it only by a vote of at least 60% of the Board."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 12, Sec. 12.2(a)(x)",
+                "quote": "The advice of the Governmental Advisory Committee on public policy matters shall be duly taken into account, both in the formulation and adoption of policies.",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 12, Sec. 12.2(a)(x)",
+                "quote": "may only be rejected by a vote of no less than 60% of the Board",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "GNSO bertanggung jawab mengembangkan dan merekomendasikan kepada Dewan kebijakan substantif tentang generic top-level domain (gTLD). Prosesnya dikelola GNSO Council, yang punya 21 kursi.",
+              "en": "The GNSO develops and recommends to the Board substantive policies on generic top-level domains (gTLDs). Its Council, which has 21 seats, manages the policy development process."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 11, Sec. 11.1",
+                "quote": "responsible for developing and recommending to the Board substantive policies relating to generic top-level domains",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 11, Sec. 11.2(d)",
+                "quote": "A GNSO Council responsible for managing the policy development process of the GNSO",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "type": "term",
+            "id": "advice"
+          },
+          {
+            "type": "term",
+            "id": "gac-advice"
+          },
+          {
+            "type": "entity",
+            "id": "gnso"
+          },
+          {
+            "type": "entity",
+            "id": "gac"
+          }
+        ],
+        "check": {
+          "question": {
+            "id": "Sebuah Advisory Committee, misalnya ALAC atau SSAC, mengirim nasihat ke Dewan. Apa statusnya?",
+            "en": "An Advisory Committee, such as the ALAC or SSAC, sends the Board a piece of advice. What is its status?"
+          },
+          "options": [
+            {
+              "id": "Keputusan mengikat yang wajib dijalankan Dewan.",
+              "en": "A binding decision the Board must carry out."
+            },
+            {
+              "id": "Masukan yang dipertimbangkan Dewan. AC tidak punya wewenang hukum untuk bertindak atas nama ICANN.",
+              "en": "Input the Board considers. The AC has no legal authority to act for ICANN."
+            },
+            {
+              "id": "Kebijakan yang berlaku begitu AC selesai memberi suara.",
+              "en": "A policy that takes effect once the AC finishes voting."
+            }
+          ],
+          "answerIndex": 1,
+          "explanation": {
+            "id": "Nasihat adalah temuan dan rekomendasi untuk Dewan, bukan keputusan. Kebijakan lahir dari SO, dan Dewan yang memutuskan.",
+            "en": "Advice is findings and recommendations for the Board, not a decision. Policy comes from the SOs, and the Board decides."
+          }
+        }
+      },
+      {
+        "id": "how-a-gtld-rule-is-made",
+        "title": {
+          "id": "Bagaimana aturan gTLD dibuat",
+          "en": "How a gTLD rule gets made"
+        },
+        "body": {
+          "id": "Beginilah aturan untuk domain generik benar-benar dibuat. GNSO Council mengelola proses pengembangan kebijakan (PDP). PDP mencakup komentar publik, dan ketika komunitas mencapai konsensus, SO mengirim rekomendasinya ke Dewan untuk disetujui.\n\nPDP New gTLD Subsequent Procedures (SubPro) adalah contohnya. Council memulainya pada Desember 2015 dan mengirim rekomendasi akhir ke Dewan pada 24 Maret 2021. Pada 16 Maret 2023 Dewan mengadopsi Scorecard secara penuh: sebagian output diadopsi, sebagian lain ditetapkan sebagai pending.\n\nUrutannya jadi komunitas dulu, lalu Dewan, lalu ICANN org. Jalur kebijakan menelusuri setiap tahapnya.",
+          "en": "Here is how a rule for generic domains actually gets made. The GNSO Council manages a policy development process (PDP). The PDP includes Public Comment, and when the community reaches consensus the SO sends its recommendations to the Board for approval.\n\nThe New gTLD Subsequent Procedures (SubPro) PDP is a real case. The Council initiated it in December 2015 and sent its final recommendations to the Board on 24 March 2021. On 16 March 2023 the Board adopted the Scorecard in full: some outputs were adopted and others designated pending.\n\nSo the order is community first, then the Board, then ICANN org. The policy path walks through each stage."
+        },
+        "claims": [
+          {
+            "text": {
+              "id": "Proses pengembangan kebijakan (PDP) adalah prosedur yang ditetapkan dalam Bylaws, tempat Supporting Organization dan Advisory Committee menyusun dan menyempurnakan kebijakan. PDP mencakup komentar publik. Jika komunitas mencapai konsensus, Supporting Organization yang bersangkutan mengirim rekomendasinya ke Dewan untuk disetujui.",
+              "en": "A policy development process is the procedure, specified in the Bylaws, through which Supporting Organizations and Advisory Committees develop and refine policy. It includes Public Comment, and when the community reaches consensus the Supporting Organization sends its recommendations to the Board for approval."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: policy development process (PDP)",
+                "quote": "The process, specified in the ICANN Bylaws, through which ICANN’s Supporting Organizations and Advisory Committees develop and refine policies within ICANN’s mission and scope.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/policy-development-process-en"
+              },
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: policy development process (PDP)",
+                "quote": "When the community achieves consensus, the relevant Supporting Organization submits the policy recommendations to the ICANN Board for approval.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/policy-development-process-en"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "PDP New gTLD Subsequent Procedures (SubPro) dimulai Council pada Desember 2015. Pada 24 Maret 2021 Council mengirim rekomendasi akhirnya ke Dewan. Pada 16 Maret 2023 Dewan menyetujui Scorecard secara penuh: sebagian hasil diadopsi, sebagian ditetapkan \"pending\".",
+              "en": "The New gTLD Subsequent Procedures (SubPro) PDP was initiated by the Council in December 2015. On 24 March 2021 the Council sent its final recommendations to the Board. On 16 March 2023 the Board adopted the Scorecard in full: some outputs were adopted and others designated pending."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "gnso-subpro-page",
+                "locator": "Background text on the PDP page",
+                "quote": "Subsequently, the GNSO Council initiated the Policy Development Process (PDP) in December 2015 and adopted the working group charter in January 2016.",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "board-resolutions-2023-03-16",
+                "locator": "Whereas clause on the SubPro Final Report",
+                "quote": "transmitted its Recommendations Report regarding adoption of the final recommendations (Recommendations) from the New gTLD Subsequent Procedures Policy Development Process to the ICANN Board",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "board-resolutions-2023-03-16",
+                "locator": "Resolved 2023.03.16.04",
+                "quote": "the ICANN Board adopts the Scorecard in full. Section A of the Scorecard identifies the Outputs that the Board adopts. Section B identifies the Outputs that the Board designates as pending.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          }
+        ],
         "links": [
           {
             "type": "entity",
-            "id": "alac"
+            "id": "gnso"
           },
+          {
+            "type": "term",
+            "id": "pdp"
+          },
+          {
+            "type": "term",
+            "id": "gtld"
+          },
+          {
+            "type": "source",
+            "id": "gnso-subpro-page"
+          }
+        ],
+        "check": {
+          "question": {
+            "id": "Di mana aturan baru untuk gTLD bermula?",
+            "en": "Where does a new rule for gTLDs start?"
+          },
+          "options": [
+            {
+              "id": "Staf ICANN menulisnya, lalu Dewan menyetujui.",
+              "en": "ICANN staff write it, then the Board approves it."
+            },
+            {
+              "id": "GNSO Council menjalankan PDP, lalu Dewan mempertimbangkan rekomendasinya.",
+              "en": "The GNSO Council runs a PDP, then the Board considers its recommendations."
+            },
+            {
+              "id": "GAC menerbitkan aturan, lalu registry menjalankannya.",
+              "en": "The GAC issues the rule, then registries carry it out."
+            }
+          ],
+          "answerIndex": 1,
+          "explanation": {
+            "id": "Kebijakan gTLD dikembangkan komunitas lewat GNSO. Staf mengimplementasikan setelah Dewan mengadopsi, bukan sebaliknya.",
+            "en": "gTLD policy is developed by the community through the GNSO. Staff implement it after the Board adopts it, not the other way round."
+          }
+        }
+      },
+      {
+        "id": "indonesia-government",
+        "title": {
+          "id": "Indonesia di GAC",
+          "en": "Indonesia at the GAC"
+        },
+        "body": {
+          "id": "Indonesia muncul di beberapa tempat. Yang pertama adalah GAC, suara pemerintah di ICANN. Keanggotaan terbuka bagi pemerintah nasional, dan Indonesia ada di daftar anggota GAC, diwakili oleh Direktur Jenderal Pengawasan Ruang Digital.\n\nGAC hanya untuk pemerintah dan badan publik. Kalau kamu bukan dari pemerintah, kamu tidak bisa bergabung, tetapi kamu bisa mengikuti sesi terbuka: di ICANN86, semua sesi pleno dan kelompok kerja GAC terbuka untuk umum.\n\nJadi pemerintah Indonesia bersuara lewat nasihat yang harus dipertimbangkan Dewan (lihat langkah sebelumnya), sedangkan warga biasa punya pintu lain, yang dibahas berikutnya.",
+          "en": "Indonesia shows up in several places. The first is the GAC, the voice of governments in ICANN. Membership is open to national governments, and Indonesia is on the GAC member list, represented by the Director General for Digital Space Monitoring.\n\nThe GAC is for governments and public bodies only. If you are not in government you cannot join, but you can follow open sessions: at ICANN86, all GAC plenary and working group sessions were open meetings.\n\nSo Indonesia's government speaks through advice the Board must consider (see the earlier steps), while ordinary residents have other doors, covered next."
+        },
+        "claims": [
+          {
+            "text": {
+              "id": "Keanggotaan terbuka bagi semua pemerintah nasional, dan bagi Distinct Economies serta organisasi antarpemerintah atas undangan GAC melalui Chair-nya. Situs GAC menyebut 185 pemerintah anggota dan 41 organisasi pengamat. Indonesia tercantum dalam daftar anggota GAC, diwakili Direktur Jenderal Pengawasan Ruang Digital.",
+              "en": "Membership is open to all national governments, and to Distinct Economies and multinational governmental organizations on the GAC's invitation through its Chair. The GAC site states 185 Member governments and 41 Observer organizations. Indonesia is on the GAC member list, represented by the Director General for Digital Space Monitoring."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 12, Sec. 12.2(a)(ii)",
+                "quote": "Membership in the Governmental Advisory Committee shall be open to all national governments.",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "gac-home",
+                "locator": "section 'About the GAC'",
+                "quote": "There are 185 Member governments and 41 Observer organizations in the GAC.",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "gac-members",
+                "locator": "GAC Members list, entry 'Indonesia'",
+                "quote": "Indonesia Representative Alexander Sabar Director General, Digital Space Monitoring",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Orang di luar pemerintah tidak bisa menjadi anggota, tetapi bisa menghadiri rapat GAC atau mengikutinya secara daring. Menurut GAC, semua sesi GAC terbuka bagi peserta, termasuk sesi penyusunan Communique.",
+              "en": "People outside government cannot join, but anyone can attend a GAC meeting or follow it online. According to the GAC, all GAC sessions are open to participants, including the Communique drafting session."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "gac-first-meeting",
+                "locator": "section 'Attending your first GAC meeting'",
+                "quote": "All GAC sessions are open to participants, including the Communiqué drafting session",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          }
+        ],
+        "links": [
           {
             "type": "entity",
             "id": "gac"
           },
           {
-            "type": "entity",
-            "id": "ssac"
+            "type": "term",
+            "id": "gac-advice"
           },
           {
-            "type": "entity",
-            "id": "rssac"
+            "type": "source",
+            "id": "gac-members"
           }
         ]
       },
       {
-        "id": "who-outside",
+        "id": "indonesia-numbers-and-users",
         "title": {
-          "en": "Who is outside ICANN?",
-          "id": "Siapa yang di luar ICANN?"
+          "id": "APNIC, IDNIC, dan APRALO",
+          "en": "APNIC, IDNIC and APRALO"
         },
         "body": {
-          "en": "The regional IP registries (RIRs), the IETF standards body, and the root server operators are independent organizations. ICANN coordinates with them; it does not run them.",
-          "id": "RIR, IETF, dan operator root server bekerja mandiri di luar struktur ICANN. ICANN berkoordinasi dengan mereka, bukan mengendalikan."
+          "id": "Untuk angka, Indonesia ada di wilayah APNIC. APNIC adalah Regional Internet Registry (RIR) untuk Asia Pasifik dan memberi alamat IP serta nomor AS kepada anggotanya. Di Indonesia, IDNIC adalah National Internet Registry (NIR) yang diakui APNIC.\n\nUntuk pengguna Internet perorangan, jalurnya adalah At-Large. Cabangnya untuk Asia, Australasia, dan Kepulauan Pasifik adalah APRALO, yang mencantumkan lebih dari 60 At-Large Structure di lebih dari 30 negara dan wilayah, ditambah lebih dari 40 anggota individu.\n\nDua pintu berbeda: APNIC untuk sumber daya angka, APRALO untuk masukan pengguna ke ICANN.",
+          "en": "For numbers, Indonesia sits in the APNIC region. APNIC is the Regional Internet Registry (RIR) for Asia Pacific and gives IP addresses and AS numbers to its members. In Indonesia, IDNIC is the National Internet Registry (NIR) recognized by APNIC.\n\nFor individual Internet users, the route is At-Large. Its branch for Asia, Australasia and the Pacific Islands is APRALO, whose page lists over 60 At-Large Structures in over 30 countries and territories plus over 40 individual members.\n\nTwo different doors: APNIC for number resources, APRALO for user input to ICANN."
         },
+        "claims": [
+          {
+            "text": {
+              "id": "Setiap RIR menyediakan sumber daya nomor Internet (IPv4, IPv6, dan ASN) kepada anggotanya di wilayah yang dilayani. APNIC, misalnya, melayani Asia Pasifik.",
+              "en": "Each RIR provides Internet number resources (IPv4, IPv6 and ASNs) to its members in its region. APNIC, for example, serves the Asia Pacific."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "apnic-about",
+                "locator": "section 'About APNIC'",
+                "quote": "As the Regional Internet Registry for the Asia Pacific region, our primary role is to provide Internet number resources (IPv4, IPv6 and ASNs) to our Members in the Asia Pacific region.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Nota kesepahaman (MoU) NRO ditandatangani pada 2003 oleh empat RIR yang ada saat itu (APNIC, ARIN, LACNIC, RIPE NCC). AFRINIC menandatanganinya pada 2005. Di Indonesia, APNIC mencantumkan APJII sebagai National Internet Registry (NIR).",
+              "en": "The NRO MoU was signed in 2003 by the four RIRs that existed then (APNIC, ARIN, LACNIC, RIPE NCC). AFRINIC signed in 2005. In Indonesia, APNIC lists APJII as the National Internet Registry (NIR)."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "nro-about",
+                "locator": "section 'The Five RIR Members'",
+                "quote": "The NRO MoU was signed in 2003 by the four existing RIRs",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "apnic-nirs",
+                "locator": "section 'National Internet Registries (NIRs)'",
+                "quote": "There are seven NIRs that serve their respective Internet communities in local languages: APJII (ID) CNNIC (CN) IRINN (IN)",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Setiap RALO terdiri dari At-Large Structure (ALS) di wilayahnya yang telah disertifikasi. Jika MoU-nya mengizinkan, RALO juga boleh memuat pengguna internet individu. APRALO mencakup Asia, Australasia, dan Kepulauan Pasifik, dan halaman APRALO menyebut lebih dari 60 ALS di lebih dari 30 negara dan wilayah, serta lebih dari 40 anggota individu.",
+              "en": "Each RALO is made up of certified At-Large Structures (ALSes) in its region. If its MoU allows, a RALO may also include individual Internet users. APRALO covers Asia, Australasia, and the Pacific Islands, and its page lists over 60 ALSes in over 30 countries and territories plus over 40 individual members."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 12, Sec. 12.2(d)(viii)",
+                "quote": "Each RALO shall be comprised of self-supporting At-Large Structures within its Geographic Region that have been certified",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "atlarge-individual-member",
+                "locator": "section 'Where are individual members accepted?'",
+                "quote": "Asian, Australasian, and Pacific Islands Regional At-Large Organization (APRALO)",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "atlarge-apralo",
+                "locator": "APRALO page, region facts",
+                "quote": "APRALO consists of over 60 ALSes located in over 30 countries and territories, as well as over 40 Individual Members",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          }
+        ],
         "links": [
           {
             "type": "entity",
@@ -107,173 +571,359 @@
           },
           {
             "type": "entity",
-            "id": "ietf"
+            "id": "ralos"
           },
           {
-            "type": "entity",
-            "id": "root-server-operators"
+            "type": "term",
+            "id": "rir"
+          },
+          {
+            "type": "term",
+            "id": "at-large"
+          },
+          {
+            "type": "source",
+            "id": "apnic-about"
           }
-        ]
-      },
-      {
-        "id": "check-yourself",
-        "title": {
-          "en": "Check yourself",
-          "id": "Uji dirimu"
-        },
-        "body": {
-          "en": "A quick question before you move on.",
-          "id": "Satu pertanyaan cepat sebelum lanjut."
-        },
-        "links": [],
+        ],
         "check": {
           "question": {
-            "en": "Who develops policy recommendations for domains like .com?",
-            "id": "Siapa yang mengembangkan rekomendasi kebijakan untuk domain seperti .com?"
+            "id": "Kamu pengguna Internet perorangan di Asia Pasifik dan ingin memberi masukan ke ICANN. Pintu mana yang cocok?",
+            "en": "You are an individual Internet user in Asia Pacific and want to give input to ICANN. Which door fits?"
           },
           "options": [
             {
-              "en": "The GNSO",
-              "id": "GNSO"
+              "id": "GAC.",
+              "en": "The GAC."
             },
             {
-              "en": "The Board",
-              "id": "Dewan"
+              "id": "APRALO.",
+              "en": "APRALO."
             },
             {
-              "en": "ICANN org",
-              "id": "Organisasi ICANN"
+              "id": "IDNIC.",
+              "en": "IDNIC."
             }
           ],
-          "answerIndex": 0,
+          "answerIndex": 1,
           "explanation": {
-            "en": "The GNSO is the Supporting Organization for generic top-level domains.",
-            "id": "GNSO adalah SO yang menangani kebijakan gTLD."
+            "id": "APRALO adalah RALO untuk kawasan ini dan bagian dari At-Large. GAC khusus pemerintah, dan IDNIC adalah registry alamat IP, bukan jalur masukan ke ICANN.",
+            "en": "APRALO is the RALO for the region and part of At-Large. The GAC is for governments, and IDNIC is an IP address registry, not a route for input to ICANN."
           }
         }
       }
     ]
   },
   {
-    "id": "get-involved",
+    "id": "policy",
     "title": {
-      "en": "Get involved this month",
-      "id": "Mulai berkontribusi bulan ini"
+      "id": "Mengikuti satu kebijakan dari awal sampai akhir",
+      "en": "Follow one policy from start to finish"
     },
     "audience": {
-      "en": "For future contributors",
-      "id": "Untuk calon kontributor"
+      "id": "Kamu sudah paham struktur dasar ICANN dan ingin melihat bagaimana sebuah kebijakan benar-benar bergerak.",
+      "en": "You know the basic ICANN structure and want to see how a policy actually moves."
     },
-    "estMinutes": 60,
+    "summary": {
+      "id": "Kita ikuti PDP New gTLD Subsequent Procedures dari inisiasi sampai implementasi, lalu lihat bagaimana nasihat masuk dan apa yang bisa dilakukan Empowered Community.",
+      "en": "We follow the New gTLD Subsequent Procedures PDP from initiation to implementation, then see how advice enters and what the Empowered Community can do."
+    },
+    "estMinutes": 12,
     "steps": [
       {
-        "id": "pick-your-group",
+        "id": "start-the-pdp",
         "title": {
-          "en": "Find your group",
-          "id": "Temukan kelompokmu"
+          "id": "Memulai PDP",
+          "en": "Starting the PDP"
         },
         "body": {
-          "en": "Individual users join At-Large (ALAC). Businesses join the GNSO's commercial groups. Governments join the GAC. Technical people often start in the SSAC or via the IETF.",
-          "id": "Pengguna individu masuk lewat At-Large (ALAC). Bisnis lewat GNSO. Pemerintah lewat GAC. Komunitas teknis biasanya lewat SSAC atau IETF."
+          "id": "Kebijakan untuk domain generik bermula di GNSO. GNSO Council, yang punya 21 kursi, mengelola proses pengembangan kebijakan (PDP). Untuk memulai PDP yang masih dalam lingkup, Council butuh lebih dari sepertiga suara di setiap House, atau lebih dari dua pertiga suara di satu House.\n\nContoh kita adalah PDP New gTLD Subsequent Procedures (SubPro), tentang prosedur gTLD baru. Council memulainya pada Desember 2015.\n\nPerhatikan siapa yang bertindak di sini: anggota komunitas yang duduk di Council, bukan staf ICANN dan bukan Dewan.",
+          "en": "Policy for generic domains starts in the GNSO. The GNSO Council, which has 21 seats, manages the policy development process (PDP). To start a PDP that is within scope, the Council needs more than one-third of each House, or more than two-thirds of one House.\n\nOur example is the New gTLD Subsequent Procedures (SubPro) PDP, about procedures for new gTLDs. The Council initiated it in December 2015.\n\nNotice who acts here: community members who sit on the Council, not ICANN staff and not the Board."
         },
-        "links": [
+        "claims": [
           {
-            "type": "entity",
-            "id": "alac"
+            "text": {
+              "id": "GNSO Council punya 21 kursi: 3 dari Registries Stakeholder Group, 3 dari Registrars Stakeholder Group, 6 dari Commercial Stakeholder Group, 6 dari Non-Commercial Stakeholder Group, dan 3 dari Nominating Committee (satu tanpa hak suara). Untuk pemungutan suara, Council terbagi dua House: Contracted Parties House (7 suara) dan Non-Contracted Parties House (13 suara).",
+              "en": "The GNSO Council has 21 seats: 3 from the Registries Stakeholder Group, 3 from the Registrars Stakeholder Group, 6 from the Commercial Stakeholder Group, 6 from the Non-Commercial Stakeholder Group, and 3 from the Nominating Committee (one non-voting). For voting, it splits into two Houses: the Contracted Parties House (7 votes) and the Non-Contracted Parties House (13 votes)."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 11, Sec. 11.3(a)(v)",
+                "quote": "three representatives selected by the ICANN Nominating Committee, one of which shall be non-voting",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 11, Sec. 11.3(h)(i)",
+                "quote": "for a total of seven voting members",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 11, Sec. 11.3(h)(ii)",
+                "quote": "for a total of thirteen voting members",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
           },
+          {
+            "text": {
+              "id": "Ambang suara berbeda untuk tiap keputusan. Memulai PDP dalam lingkup butuh lebih dari sepertiga suara di setiap House atau lebih dari dua pertiga di satu House. \"GNSO Supermajority\" berarti dua pertiga di setiap House, atau tiga perempat di satu House ditambah mayoritas di House lainnya.",
+              "en": "Voting thresholds differ by decision. Starting a PDP within scope needs more than one-third of each House or more than two-thirds of one House. A \"GNSO Supermajority\" is two-thirds of each House, or three-fourths of one House plus a majority of the other."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 11, Sec. 11.3(i)(ii)",
+                "quote": "requires an affirmative vote of more than one-third (1/3) of each House or more than two-thirds (2/3) of one House.",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 11, Sec. 11.3(i)(xix)",
+                "quote": "two-thirds (2/3) of the Council members of each House, or (B) three-fourths (3/4) of the Council members of one House and a majority of the Council members of the other House.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "PDP New gTLD Subsequent Procedures (SubPro) dimulai Council pada Desember 2015. Pada 24 Maret 2021 Council mengirim rekomendasi akhirnya ke Dewan. Pada 16 Maret 2023 Dewan menyetujui Scorecard secara penuh: sebagian hasil diadopsi, sebagian ditetapkan \"pending\".",
+              "en": "The New gTLD Subsequent Procedures (SubPro) PDP was initiated by the Council in December 2015. On 24 March 2021 the Council sent its final recommendations to the Board. On 16 March 2023 the Board adopted the Scorecard in full: some outputs were adopted and others designated pending."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "gnso-subpro-page",
+                "locator": "Background text on the PDP page",
+                "quote": "Subsequently, the GNSO Council initiated the Policy Development Process (PDP) in December 2015 and adopted the working group charter in January 2016.",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "board-resolutions-2023-03-16",
+                "locator": "Whereas clause on the SubPro Final Report",
+                "quote": "transmitted its Recommendations Report regarding adoption of the final recommendations (Recommendations) from the New gTLD Subsequent Procedures Policy Development Process to the ICANN Board",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "board-resolutions-2023-03-16",
+                "locator": "Resolved 2023.03.16.04",
+                "quote": "the ICANN Board adopts the Scorecard in full. Section A of the Scorecard identifies the Outputs that the Board adopts. Section B identifies the Outputs that the Board designates as pending.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          }
+        ],
+        "links": [
           {
             "type": "entity",
             "id": "gnso"
-          }
-        ]
-      },
-      {
-        "id": "join-at-large",
-        "title": {
-          "en": "Join At-Large (for Indonesians)",
-          "id": "Gabung At-Large (untuk Indonesia)"
-        },
-        "body": {
-          "en": "For individuals in Indonesia the practical first step is APRALO, the Asia-Pacific regional At-Large organization. Join an existing At-Large Structure or start one.",
-          "id": "Untuk Indonesia, pintu masuknya APRALO. Cari At-Large Structure lokal, atau daftarkan dirimu."
-        },
-        "links": [
-          {
-            "type": "entity",
-            "id": "ralos"
           },
           {
             "type": "term",
-            "id": "appralo"
+            "id": "pdp"
+          },
+          {
+            "type": "term",
+            "id": "gtld"
+          },
+          {
+            "type": "source",
+            "id": "gnso-subpro-page"
           }
         ]
       },
       {
-        "id": "join-working-groups",
+        "id": "working-group",
         "title": {
-          "en": "Join working groups",
-          "id": "Ikut working group"
+          "id": "Kelompok kerja",
+          "en": "The working group"
         },
         "body": {
-          "en": "Working groups are where policy is actually written. GNSO working groups are open to anyone; you do not need to be a member of a constituency to join most of them.",
-          "id": "Working group adalah tempat kebijakan dikerjakan. Sebagian besar terbuka untuk umum tanpa syarat keanggotaan."
+          "id": "Di GNSO, pekerjaan sukarelawan berlangsung di Working Group. Pada umumnya siapa pun bisa bergabung ke GNSO Working Group. Kamu mendaftar lewat ICANN Join dengan ICANN Account, idealnya saat kelompok itu sedang dibentuk.\n\nIni berbeda dengan Council, yang kursinya dibagi per kelompok: 3 dari Registries Stakeholder Group, 3 dari Registrars Stakeholder Group, 6 dari Commercial Stakeholder Group, 6 dari Non-Commercial Stakeholder Group, dan 3 dari Nominating Committee (satu tanpa hak suara).\n\nJadi Working Group terbuka untuk sukarelawan, sedangkan suara di Council diberikan oleh pemegang kursi.",
+          "en": "Inside the GNSO, volunteer work happens in Working Groups. In general, anyone can join a GNSO Working Group. You sign up through ICANN Join on an ICANN Account, ideally when the group is being formed.\n\nThat is different from the Council, whose seats are allocated by group: 3 from the Registries Stakeholder Group, 3 from the Registrars Stakeholder Group, 6 from the Commercial Stakeholder Group, 6 from the Non-Commercial Stakeholder Group, and 3 from the Nominating Committee (one non-voting).\n\nSo a Working Group is open to volunteers, while a Council vote is cast by seat holders."
         },
+        "claims": [
+          {
+            "text": {
+              "id": "Siapa saja pada umumnya boleh bergabung dengan Working Group GNSO. Pendaftaran lewat ICANN Join di ICANN Account, dan waktu terbaik adalah saat grup baru dibentuk.",
+              "en": "In general, anyone can join a GNSO Working Group. Sign up through ICANN Join on an ICANN Account, ideally when the group is being formed."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "gnso-volunteer-wg-page",
+                "locator": "Volunteer for a Working Group",
+                "quote": "In general, anyone can join a GNSO Working Group or Drafting Team.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "GNSO Council punya 21 kursi: 3 dari Registries Stakeholder Group, 3 dari Registrars Stakeholder Group, 6 dari Commercial Stakeholder Group, 6 dari Non-Commercial Stakeholder Group, dan 3 dari Nominating Committee (satu tanpa hak suara). Untuk pemungutan suara, Council terbagi dua House: Contracted Parties House (7 suara) dan Non-Contracted Parties House (13 suara).",
+              "en": "The GNSO Council has 21 seats: 3 from the Registries Stakeholder Group, 3 from the Registrars Stakeholder Group, 6 from the Commercial Stakeholder Group, 6 from the Non-Commercial Stakeholder Group, and 3 from the Nominating Committee (one non-voting). For voting, it splits into two Houses: the Contracted Parties House (7 votes) and the Non-Contracted Parties House (13 votes)."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 11, Sec. 11.3(a)(v)",
+                "quote": "three representatives selected by the ICANN Nominating Committee, one of which shall be non-voting",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 11, Sec. 11.3(h)(i)",
+                "quote": "for a total of seven voting members",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 11, Sec. 11.3(h)(ii)",
+                "quote": "for a total of thirteen voting members",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          }
+        ],
         "links": [
           {
             "type": "entity",
             "id": "gnso"
+          },
+          {
+            "type": "entity",
+            "id": "gnso-stakeholder-groups"
+          },
+          {
+            "type": "term",
+            "id": "stakeholder-group"
+          },
+          {
+            "type": "source",
+            "id": "gnso-volunteer-wg-page"
           }
-        ]
+        ],
+        "check": {
+          "question": {
+            "id": "Siapa yang bisa bergabung ke GNSO Working Group?",
+            "en": "Who can join a GNSO Working Group?"
+          },
+          "options": [
+            {
+              "id": "Hanya pemegang kursi di GNSO Council.",
+              "en": "Only people who hold a seat on the GNSO Council."
+            },
+            {
+              "id": "Pada umumnya siapa pun, lewat ICANN Join.",
+              "en": "In general anyone, through ICANN Join."
+            },
+            {
+              "id": "Hanya registry dan registrar yang punya kontrak dengan ICANN.",
+              "en": "Only registries and registrars under contract with ICANN."
+            }
+          ],
+          "answerIndex": 1,
+          "explanation": {
+            "id": "Working Group terbuka bagi sukarelawan. Kursi Council memang dibatasi per kelompok, tetapi itu hal lain.",
+            "en": "Working Groups are open to volunteers. Council seats are limited by group, but that is a different thing."
+          }
+        }
       },
       {
-        "id": "attend-a-meeting",
+        "id": "council-and-public-comment",
         "title": {
-          "en": "Attend a public meeting",
-          "id": "Ikuti pertemuan publik"
+          "id": "Council dan komentar publik",
+          "en": "The Council and public comment"
         },
         "body": {
-          "en": "ICANN holds public meetings during the year. First-timers can apply for the Fellowship or NextGen programs. Newcomer sessions on day one explain how everything works.",
-          "id": "ICANN mengadakan pertemuan publik sepanjang tahun. Program Fellowship dan NextGen dirancang untuk peserta baru."
+          "id": "Komentar publik adalah bagian dari PDP. Ini mekanisme yang memungkinkan komunitas ICANN dan pihak lain memberi masukan, dan dipakai dalam proses pengembangan kebijakan serta dalam pekerjaan implementasi, tinjauan, dan operasi ICANN org.\n\nKetika komunitas mencapai konsensus, SO mengirim rekomendasinya ke Dewan. Untuk SubPro, Council mengirim rekomendasi akhirnya ke Dewan pada 24 Maret 2021.\n\nKarena PDP mencakup komentar publik, orang di luar GNSO, termasuk kamu, bisa memberi masukan sebelum rekomendasi sampai ke Dewan.",
+          "en": "Public Comment is part of the PDP. It is a mechanism that lets the ICANN community and others give input and feedback, and it is used in the policy development process and in implementation work, reviews and ICANN org operations.\n\nWhen the community reaches consensus, the SO sends its recommendations to the Board. For SubPro, the Council sent its final recommendations to the Board on 24 March 2021.\n\nBecause the PDP includes Public Comment, people outside the GNSO, including you, can give input before the recommendations reach the Board."
         },
-        "links": []
-      },
-      {
-        "id": "30-day-plan",
-        "title": {
-          "en": "Your 30-day plan",
-          "id": "Rencana 30 hari"
-        },
-        "body": {
-          "en": "Week 1: pick your group and subscribe to its mailing list. Week 2: read the group's last three drafts. Week 3: comment in a public comment period. Week 4: introduce yourself on a call.",
-          "id": "Minggu 1: pilih kelompokmu. Minggu 2: baca diskusi terakhir. Minggu 3: tulis komentar di konsultasi publik. Minggu 4: perkenalkan diri di rapat."
-        },
-        "links": []
-      }
-    ]
-  },
-  {
-    "id": "policy",
-    "title": {
-      "en": "Follow the policy process",
-      "id": "Ikuti alur kebijakan"
-    },
-    "audience": {
-      "en": "For people who want to influence policy",
-      "id": "Untuk yang mau memahami dan memengaruhi kebijakan"
-    },
-    "estMinutes": 60,
-    "steps": [
-      {
-        "id": "pdp-basics",
-        "title": {
-          "en": "How policy is made",
-          "id": "Cara kebijakan dibuat"
-        },
-        "body": {
-          "en": "A Supporting Organization runs a Policy Development Process: a working group drafts recommendations, the SO council approves them, and the Board considers adopting them.",
-          "id": "Working group menyusun rekomendasi, SO menyetujui, lalu Dewan mempertimbangkan."
-        },
+        "claims": [
+          {
+            "text": {
+              "id": "Komentar publik adalah mekanisme yang memberi komunitas ICANN dan pihak lain kesempatan menyampaikan masukan dan tanggapan. Mekanisme ini dipakai dalam proses pengembangan kebijakan, dan untuk memandu pekerjaan implementasi, tinjauan, serta kegiatan operasional ICANN org.",
+              "en": "Public Comment is a mechanism that lets the ICANN community and others give input and feedback. It is used in the policy development process and to guide implementation work, reviews and operations of ICANN org."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: Public Comment",
+                "quote": "A mechanism that gives the ICANN community and other stakeholders an opportunity to provide input and feedback.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/public-comment-en"
+              },
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: Public Comment",
+                "quote": "Public Comment is also used to guide implementation work, reviews, and operational activities of the ICANN organization.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/public-comment-en"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Proses pengembangan kebijakan (PDP) adalah prosedur yang ditetapkan dalam Bylaws, tempat Supporting Organization dan Advisory Committee menyusun dan menyempurnakan kebijakan. PDP mencakup komentar publik. Jika komunitas mencapai konsensus, Supporting Organization yang bersangkutan mengirim rekomendasinya ke Dewan untuk disetujui.",
+              "en": "A policy development process is the procedure, specified in the Bylaws, through which Supporting Organizations and Advisory Committees develop and refine policy. It includes Public Comment, and when the community reaches consensus the Supporting Organization sends its recommendations to the Board for approval."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: policy development process (PDP)",
+                "quote": "The process, specified in the ICANN Bylaws, through which ICANN’s Supporting Organizations and Advisory Committees develop and refine policies within ICANN’s mission and scope.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/policy-development-process-en"
+              },
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: policy development process (PDP)",
+                "quote": "When the community achieves consensus, the relevant Supporting Organization submits the policy recommendations to the ICANN Board for approval.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/policy-development-process-en"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "PDP New gTLD Subsequent Procedures (SubPro) dimulai Council pada Desember 2015. Pada 24 Maret 2021 Council mengirim rekomendasi akhirnya ke Dewan. Pada 16 Maret 2023 Dewan menyetujui Scorecard secara penuh: sebagian hasil diadopsi, sebagian ditetapkan \"pending\".",
+              "en": "The New gTLD Subsequent Procedures (SubPro) PDP was initiated by the Council in December 2015. On 24 March 2021 the Council sent its final recommendations to the Board. On 16 March 2023 the Board adopted the Scorecard in full: some outputs were adopted and others designated pending."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "gnso-subpro-page",
+                "locator": "Background text on the PDP page",
+                "quote": "Subsequently, the GNSO Council initiated the Policy Development Process (PDP) in December 2015 and adopted the working group charter in January 2016.",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "board-resolutions-2023-03-16",
+                "locator": "Whereas clause on the SubPro Final Report",
+                "quote": "transmitted its Recommendations Report regarding adoption of the final recommendations (Recommendations) from the New gTLD Subsequent Procedures Policy Development Process to the ICANN Board",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "board-resolutions-2023-03-16",
+                "locator": "Resolved 2023.03.16.04",
+                "quote": "the ICANN Board adopts the Scorecard in full. Section A of the Scorecard identifies the Outputs that the Board adopts. Section B identifies the Outputs that the Board designates as pending.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          }
+        ],
         "links": [
+          {
+            "type": "term",
+            "id": "public-comment"
+          },
           {
             "type": "term",
             "id": "pdp"
@@ -285,83 +935,478 @@
         ]
       },
       {
-        "id": "gac-role",
+        "id": "board-and-org",
         "title": {
-          "en": "The government voice",
-          "id": "Suara pemerintah"
+          "id": "Dewan mengadopsi, ICANN org menjalankan",
+          "en": "The Board adopts, ICANN org implements"
         },
         "body": {
-          "en": "The GAC issues formal advice. The Board usually follows it; when it does not on certain topics, the Bylaws set a special procedure.",
-          "id": "Nasihat GAC tidak mengikat, tetapi ada prosedur khusus kalau Dewan tidak mengikutinya."
+          "id": "Dewan kemudian mempertimbangkan rekomendasi itu. Pada 16 Maret 2023 Dewan mengadopsi Scorecard SubPro secara penuh: sebagian output diadopsi dan sebagian lain ditetapkan sebagai pending. Keputusannya berbentuk resolusi Dewan, keputusan resmi yang diambil dalam rapat dan dipublikasikan di situs ICANN.\n\nSetelah diadopsi, ICANN org mengambil alih. Staf menjalankan kebijakan yang disusun komunitas. Yang menyusun kebijakan adalah komunitas, bukan staf.\n\nTiga peran, tiga pihak: GNSO merekomendasikan, Dewan memutuskan, ICANN org menjalankan.",
+          "en": "The Board then considers the recommendations. On 16 March 2023 it adopted the SubPro Scorecard in full: some outputs were adopted and others designated pending. The decision takes the form of a Board resolution, a formal decision passed at a meeting and published on the ICANN website.\n\nAfter adoption, ICANN org takes over. Staff implement the policies the community develops. The community, not staff, does the policy development.\n\nThree roles, three parties: the GNSO recommends, the Board decides, ICANN org implements."
         },
+        "claims": [
+          {
+            "text": {
+              "id": "PDP New gTLD Subsequent Procedures (SubPro) dimulai Council pada Desember 2015. Pada 24 Maret 2021 Council mengirim rekomendasi akhirnya ke Dewan. Pada 16 Maret 2023 Dewan menyetujui Scorecard secara penuh: sebagian hasil diadopsi, sebagian ditetapkan \"pending\".",
+              "en": "The New gTLD Subsequent Procedures (SubPro) PDP was initiated by the Council in December 2015. On 24 March 2021 the Council sent its final recommendations to the Board. On 16 March 2023 the Board adopted the Scorecard in full: some outputs were adopted and others designated pending."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "gnso-subpro-page",
+                "locator": "Background text on the PDP page",
+                "quote": "Subsequently, the GNSO Council initiated the Policy Development Process (PDP) in December 2015 and adopted the working group charter in January 2016.",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "board-resolutions-2023-03-16",
+                "locator": "Whereas clause on the SubPro Final Report",
+                "quote": "transmitted its Recommendations Report regarding adoption of the final recommendations (Recommendations) from the New gTLD Subsequent Procedures Policy Development Process to the ICANN Board",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "board-resolutions-2023-03-16",
+                "locator": "Resolved 2023.03.16.04",
+                "quote": "the ICANN Board adopts the Scorecard in full. Section A of the Scorecard identifies the Outputs that the Board adopts. Section B identifies the Outputs that the Board designates as pending.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Resolusi Dewan adalah keputusan formal yang disahkan Dewan ICANN dalam rapat. Bylaws mewajibkan resolusi diumumkan di situs ICANN paling lambat akhir hari kerja kedua setelah rapat, kecuali untuk hal-hal seperti urusan kepegawaian atau hukum.",
+              "en": "A Board resolution is a formal decision passed by the ICANN Board at a meeting. The Bylaws require resolutions to be published on the ICANN website by the end of the second business day after the meeting, except for matters such as personnel or legal issues."
+            },
+            "kind": "interpretation",
+            "citations": [
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 3, Sec. 3.5",
+                "quote": "any resolutions passed by the Board at that meeting shall be made publicly available on the Website",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 3, Sec. 3.5",
+                "quote": "actions relating to personnel or employment matters, legal matters",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Staf menerapkan kebijakan yang dikembangkan komunitas, sedangkan pengembangan kebijakannya sendiri dilakukan komunitas, bukan staf.",
+              "en": "Staff implement policies that the community develops. The community, not staff, does the policy development."
+            },
+            "kind": "interpretation",
+            "citations": [
+              {
+                "sourceId": "icann-who-we-are",
+                "locator": "ICANN is made up of three parts: ICANN Organization",
+                "quote": "The ICANN organization provides staff and resources to support the ICANN community and Board, and implements policies developed by the community.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          }
+        ],
         "links": [
+          {
+            "type": "entity",
+            "id": "icann-board"
+          },
+          {
+            "type": "entity",
+            "id": "icann-org"
+          },
+          {
+            "type": "term",
+            "id": "board-resolution"
+          },
+          {
+            "type": "source",
+            "id": "board-resolutions-2023-03-16"
+          }
+        ],
+        "check": {
+          "question": {
+            "id": "Apa yang dilakukan resolusi Dewan 16 Maret 2023 soal SubPro?",
+            "en": "What did the Board's resolution of 16 March 2023 on SubPro do?"
+          },
+          "options": [
+            {
+              "id": "Mengadopsi semua output sekaligus, tanpa ada yang pending.",
+              "en": "Adopted every output at once, with nothing pending."
+            },
+            {
+              "id": "Mengadopsi Scorecard secara penuh: sebagian output diadopsi, sebagian ditetapkan pending.",
+              "en": "Adopted the Scorecard in full: some outputs adopted, others designated pending."
+            },
+            {
+              "id": "Menolak rekomendasi Council.",
+              "en": "Rejected the Council's recommendations."
+            }
+          ],
+          "answerIndex": 1,
+          "explanation": {
+            "id": "Mengadopsi Scorecard secara penuh berarti seluruh Scorecard diputuskan, dan isinya memilah output yang diadopsi (Bagian A) dari yang pending (Bagian B).",
+            "en": "Adopting the Scorecard in full means the whole Scorecard was decided, and it sorts the outputs adopted (Section A) from those pending (Section B)."
+          }
+        }
+      },
+      {
+        "id": "advice-enters",
+        "title": {
+          "id": "Bagaimana nasihat masuk",
+          "en": "How advice enters"
+        },
+        "body": {
+          "id": "Nasihat masuk berdampingan dengan PDP. ALAC, misalnya, menyusun pernyataan atas laporan awal PDP tentang DNS abuse. Pemungutan suara ALAC selesai pada 25 September 2026 dan pernyataan itu dikirim pada 28 September 2026.\n\nSSAC menerbitkan dokumen SAC bernomor yang berisi rekomendasinya. GAC menyampaikan nasihat langsung ke Dewan, dan kalau nasihat itu disetujui GAC secara konsensus, Dewan hanya bisa menolaknya lewat suara minimal 60% anggota Dewan. Setelah itu GAC dan Dewan mencari solusi yang bisa diterima kedua pihak.\n\nSemua ini masukan. Kebijakan tetap lahir dari SO.",
+          "en": "Advice enters alongside the PDP. The ALAC, for example, wrote a statement on the initial report of the PDP on DNS abuse. The ALAC vote ended on 25 September 2026 and the statement was submitted on 28 September 2026.\n\nThe SSAC publishes numbered SAC documents with its recommendations. The GAC advises the Board directly, and if the GAC adopts advice by full consensus, the Board can reject it only by a vote of at least 60% of the Board. After that the GAC and the Board try to find a mutually acceptable solution.\n\nAll of this is input. Policy still comes from the SOs."
+        },
+        "claims": [
+          {
+            "text": {
+              "id": "ALAC Statement on DNS Abuse Mitigation PDP1 Initial Report: tanggapan ALAC atas laporan awal proses pengembangan kebijakan tentang DNS abuse. ALAC memberi suara pada 25 September 2026 dan pernyataan itu diserahkan pada 28 September 2026.",
+              "en": "ALAC Statement on DNS Abuse Mitigation PDP1 Initial Report: the ALAC's response to the initial report of the policy development process on DNS abuse. The ALAC vote ended on 25 September 2026 and the statement was submitted on 28 September 2026."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "atlarge-statement-dns-abuse-pdp1",
+                "locator": "ALAC Statement page, status phases",
+                "quote": "ALAC Statement on DNS Abuse Mitigation PDP1 Initial Report",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "atlarge-home",
+                "locator": "section 'Latest Comments & Advice'",
+                "quote": "ALAC Statement on DNS Abuse Mitigation PDP1 Initial Report Status: Submitted 28 Sep 2026",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Melapor berkala kepada Dewan dan membuat rekomendasi kebijakan untuk komunitas dan Dewan. Hasilnya terbit sebagai dokumen bernomor SAC.",
+              "en": "Reports periodically to the Board and makes policy recommendations to the community and the Board. Its output is published as numbered SAC documents."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 12, Sec. 12.2(b)(i)(D)-(E)",
+                "quote": "To make policy recommendations to the ICANN community and Board.",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "ssac-publications",
+                "locator": "SSAC Publications list",
+                "quote": "SSAC Comments on the Initial Report of the GNSO DNS Abuse Mitigation Policy Development Process 1",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Nasihat yang disepakati konsensus penuh GAC (GAC Consensus Advice) hanya bisa ditolak Dewan dengan suara minimal 60%. Setelah itu GAC dan Dewan berusaha mencari solusi yang bisa diterima kedua pihak. Nasihat tanpa konsensus tetap harus dipertimbangkan, dan jika Dewan tidak mengikutinya, Dewan menyampaikan alasannya.",
+              "en": "Advice approved by full GAC consensus (GAC Consensus Advice) can only be rejected by a vote of at least 60% of the Board, after which the GAC and the Board try to find a mutually acceptable solution. Other GAC advice must still be duly taken into account, and if the Board does not follow it, the Board states why."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 12, Sec. 12.2(a)(x)",
+                "quote": "may only be rejected by a vote of no less than 60% of the Board, and the Governmental Advisory Committee and the Board will then try, in good faith",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "type": "entity",
+            "id": "alac"
+          },
+          {
+            "type": "entity",
+            "id": "ssac"
+          },
           {
             "type": "entity",
             "id": "gac"
           },
           {
             "type": "term",
-            "id": "gac-advice"
+            "id": "advice"
+          },
+          {
+            "type": "source",
+            "id": "atlarge-statement-dns-abuse-pdp1"
           }
-        ]
+        ],
+        "check": {
+          "question": {
+            "id": "GAC menyetujui sebuah nasihat secara konsensus. Apa yang bisa dilakukan Dewan?",
+            "en": "The GAC adopts a piece of advice by consensus. What can the Board do?"
+          },
+          "options": [
+            {
+              "id": "Tidak ada: Dewan wajib menjalankannya.",
+              "en": "Nothing: the Board must carry it out."
+            },
+            {
+              "id": "Menolaknya hanya lewat suara minimal 60% anggota Dewan, lalu GAC dan Dewan mencari solusi bersama.",
+              "en": "Reject it only by a vote of at least 60% of the Board, after which the GAC and Board seek a mutually acceptable solution."
+            },
+            {
+              "id": "Menolaknya dengan suara mayoritas biasa tanpa memberi tahu siapa pun.",
+              "en": "Reject it by simple majority without telling anyone."
+            }
+          ],
+          "answerIndex": 1,
+          "explanation": {
+            "id": "Nasihat konsensus GAC punya bobot prosedural, tetapi tetap nasihat. Ambang penolakannya tinggi, namun Dewan tidak wajib menjalankannya.",
+            "en": "GAC consensus advice carries procedural weight but is still advice. The threshold to reject it is high, but the Board is not bound to carry it out."
+          }
+        }
       },
       {
-        "id": "public-comments",
+        "id": "empowered-community-check",
         "title": {
-          "en": "Public comments",
-          "id": "Komentar publik"
+          "id": "Empowered Community sebagai pengawas",
+          "en": "The Empowered Community as a check"
         },
         "body": {
-          "en": "Nearly every policy decision has a public comment period. Anyone can submit. Comments that are specific and on time carry the most weight.",
-          "id": "Setiap draf kebijakan dibuka untuk komentar publik. Semua orang boleh memberi masukan."
+          "id": "Tahap terakhir adalah pengawasan atas Dewan. Empowered Community (EC) adalah asosiasi nirlaba dari lima Decisional Participant: ASO, ccNSO, GNSO, ALAC, dan GAC. EC bertindak lewat EC Administration, yang terdiri dari ketua mereka atau orang yang mereka tunjuk.\n\nWewenang EC menyangkut Dewan dan rencana ICANN. EC mengangkat dan memberhentikan Direktur secara individu, selain Presiden, bisa memberhentikan seluruh Dewan, dan bisa menolak Anggaran ICANN, Anggaran IANA, Operating Plan, Strategic Plan, dan perubahan Bylaws standar.\n\nContoh nyata: pada Juli 2026 Dewan menyetujui Fundamental Bylaws Amendments, dan EC Administration menyetujuinya lewat surat bertanggal 3 Juli 2026.",
+          "en": "The last stage is a check on the Board. The Empowered Community (EC) is a nonprofit association of five Decisional Participants: the ASO, ccNSO, GNSO, ALAC and GAC. It acts through the EC Administration, made up of their chairs or designees.\n\nThe EC's powers are about the Board and ICANN's plans. It appoints and removes individual Directors other than the President, can recall the entire Board, and can reject ICANN Budgets, IANA Budgets, Operating Plans, Strategic Plans and Standard Bylaw Amendments.\n\nA real example: in July 2026 the Board approved Fundamental Bylaws Amendments, and the EC Administration approved them by a letter dated 3 July 2026."
         },
+        "claims": [
+          {
+            "text": {
+              "id": "Anggotanya adalah lima Decisional Participant: ASO, ccNSO, GNSO, ALAC, dan GAC. Mereka bertindak lewat EC Administration, yaitu ketua masing-masing atau orang yang mereka tunjuk. EC tidak punya direktur, officer, atau karyawan.",
+              "en": "Its members are five Decisional Participants: the ASO, ccNSO, GNSO, ALAC and GAC. They act through the EC Administration, made up of their chairs or people they designate. The EC has no directors, officers or employees."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 6, Sec. 6.1(a)",
+                "quote": "the ASO, the ccNSO (as defined in Section 10.1), the GNSO (as defined in Section 11.1), the ALAC (as defined in Section 12.2(d)(i)) and the GAC",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 6, Sec. 6.3(a)",
+                "quote": "The Decisional Participants shall act through their respective chairs or such other persons as may be designated by the Decisional Participants",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 6, Sec. 6.1(d)",
+                "quote": "nor have any directors, officers or employees",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "EC menunjuk dan memberhentikan Direktur secara individual (selain Presiden), dan dapat me-recall seluruh Dewan.",
+              "en": "The EC appoints and removes individual Directors (other than the President) and can recall the entire Board."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 6, Sec. 6.2(a)(i)-(ii)",
+                "quote": "Appoint and remove individual Directors (other than the President); (ii) Recall the entire Board;",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "EC dapat menolak ICANN Budget, IANA Budget, Operating Plan, Strategic Plan, perubahan Bylaws biasa (Standard Bylaw Amendments), dan PTI Governance Actions.",
+              "en": "The EC can reject ICANN Budgets, IANA Budgets, Operating Plans, Strategic Plans, Standard Bylaw Amendments and PTI Governance Actions."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 6, Sec. 6.2(a)(iii)",
+                "quote": "Reject ICANN Budgets, IANA Budgets, Operating Plans (as defined in Section 22.5(a)(i)) and Strategic Plans",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 6, Sec. 6.2(a)(iv)",
+                "quote": "Reject Standard Bylaw Amendments",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 6, Sec. 6.2(a)(vi)",
+                "quote": "Reject PTI Governance Actions",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Pada Juli 2026 Dewan menyetujui Fundamental Bylaws Amendments terkait Customer Standing Committee dan IANA Naming Function Review. EC Administration menyetujuinya lewat surat bertanggal 3 Juli 2026. GAC mengirim surat abstain kepada EC Administration sehari sebelumnya, 2 Juli 2026. Bylaws yang berlaku saat ini bertanggal \"As amended 3 July 2026\".",
+              "en": "In July 2026 the Board approved Fundamental Bylaws Amendments on the Customer Standing Committee and the IANA Naming Function Review. The EC Administration approved them by a letter dated 3 July 2026. The GAC sent the EC Administration a letter abstaining the day before, on 2 July 2026. The current Bylaws are dated \"As amended 3 July 2026\"."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-ec-correspondence",
+                "locator": "2026 list, 3 July 2026",
+                "quote": "Letter from ECA to ICANN Secretary Approving the Fundamental Bylaws Amendments re Customer Standing Committee and IANA Naming Function Review",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-ec-correspondence",
+                "locator": "2026 list, 2 July 2026",
+                "quote": "Letter from GAC to ECA Abstaining from the Fundamental Bylaws Amendments re Customer Standing Committee and IANA Naming Function Review",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-ec-correspondence",
+                "locator": "2026 list, related correspondence",
+                "quote": "Notice of Board Approval of Fundamental Bylaws Amendments re Customer Standing Committee and IANA Naming Function Review",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Cover page, Date",
+                "quote": "As amended 3 July 2026",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          }
+        ],
         "links": [
           {
+            "type": "entity",
+            "id": "empowered-community"
+          },
+          {
             "type": "term",
-            "id": "public-comment"
+            "id": "empowered-community"
+          },
+          {
+            "type": "entity",
+            "id": "icann-board"
+          },
+          {
+            "type": "term",
+            "id": "bylaws"
           }
         ]
-      },
-      {
-        "id": "follow-one-issue",
-        "title": {
-          "en": "Follow one real issue",
-          "id": "Ikuti satu isu nyata"
-        },
-        "body": {
-          "en": "Pick one live public comment proceeding on icann.org and read the comments. This is the fastest way to see how the process works.",
-          "id": "Pilih satu isu yang sedang buka komentar publik di icann.org dan baca masukannya."
-        },
-        "links": []
       }
     ]
   },
   {
     "id": "technical",
     "title": {
-      "en": "The technical layer",
-      "id": "Lapisan teknis"
+      "id": "Sisi teknis: DNS, root, dan angka",
+      "en": "The technical side: DNS, the root and numbers"
     },
     "audience": {
-      "en": "For engineers and operators",
-      "id": "Untuk komunitas teknis"
+      "id": "Kamu ingin tahu bagaimana nama, alamat, dan parameter protokol dikelola dan siapa yang melakukan apa.",
+      "en": "You want to know how names, addresses and protocol parameters are managed and who does what."
     },
-    "estMinutes": 60,
+    "summary": {
+      "id": "Dari dasar DNS sampai zona root, operator root server, fungsi IANA, alamat IP dan RIR, parameter protokol IETF, dan peran SSAC.",
+      "en": "From DNS basics to the root zone, root server operators, IANA functions, IP addresses and RIRs, IETF protocol parameters and the SSAC."
+    },
+    "estMinutes": 14,
     "steps": [
       {
-        "id": "names-and-numbers",
+        "id": "dns-basics",
         "title": {
-          "en": "Names and numbers",
-          "id": "Nama dan nomor"
+          "id": "Dasar DNS",
+          "en": "DNS basics"
         },
         "body": {
-          "en": "The internet has two coordinated registries: names (DNS) and numbers (IP addresses, ASNs). ICANN coordinates the first through the IANA functions; the RIR communities handle the second.",
-          "id": "ICANN mengoordinasikan penamaan lewat fungsi IANA; alamat IP dikelola komunitas RIR secara mandiri."
+          "id": "Domain Name System (DNS) memungkinkan orang memakai nama yang akrab, bukan alamat IP berupa angka. Kamu mengetik icann.org, bukan 192.0.43.7.\n\nTop-level domain (TLD) adalah bagian terakhir dari sebuah nama, di puncak hierarki penamaan DNS. Di icann.org, TLD-nya adalah org. TLD ada dua kelas: generik (gTLD) dan kode negara (ccTLD).\n\nSetiap TLD punya registry, yaitu basis data induk yang otoritatif untuk nama-nama yang terdaftar di TLD itu. DNS membuka registry untuk menemukan name server bagi domain apa pun di TLD tersebut.",
+          "en": "The Domain Name System (DNS) lets people use a familiar name instead of a numeric IP address. You type icann.org instead of 192.0.43.7.\n\nThe top-level domain (TLD) is the last part of a name, at the top of the DNS naming hierarchy. In icann.org, the TLD is org. TLDs fall into two classes, generic (gTLD) and country code (ccTLD).\n\nEach TLD has a registry, the authoritative master database of the names registered in it. The DNS consults the registry to find the name servers for any domain in that TLD."
         },
+        "claims": [
+          {
+            "text": {
+              "id": "DNS memungkinkan orang memakai nama domain yang mudah diingat sebagai ganti alamat IP numerik sebuah komputer. Misalnya, kamu mengetik icann.org, bukan 192.0.43.7.",
+              "en": "The DNS lets people use a familiar domain name instead of the numeric IP address of a computer. For example, you type icann.org instead of 192.0.43.7."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: Domain Name System (DNS)",
+                "quote": "The DNS makes using the Internet easier by allowing a familiar string of letters - the domain name - to be used instead of the arcane IP address.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/domain-name-system-en"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "TLD adalah bagian paling akhir dari nama domain, di puncak hierarki penamaan Domain Name System. Pada icann.org, TLD-nya adalah org. TLD terbagi dua kelas: generik (gTLD) dan kode negara (ccTLD).",
+              "en": "A TLD is the last part of a domain name, at the top of the Domain Name System's naming hierarchy. In icann.org, the TLD is org. TLDs fall into two classes: generic (gTLD) and country code (ccTLD)."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: top-level domain (TLD)",
+                "quote": "A domain at the top of the naming hierarchy of the Domain Name System. In a domain name, the TLD appears after the second-level domain.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/top-level-domain-en"
+              },
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: top-level domain (TLD)",
+                "quote": "in the domain name icann.org, the characters org identify the TLD.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/top-level-domain-en"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Registry adalah basis data induk otoritatif dari nama domain yang terdaftar di sebuah domain tingkat atas. Setiap TLD punya satu registry, dan DNS merujuknya untuk menemukan name server bagi setiap domain di TLD itu.",
+              "en": "A registry is the authoritative master database of the domain names registered in a top-level domain. Each TLD has one, and the DNS consults it to find the name servers for any domain in that TLD."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: registry",
+                "quote": "An authoritative master database of the domain names registered in a top-level domain (TLD).",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/registry-en"
+              },
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: registry",
+                "quote": "The Domain Name System consults the TLD registry to obtain the authoritative name servers for the domain names registered in that TLD.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/registry-en"
+              }
+            ]
+          }
+        ],
         "links": [
           {
             "type": "term",
             "id": "dns"
+          },
+          {
+            "type": "term",
+            "id": "tld"
+          },
+          {
+            "type": "term",
+            "id": "registry"
           },
           {
             "type": "term",
@@ -370,20 +1415,86 @@
         ]
       },
       {
-        "id": "root",
+        "id": "root-zone-and-dnssec",
         "title": {
-          "en": "The root of the DNS",
-          "id": "Akar DNS"
+          "id": "Zona root dan DNSSEC",
+          "en": "The root zone and DNSSEC"
         },
         "body": {
-          "en": "The root zone lists all top-level domains. PTI (the IANA functions) manages it under ICANN; root server operators distribute it worldwide.",
-          "id": "Zona root berisi daftar semua TLD, dikelola lewat fungsi IANA dan disebarkan operator root server."
+          "id": "Di puncak hierarki DNS ada zona root. Zona ini memuat semua informasi yang diperlukan untuk menemukan top-level domain, dan IANA mencatat delegasi TLD, seperti .edu atau .in, di dalamnya.\n\nRoot server adalah name server otoritatif yang menjawab pertanyaan tentang isi zona root. Root server diharapkan memegang edisi zona root yang terbaru.\n\nDNSSEC menambahkan rantai tanda tangan digital pada proses pencarian. Dengan itu resolver bisa memeriksa bahwa jawaban datang dari server DNS yang terotentikasi, sehingga penyerang tidak bisa mengarahkan pengguna ke situs palsu.",
+          "en": "At the top of the DNS hierarchy sits the root zone. It holds all the information needed to find the top-level domains, and IANA records the delegations of TLDs, such as .edu or .in, in it.\n\nA root server is an authoritative name server that answers queries about the contents of the root zone. Root servers are expected to hold the current edition of the root zone.\n\nDNSSEC adds a chain of digital signatures to the lookup process. It lets resolvers check that an answer came from an authenticated DNS server, which prevents attackers from sending users to deceptive websites."
         },
-        "links": [
+        "claims": [
           {
-            "type": "entity",
-            "id": "pti"
+            "text": {
+              "id": "Root zone adalah puncak hierarki DNS dan memuat semua informasi yang diperlukan untuk menemukan domain tingkat atas. IANA mencatat delegasi TLD, seperti .edu atau .in, di dalamnya.",
+              "en": "The root zone is the top of the DNS hierarchy and holds all the information needed to find top-level domains. IANA records the delegations of TLDs, such as .edu or .in, in it."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: root zone",
+                "quote": "The top of the Domain Name System hierarchy. The root zone contains all the information needed to find top-level domains.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/root-zone-en"
+              },
+              {
+                "sourceId": "iana-root-zone-management",
+                "locator": "section 'About Root Zone Management'",
+                "quote": "The Domain Name System (DNS) root zone is the highest-level of the naming hierarchy, principally composed of delegations of top-level domains (such as .edu or .in).",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
           },
+          {
+            "text": {
+              "id": "Root server adalah name server otoritatif yang menjawab pertanyaan tentang isi root zone. Semua root server diharapkan memegang edisi root zone yang terbaru.",
+              "en": "A root server is an authoritative name server that answers queries about the contents of the root zone. Root servers are expected to hold the current edition of the root zone."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: root server",
+                "quote": "An authoritative name server that responds to queries about the contents of the root zone.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/root-server-en"
+              },
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: root zone",
+                "quote": "All root servers are expected to have (and respond to queries about) the current edition of the root zone.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/root-zone-en"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "DNSSEC adalah teknologi yang membantu mengamankan pencarian nama domain dengan menambahkan rantai tanda tangan digital ke proses pencarian. Dengan DNSSEC, resolver dapat memeriksa bahwa jawaban berasal dari server DNS yang terautentikasi, sehingga penyerang tidak bisa mengarahkan pengguna ke situs palsu.",
+              "en": "DNSSEC is a technology that helps secure domain name lookups by adding a chain of digital signatures to the lookup process. It lets resolvers check that an answer came from an authenticated DNS server, which prevents attackers from sending users to deceptive websites."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: Domain Name System Security Extensions (DNSSEC)",
+                "quote": "A technology that helps secure domain name lookups by incorporating a chain of digital signatures into the lookup process.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/domain-name-system-security-extensions-en"
+              },
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: Domain Name System Security Extensions (DNSSEC)",
+                "quote": "By accepting only authenticated query results, resolvers can prevent attackers from hijacking the lookup process and directing Internet users to deceptive websites.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/domain-name-system-security-extensions-en"
+              }
+            ]
+          }
+        ],
+        "links": [
           {
             "type": "term",
             "id": "root-zone"
@@ -391,50 +1502,1167 @@
           {
             "type": "term",
             "id": "root-server"
+          },
+          {
+            "type": "term",
+            "id": "dnssec"
+          },
+          {
+            "type": "source",
+            "id": "iana-root-zone-management"
           }
         ]
       },
       {
-        "id": "standards",
+        "id": "root-operators-vs-rssac",
         "title": {
-          "en": "Standards",
-          "id": "Standar"
+          "id": "Operator root server dan RSSAC",
+          "en": "Root server operators versus RSSAC"
         },
         "body": {
-          "en": "The IETF develops protocol standards. IANA maintains the registries. ICANN hosts the IANA functions affiliate, but does not set technical standards.",
-          "id": "IETF menetapkan standar; IANA menjaga registry-nya. Keduanya badan yang berbeda."
+          "id": "Dua kelompok ini namanya mirip tetapi tugasnya beda. Root server operator menjalankan servernya. Ada 12 organisasi independen yang mengoperasikan 13 identitas root server, berlabel A sampai M. Verisign menjalankan dua identitas.\n\nRoot Server System Advisory Committee (RSSAC) adalah Advisory Committee ICANN. RSSAC memberi nasihat kepada komunitas dan Dewan soal operasi, administrasi, keamanan, dan integritas Root Server System. Anggotanya perwakilan organisasi operator root server, ditambah liaison dari organisasi mitra.\n\nJadi operator yang menjalankan sistemnya, dan RSSAC adalah tempat mereka bersama mitra memberi nasihat ke ICANN.",
+          "en": "Two groups sound alike and do different jobs. The root server operators run the servers. There are 12 independent organizations running the 13 root server identities, labeled A through M. Verisign runs two identities.\n\nThe Root Server System Advisory Committee (RSSAC) is an ICANN Advisory Committee. It advises the community and the Board on the operation, administration, security, and integrity of the Root Server System. Its members are representatives from the root server operator organizations plus liaisons from partner organizations.\n\nSo the operators run the system, and the RSSAC is where they and their partners give advice to ICANN."
         },
+        "claims": [
+          {
+            "text": {
+              "id": "Dua belas organisasi independen yang mengoperasikan 13 identitas root name server, berlabel A sampai M.",
+              "en": "Twelve independent organizations that operate the 13 root name server identities, labeled A through M."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "root-servers-org",
+                "locator": "Root Server System overview",
+                "quote": "The 13 root name servers are operated by 12 independent organisations.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Ada 12 operator: Verisign, University of Southern California Information Sciences Institute, Cogent Communications, University of Maryland, NASA (Ames Research Center), Internet Systems Consortium, US Department of Defense (NIC), US Army (Research Lab), Netnod, RIPE NCC, ICANN, dan WIDE Project. Verisign menjalankan dua identitas.",
+              "en": "There are 12 operators: Verisign, the University of Southern California Information Sciences Institute, Cogent Communications, the University of Maryland, NASA (Ames Research Center), Internet Systems Consortium, the US Department of Defense (NIC), the US Army (Research Lab), Netnod, RIPE NCC, ICANN and the WIDE Project. Verisign runs two identities."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "iana-root-servers",
+                "locator": "List of Root Servers, rows a to d",
+                "quote": "a.root-servers.net 198.41.0.4, 2001:503:ba3e::2:30 Verisign, Inc. b.root-servers.net 170.247.170.2, 2801:1b8:10::b University of Southern California, Information Sciences Institute c.root-servers.net 192.33.4.12, 2001:500:2::c Cogent Communications d.root-servers.net 199.7.91.13, 2001:500:2d::d University of Maryland",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "iana-root-servers",
+                "locator": "List of Root Servers, rows e to h",
+                "quote": "e.root-servers.net 192.203.230.10, 2001:500:a8::e NASA (Ames Research Center) f.root-servers.net 192.5.5.241, 2001:500:2f::f Internet Systems Consortium, Inc. g.root-servers.net 192.112.36.4, 2001:500:12::d0d US Department of Defense (NIC) h.root-servers.net 198.97.190.53, 2001:500:1::53 US Army (Research Lab)",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "iana-root-servers",
+                "locator": "List of Root Servers, rows i to m",
+                "quote": "i.root-servers.net 192.36.148.17, 2001:7fe::53 Netnod j.root-servers.net 192.58.128.30, 2001:503:c27::2:30 Verisign, Inc. k.root-servers.net 193.0.14.129, 2001:7fd::1 RIPE NCC l.root-servers.net 199.7.83.42, 2001:500:9f::42 ICANN m.root-servers.net 202.12.27.33, 2001:dc3::35 WIDE Project",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "RSSAC memberi nasihat kepada komunitas dan Dewan ICANN tentang operasi, administrasi, keamanan, dan integritas Root Server System.",
+              "en": "The RSSAC advises the ICANN community and Board on the operation, administration, security, and integrity of the Root Server System."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "rssac-page",
+                "locator": "section 'About the RSSAC'",
+                "quote": "The RSSAC advises the ICANN community and the Board on matters relating to the operation, administration, security, and integrity of the Root Server System.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "RSSAC terdiri dari perwakilan organisasi operator root server dan liaison dari organisasi mitra yang terlibat dalam pengelolaan teknis dan operasional root zone. Masa jabatan anggota tiga tahun, dan Dewan menerima rekomendasi RSSAC untuk Chair. Jumlah anggota tidak disebut di halaman RSSAC.",
+              "en": "The RSSAC consists of representatives from the root server operator organizations and liaisons from partner organizations involved in the technical and operational management of the root zone. Member terms are three years, and the RSSAC recommends its chair to the Board. The RSSAC page does not state a member count."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "rssac-page",
+                "locator": "section 'About the RSSAC'",
+                "quote": "consists of representatives from the root server operator organizations and liaisons from the partner organizations involved in the technical and operational management of the root zone.",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 12, Sec. 12.2(c)(ii)",
+                "quote": "RSSAC membership appointment shall be for a three-year term",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 12, Sec. 12.2(c)(ii)(B)",
+                "quote": "The RSSAC shall recommend the appointment of the chair to the Board following a nomination process that it devises and documents.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "type": "entity",
+            "id": "root-server-operators"
+          },
+          {
+            "type": "entity",
+            "id": "rssac"
+          },
+          {
+            "type": "term",
+            "id": "root-server"
+          },
+          {
+            "type": "source",
+            "id": "root-servers-org"
+          }
+        ],
+        "check": {
+          "question": {
+            "id": "Siapa yang mengoperasikan root server?",
+            "en": "Who operates the root servers?"
+          },
+          "options": [
+            {
+              "id": "RSSAC.",
+              "en": "The RSSAC."
+            },
+            {
+              "id": "12 organisasi root server operator yang independen.",
+              "en": "The 12 independent root server operator organizations."
+            },
+            {
+              "id": "Dewan ICANN.",
+              "en": "The ICANN Board."
+            }
+          ],
+          "answerIndex": 1,
+          "explanation": {
+            "id": "RSSAC memberi nasihat, tidak menjalankan server. Operatornya adalah 12 organisasi.",
+            "en": "The RSSAC advises and does not run servers. The operators are 12 organizations."
+          }
+        }
+      },
+      {
+        "id": "iana-and-pti",
+        "title": {
+          "id": "IANA dan PTI",
+          "en": "IANA and PTI"
+        },
+        "body": {
+          "id": "IANA adalah nama untuk sekumpulan fungsi, dan PTI adalah organisasi yang menjalankannya. PTI adalah afiliasi nirlaba ICANN, dengan ICANN sebagai satu-satunya anggota. Tujuan tunggalnya adalah menyelenggarakan fungsi IANA.\n\nFungsi itu mencakup tiga area: nama domain, sumber daya angka, dan penetapan parameter protokol. Pengelolaan zona root di langkah sebelumnya adalah bagian nama domain.\n\nBylaws mewajibkan ICANN menjaga PTI sebagai badan hukum terpisah. Jadi PTI dekat dengan ICANN, tetapi bukan sebuah departemen di ICANN org.",
+          "en": "IANA is the name for a set of functions, and PTI is the organization that performs them. PTI is a nonprofit affiliate of ICANN, with ICANN as its sole member. Its sole purpose is to deliver the IANA functions.\n\nThey cover three areas: domain names, number resources and protocol parameter assignments. The root zone work in the previous step is the domain names part.\n\nThe Bylaws require ICANN to keep PTI as a separate legal entity. So PTI is close to ICANN, but it is not a department of ICANN org."
+        },
+        "claims": [
+          {
+            "text": {
+              "id": "PTI adalah badan hukum nirlaba afiliasi ICANN, dengan ICANN sebagai satu-satunya member. Tugas tunggalnya menjalankan fungsi IANA.",
+              "en": "PTI is a nonprofit affiliate of ICANN, with ICANN as its sole member. Its sole purpose is to deliver the IANA functions."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "iana-governance",
+                "locator": "Governance, first paragraph",
+                "quote": "PTI is an affiliate of the Internet Corporation for Assigned Names and Numbers (ICANN), with ICANN as its sole member. PTI's sole purpose is to deliver the IANA functions on behalf of ICANN",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "PTI menjalankan fungsi IANA dalam tiga bidang: nama domain, sumber daya nomor, dan parameter protokol.",
+              "en": "PTI performs the IANA functions in three areas: domain names, number resources and protocol parameter assignments."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "iana-governance",
+                "locator": "The IANA Functions",
+                "quote": "The IANA functions are commonly grouped into three areas: domain names, number resources, and protocol parameter assignments.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Bylaws mewajibkan ICANN memiliki PTI sebagai badan hukum California nirlaba yang terpisah, untuk menyediakan layanan IANA, termasuk fungsi penamaan IANA berdasarkan IANA Naming Function Contract.",
+              "en": "The Bylaws require ICANN to keep PTI as a separate California nonprofit corporation that provides IANA services, including the IANA naming function under the IANA Naming Function Contract."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 16, Sec. 16.1",
+                "quote": "for the purpose of providing IANA services, including providing IANA naming function services pursuant to the IANA Naming Function Contract",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "type": "entity",
+            "id": "pti"
+          },
+          {
+            "type": "term",
+            "id": "iana-functions"
+          },
+          {
+            "type": "entity",
+            "id": "icann-org"
+          },
+          {
+            "type": "source",
+            "id": "iana-about"
+          }
+        ]
+      },
+      {
+        "id": "addresses-and-rirs",
+        "title": {
+          "id": "Alamat IP, RIR, dan ASO",
+          "en": "IP addresses, RIRs and the ASO"
+        },
+        "body": {
+          "id": "Alamat IP adalah nilai numerik yang mengidentifikasi sebuah perangkat di Internet secara unik. Alamat IPv4 panjangnya 32 bit dan IPv6 panjangnya 128 bit.\n\nOperator jaringan mendapat ruang alamat dari salah satu dari lima Regional Internet Registry (RIR): AFRINIC, APNIC, ARIN, LACNIC, dan RIPE NCC. Kelimanya berkoordinasi lewat Number Resource Organization (NRO).\n\nAddress Supporting Organization (ASO) di ICANN adalah hal lain. Address Council-nya adalah 15 anggota NRO Number Council. ASO dan NRO adalah badan yang terpisah: NRO, sebagai badan koordinasi lima RIR, menjalankan fungsi ASO.",
+          "en": "An IP address is a numeric value that uniquely identifies a device attached to the Internet. IPv4 addresses are 32 bits long and IPv6 addresses are 128 bits long.\n\nNetwork operators get address space from one of five Regional Internet Registries (RIRs): AFRINIC, APNIC, ARIN, LACNIC and RIPE NCC. They coordinate through the Number Resource Organization (NRO).\n\nICANN's Address Supporting Organization (ASO) is a different thing. Its Address Council is the 15 members of the NRO Number Council. The ASO and the NRO are separate bodies: the NRO, as the coordinating body of the five RIRs, carries out the ASO's functions."
+        },
+        "claims": [
+          {
+            "text": {
+              "id": "Alamat IP adalah nilai numerik yang mengidentifikasi sebuah perangkat di Internet secara unik. Alamat IPv4 panjangnya 32 bit, misalnya 192.0.32.7. Alamat IPv6 panjangnya 128 bit, misalnya 2620:0:2d0:200::7.",
+              "en": "An IP address is a numeric value that uniquely identifies a device attached to the Internet. IPv4 addresses are 32 bits long, for example 192.0.32.7. IPv6 addresses are 128 bits long, for example 2620:0:2d0:200::7."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: Internet Protocol address (IP address)",
+                "quote": "A numeric value that uniquely identifies a device attached to the Internet.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/internet-protocol-address-en"
+              },
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: Internet Protocol address (IP address)",
+                "quote": "Internet Protocol version 4 (IPv4) addresses have a length of 32 bits",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/internet-protocol-address-en"
+              },
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: Internet Protocol address (IP address)",
+                "quote": "Internet Protocol version 6 (IPv6) addresses have a length of 128 bits",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/internet-protocol-address-en"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Ada lima RIR: AFRINIC (Afrika), APNIC (Asia Pasifik), ARIN (Amerika Serikat, Kanada, dan sebagian kepulauan Karibia dan Atlantik Utara), LACNIC (Amerika Latin dan Karibia), dan RIPE NCC (Eropa, Timur Tengah, dan sebagian Asia Tengah). Kelimanya adalah anggota NRO.",
+              "en": "There are five RIRs: AFRINIC (Africa), APNIC (Asia Pacific), ARIN (United States, Canada, many Caribbean and North Atlantic islands), LACNIC (Latin America and the Caribbean) and RIPE NCC (Europe, the Middle East and parts of Central Asia). All five are NRO members."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "nro-rirs",
+                "locator": "RIR table, row AFRINIC",
+                "quote": "African Network Coordination Centre (AFRINIC) 2005 Mauritius Africa",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "nro-rirs",
+                "locator": "RIR table, row APNIC",
+                "quote": "Asia-Pacific Network Coordination Centre (APNIC) 1993 Australia Asia Pacific",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "nro-rirs",
+                "locator": "RIR table, row ARIN",
+                "quote": "American Registry for Internet Numbers (ARIN) 1997 USA United States, Canada, many Caribbean and North Atlantic islands",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "nro-rirs",
+                "locator": "RIR table, row LACNIC",
+                "quote": "Latin American and Caribbean Internet Addresses Registry (LACNIC) 2002 Uruguay Latin America and the Caribbean",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "nro-rirs",
+                "locator": "RIR table, row RIPE NCC",
+                "quote": "Réseaux IP Européens Network Coordination Centre (RIPE NCC) 1992 The Netherlands Europe, the Middle East and parts of Central Asia",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Address Council (ASO AC) terdiri atas 15 anggota NRO Number Council, yaitu tiga dari tiap RIR: dua dipilih komunitas RIR dan satu ditunjuk Executive Board RIR. ASO dan NRO adalah dua badan terpisah: NRO, sebagai badan koordinasi lima RIR, menjalankan fungsi ASO.",
+              "en": "The Address Council (ASO AC) is the 15 members of the NRO Number Council: three from each RIR, two chosen by the RIR's community and one appointed by the RIR's Executive Board. The ASO and the NRO are separate bodies: the NRO, as the coordinating body of the five RIRs, carries out the ASO's functions."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 9, Sec. 9.2(a)",
+                "quote": "The ASO shall have an Address Council, consisting of the members of the NRO Number Council.",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "aso-address-council",
+                "locator": "Address Council, ASO AC Members",
+                "quote": "Each of the five RIRs appoints three members to the ASO AC. Each RIR’s community appoints two members and one member is appointed by the RIR’s Executive Board.",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "aso-and-nro",
+                "locator": "ASO NRO",
+                "quote": "The Address Supporting Organization (ASO) and the Number Resource Organization (NRO) are two separate bodies.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "type": "entity",
+            "id": "rirs"
+          },
+          {
+            "type": "entity",
+            "id": "aso"
+          },
+          {
+            "type": "term",
+            "id": "ip-address"
+          },
+          {
+            "type": "term",
+            "id": "asn"
+          },
+          {
+            "type": "source",
+            "id": "aso-and-nro"
+          }
+        ],
+        "check": {
+          "question": {
+            "id": "Bagaimana hubungan ASO dengan NRO?",
+            "en": "How do the ASO and the NRO relate?"
+          },
+          "options": [
+            {
+              "id": "Keduanya satu badan yang sama dengan dua nama.",
+              "en": "They are one body under two names."
+            },
+            {
+              "id": "ASO adalah SO di ICANN. NRO, badan koordinasi lima RIR, menjalankan fungsi ASO.",
+              "en": "The ASO is an ICANN SO. The NRO, the RIRs' coordinating body, carries out the ASO's functions."
+            },
+            {
+              "id": "ASO membagikan alamat IP langsung kepada operator jaringan.",
+              "en": "The ASO hands out IP addresses directly to network operators."
+            }
+          ],
+          "answerIndex": 1,
+          "explanation": {
+            "id": "ASO dan NRO adalah badan yang terpisah. Alamat IP dibagikan RIR kepada anggotanya, bukan oleh ASO.",
+            "en": "The ASO and NRO are separate bodies. RIRs distribute IP addresses to their members, not the ASO."
+          }
+        }
+      },
+      {
+        "id": "protocol-parameters-and-ssac",
+        "title": {
+          "id": "Parameter protokol dan SSAC",
+          "en": "Protocol parameters and the SSAC"
+        },
+        "body": {
+          "id": "Parameter protokol adalah kode dan angka yang dipakai protokol Internet. IANA menetapkan dan mencatatnya hanya sesuai kriteria dan prosedur dalam RFC, yang berasal dari Internet Engineering Task Force (IETF). IETF adalah badan standar terbuka tanpa keanggotaan: siapa pun bisa ikut serta.\n\nKalau IANA dan IESG berselisih secara teknis, keduanya meminta panduan IAB, dan keputusan IAB bersifat final (RFC 2860, bagian 4).\n\nSecurity and Stability Advisory Committee (SSAC) mengawasi keamanan sistem penamaan dan pengalamatan dari sisi ICANN. Anggotanya diangkat Dewan untuk masa jabatan tiga tahun dan duduk sebagai individu, bukan wakil perusahaan.",
+          "en": "Protocol parameters are the codes and numbers that Internet protocols use. IANA assigns and registers them only as directed by the criteria and procedures in RFCs, which come from the Internet Engineering Task Force (IETF). The IETF is an open standards body with no membership: anyone can take part.\n\nIf IANA and the IESG have a technical dispute, both seek guidance from the IAB, whose decision is final (RFC 2860, section 4).\n\nThe Security and Stability Advisory Committee (SSAC) watches the security of naming and addressing from the ICANN side. Its members are appointed by the Board for three-year terms and serve as individuals, not as representatives of their employers."
+        },
+        "claims": [
+          {
+            "text": {
+              "id": "IANA hanya memberi dan mencatat parameter protokol Internet sesuai kriteria dan prosedur yang ditetapkan dalam RFC. Jika IANA dan IESG berselisih secara teknis, keduanya meminta panduan IAB, dan keputusan IAB bersifat final (RFC 2860, bagian 4).",
+              "en": "IANA assigns and registers Internet protocol parameters only as directed by the criteria and procedures in RFCs. If IANA and the IESG have a technical dispute, both seek guidance from the IAB, whose decision is final (RFC 2860, section 4)."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "rfc-2860",
+                "locator": "Section 4.1",
+                "quote": "The IANA will assign and register Internet protocol parameters only as directed by the criteria and procedures specified in RFCs",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "rfc-2860",
+                "locator": "Section 4.2",
+                "quote": "In the event of technical dispute between the IANA and the IESG, both will seek guidance from the IAB whose decision shall be final.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "IETF tidak punya keanggotaan. Siapa pun bisa berpartisipasi dengan bergabung ke milis working group atau mendaftar ke pertemuan IETF.",
+              "en": "There is no membership in the IETF. Anyone can take part by joining a working group mailing list or registering for an IETF meeting."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "ietf-introduction",
+                "locator": "section 'Participants'",
+                "quote": "There is no membership in the IETF. Anyone can participate by signing up to a working group mailing list (more on that below), or registering for an IETF meeting.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "SSAC adalah kelompok sukarelawan ahli keamanan teknis yang menasihati komunitas dan Dewan ICANN soal keamanan sistem nama dan alamat internet.",
+              "en": "The SSAC is a volunteer group of technical security specialists advising the ICANN community and Board on the security of Internet naming and addressing."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "ssac-page",
+                "locator": "section 'About the SSAC'",
+                "quote": "The SSAC advises the ICANN community and the ICANN Board on matters relating to the security and integrity of the naming and address allocation systems of the Internet.",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "ssac-page",
+                "locator": "page summary",
+                "quote": "volunteer group of specialists in the technical security field that provides advice and insight to the ICANN community and the Board.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Ketua dan anggota SSAC ditunjuk oleh Dewan, untuk masa jabatan tiga tahun yang bisa diperpanjang tanpa batas. Anggota bekerja sebagai individu, bukan wakil perusahaan atau lembaga asalnya. Halaman SSAC tidak menyebut jumlah anggota.",
+              "en": "The SSAC's chair and members are appointed by the Board for three-year terms that can be renewed without limit. Members serve as individuals, not as representatives of their employers or other organizations. The SSAC page does not state a member count."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 12, Sec. 12.2(b)(ii)",
+                "quote": "The SSAC's chair and members shall be appointed by the Board. SSAC membership appointment shall be for a three-year term",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "ssac-page",
+                "locator": "section 'Member Expectations'",
+                "quote": "SSAC members participate in the SSAC as individuals, not as representatives of their employers or other organizations, and as equals.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          }
+        ],
         "links": [
           {
             "type": "entity",
             "id": "ietf"
           },
           {
-            "type": "term",
-            "id": "dnssec"
-          }
-        ]
-      },
-      {
-        "id": "security",
-        "title": {
-          "en": "Security",
-          "id": "Keamanan"
-        },
-        "body": {
-          "en": "SSAC (security) and RSSAC (root servers) study risks and advise the Board. Start with their published reports.",
-          "id": "SSAC dan RSSAC meneliti risiko keamanan dan stabilitas, hasilnya berupa laporan dan nasihat."
-        },
-        "links": [
-          {
             "type": "entity",
             "id": "ssac"
           },
           {
+            "type": "source",
+            "id": "rfc-2860"
+          },
+          {
+            "type": "source",
+            "id": "iana-protocol-registries"
+          }
+        ],
+        "check": {
+          "question": {
+            "id": "Siapa yang menentukan nilai parameter protokol yang dicatat IANA?",
+            "en": "Who decides which values IANA registers for a protocol parameter?"
+          },
+          "options": [
+            {
+              "id": "IANA memilihnya sendiri.",
+              "en": "IANA chooses them itself."
+            },
+            {
+              "id": "Kriteria dan prosedurnya ditetapkan dalam RFC dari IETF, dan IANA mencatat sesuai itu.",
+              "en": "The criteria and procedures are set in IETF RFCs, and IANA registers according to them."
+            },
+            {
+              "id": "Dewan ICANN memberi suara untuk setiap nilai.",
+              "en": "The ICANN Board votes on each value."
+            }
+          ],
+          "answerIndex": 1,
+          "explanation": {
+            "id": "IANA mencatat parameter protokol hanya sesuai kriteria dan prosedur dalam RFC. Standar protokolnya datang dari IETF.",
+            "en": "IANA registers protocol parameters only as directed by the criteria and procedures in RFCs. The protocol standards come from the IETF."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "get-involved",
+    "title": {
+      "id": "Langkah pertama untuk terlibat",
+      "en": "Get involved: first moves"
+    },
+    "audience": {
+      "id": "Kamu ingin ikut serta di ICANN dan mencari pintu masuk yang konkret.",
+      "en": "You want to take part in ICANN and need concrete entry points."
+    },
+    "summary": {
+      "id": "Enam pintu masuk nyata: komentar publik, At-Large lewat APRALO, kelompok GNSO, program Fellowship dan NextGen, NomCom, dan forum kebijakan APNIC.",
+      "en": "Six real entry points: public comment, At-Large through APRALO, GNSO groups, the Fellowship and NextGen programs, the NomCom, and APNIC policy fora."
+    },
+    "estMinutes": 14,
+    "steps": [
+      {
+        "id": "follow-public-comment",
+        "title": {
+          "id": "Mulai dari komentar publik",
+          "en": "Start with public comment"
+        },
+        "body": {
+          "id": "Langkah termurah adalah membaca bagaimana ICANN meminta masukan. Komentar publik adalah mekanisme yang memungkinkan komunitas ICANN dan pihak lain memberi masukan. Ia dipakai dalam proses pengembangan kebijakan dan untuk memandu pekerjaan implementasi, tinjauan, dan operasi ICANN org.\n\nMembaca satu proposal lengkap mengajarkan banyak hal. Pernyataan ALAC, misalnya, melewati tahap yang tetap: draf pertama, periode komentar, draf akhir, pemungutan suara ALAC, lalu pengiriman. Pernyataan ALAC atas laporan awal PDP tentang DNS abuse adalah contoh yang bisa kamu baca.\n\nPilih satu topik yang bersinggungan dengan pekerjaanmu, dan catat apa yang ditanyakan.",
+          "en": "The cheapest first move is to read how ICANN asks for input. Public Comment is a mechanism that lets the ICANN community and others give input and feedback. It is used in the policy development process and to guide implementation work, reviews and operations of ICANN org.\n\nReading one full proposal teaches a lot. An ALAC statement, for example, goes through set phases: first draft, comment period, final draft, ALAC vote, then submission. The ALAC statement on the DNS abuse PDP1 initial report is an example you can read.\n\nPick one topic that touches your work, and note what it asks."
+        },
+        "claims": [
+          {
+            "text": {
+              "id": "Komentar publik adalah mekanisme yang memberi komunitas ICANN dan pihak lain kesempatan menyampaikan masukan dan tanggapan. Mekanisme ini dipakai dalam proses pengembangan kebijakan, dan untuk memandu pekerjaan implementasi, tinjauan, serta kegiatan operasional ICANN org.",
+              "en": "Public Comment is a mechanism that lets the ICANN community and others give input and feedback. It is used in the policy development process and to guide implementation work, reviews and operations of ICANN org."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: Public Comment",
+                "quote": "A mechanism that gives the ICANN community and other stakeholders an opportunity to provide input and feedback.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/public-comment-en"
+              },
+              {
+                "sourceId": "icann-acronyms",
+                "locator": "Entry: Public Comment",
+                "quote": "Public Comment is also used to guide implementation work, reviews, and operational activities of the ICANN organization.",
+                "verifiedAt": "2026-10-20",
+                "url": "https://www.icann.org/en/icann-acronyms-and-terms/public-comment-en"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Menyusun dan menyampaikan pernyataan, komentar, dan nasihat resmi tentang kebijakan ICANN. Pernyataan ALAC lewat tahapan tetap: draf pertama, komentar, draf akhir, pemungutan suara ALAC, lalu penyerahan.",
+              "en": "Writes and submits statements, comments, and formal advice on ICANN policy. An ALAC statement goes through set phases: first draft, comment period, final draft, ALAC vote, then submission."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "atlarge-home",
+                "locator": "section 'Policy Comments & Advice'",
+                "quote": "The At-Large Advisory Committee participates in many activities leading to it issuing including statements, comments, correspondences, proposals, briefings, declarations and formal advice on ICANN policies and issues impacting Internet users.",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "atlarge-statement-dns-abuse-pdp1",
+                "locator": "Status phases 1 to 5",
+                "quote": "Phase 4 . ALAC Vote",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "type": "term",
+            "id": "public-comment"
+          },
+          {
+            "type": "term",
+            "id": "pdp"
+          },
+          {
             "type": "entity",
-            "id": "rssac"
+            "id": "alac"
+          },
+          {
+            "type": "source",
+            "id": "atlarge-statement-dns-abuse-pdp1"
           }
         ]
+      },
+      {
+        "id": "join-at-large",
+        "title": {
+          "id": "Bergabung ke At-Large lewat APRALO",
+          "en": "Join At-Large through APRALO"
+        },
+        "body": {
+          "id": "At-Large adalah komunitas pengguna Internet perorangan, dan rumahnya di ICANN adalah ALAC. Siapa pun bisa masuk dengan bergabung ke At-Large Structure (ALS) yang terakreditasi. Anggota sebuah ALS otomatis menjadi anggota komunitas At-Large.\n\nSebuah organisasi bisa mendaftar menjadi ALS baru. Perorangan juga bisa bergabung tanpa ALS, tetapi keanggotaan individu hanya diterima di wilayah tertentu.\n\nDi APRALO, kriteria untuk individu adalah: berlangganan milis apac-discuss@icann.org, berdomisili tetap di negara atau wilayah dalam kawasan APRALO sebagaimana ditetapkan ICANN, dan bukan anggota ALS terakreditasi. Cek daftar wilayah di halaman APRALO.",
+          "en": "At-Large is the community of individual Internet users, and its home in ICANN is the ALAC. Anyone can enter by joining an accredited At-Large Structure (ALS). Members of an ALS are automatically members of the At-Large community.\n\nAn organization can apply to become a new ALS. An individual can also join without an ALS, but individual membership is only accepted in certain regions.\n\nIn APRALO, the criteria for an individual are: be subscribed to the apac-discuss@icann.org mailing list, be a permanent resident of a country or territory in the APRALO region as defined by ICANN, and not be a member of an accredited ALS. Check the region list on the APRALO page."
+        },
+        "claims": [
+          {
+            "text": {
+              "id": "Siapa pun bisa masuk komunitas At-Large dengan bergabung ke At-Large Structure (ALS) yang sudah terakreditasi. Anggota ALS otomatis menjadi anggota komunitas At-Large.",
+              "en": "Anyone can enter the At-Large community by joining an accredited At-Large Structure (ALS). Members of an ALS are automatically members of the At-Large community."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "atlarge-join-us",
+                "locator": "section '1. Become a member of an accredited At-Large Structure (ALS)'",
+                "quote": "If you are a member of an accredited ALS, you are automatically a member of the At-Large Community.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Organisasi juga bisa mendaftar sebagai ALS baru. Perorangan bisa menjadi anggota individu tanpa ALS, tetapi hanya di wilayah tertentu.",
+              "en": "An organization can apply to become a new ALS. An individual can also join without an ALS, but individual membership is only accepted in certain regions."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "atlarge-join-us",
+                "locator": "sections '2.' and '3.'",
+                "quote": "You may become an individual member of the At-Large Community without affiliation with an ALS. Individual membership is only accepted in certain regions.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Di APRALO, orang yang tidak punya ALS di wilayahnya bisa menjadi anggota individu. Syaratnya: berlangganan milis apac-discuss@icann.org, menjadi penduduk tetap di salah satu negara atau wilayah APRALO menurut definisi ICANN, dan bukan anggota ALS terakreditasi.",
+              "en": "In APRALO, someone with no accredited ALS where they live can become an individual member. The criteria: be subscribed to the apac-discuss@icann.org mailing list, be a permanent resident of a country or territory in the APRALO region as defined by ICANN, and not be a member of an accredited ALS."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "atlarge-individual-member",
+                "locator": "section 'APRALO'",
+                "quote": "you can become an individual member (also called 'unaffiliated individual member') in APRALO.",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "atlarge-individual-member",
+                "locator": "section 'APRALO', criteria list",
+                "quote": "Not be a member of an accredited ALS;",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "type": "entity",
+            "id": "ralos"
+          },
+          {
+            "type": "entity",
+            "id": "alac"
+          },
+          {
+            "type": "term",
+            "id": "at-large"
+          },
+          {
+            "type": "source",
+            "id": "atlarge-join-us"
+          },
+          {
+            "type": "source",
+            "id": "atlarge-apralo"
+          }
+        ],
+        "check": {
+          "question": {
+            "id": "Di kawasan APRALO tidak ada ALS terakreditasi di kotamu. Mana yang benar?",
+            "en": "There is no accredited ALS where you live in the APRALO region. Which statement is true?"
+          },
+          "options": [
+            {
+              "id": "Individu tidak pernah diterima di At-Large.",
+              "en": "Individuals are never accepted in At-Large."
+            },
+            {
+              "id": "Kamu bisa jadi anggota individu jika berlangganan milis apac-discuss, berdomisili tetap di kawasan itu, dan bukan anggota ALS.",
+              "en": "You can become an individual member if you subscribe to apac-discuss, live permanently in the region, and are not in an ALS."
+            },
+            {
+              "id": "Kamu harus lebih dulu bekerja untuk sebuah ALS.",
+              "en": "You must first work for an ALS."
+            }
+          ],
+          "answerIndex": 1,
+          "explanation": {
+            "id": "APRALO membuka jalur anggota individu bagi yang belum punya ALS di tempat tinggalnya, dengan tiga kriteria itu.",
+            "en": "APRALO has an individual member route for people with no ALS where they live, with those three criteria."
+          }
+        }
+      },
+      {
+        "id": "gnso-groups",
+        "title": {
+          "id": "Kelompok GNSO",
+          "en": "GNSO groups"
+        },
+        "body": {
+          "id": "Kalau minatmu nama domain, GNSO adalah tempat kebijakan bermula, dan kamu bisa ikut tanpa perusahaan di belakangmu. Pada umumnya siapa pun bisa bergabung ke GNSO Working Group, lewat ICANN Join dengan ICANN Account, idealnya saat kelompok sedang dibentuk.\n\nUntuk keanggotaan tetap, pilih stakeholder group (kelompok pemangku kepentingan) yang cocok. Registrar dan operator registry bergabung lewat situs kelompok masing-masing (rrsg.org untuk registrar, rysg.info untuk registry). Organisasi nirlaba, dan individu yang mendaftarkan nama domain untuk keperluan pribadi nonkomersial, bisa mendaftar ke Non-Commercial Stakeholder Group lewat wiki NCSG.\n\nKelompok yang belum terwakili bisa mengajukan petisi ke Dewan agar diakui sebagai Constituency baru di Non-Contracted Parties House.",
+          "en": "If you care about domain names, the GNSO is where policy starts, and you can take part without a company behind you. In general, anyone can join a GNSO Working Group, through ICANN Join on an ICANN Account, ideally when the group is being formed.\n\nFor standing membership, pick the stakeholder group that fits you. Registrars and registry operators join through each group's own site (rrsg.org for registrars, rysg.info for registries). Non-commercial organizations, and individuals who register domain names for non-commercial personal use, can apply to the Non-Commercial Stakeholder Group through the NCSG wiki.\n\nA group that is not yet represented can petition the Board to be recognized as a new Constituency in the Non-Contracted Parties House."
+        },
+        "claims": [
+          {
+            "text": {
+              "id": "Siapa saja pada umumnya boleh bergabung dengan Working Group GNSO. Pendaftaran lewat ICANN Join di ICANN Account, dan waktu terbaik adalah saat grup baru dibentuk.",
+              "en": "In general, anyone can join a GNSO Working Group. Sign up through ICANN Join on an ICANN Account, ideally when the group is being formed."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "gnso-volunteer-wg-page",
+                "locator": "Volunteer for a Working Group",
+                "quote": "In general, anyone can join a GNSO Working Group or Drafting Team.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Registrar dan operator registry dapat bergabung lewat situs grup masing-masing (rrsg.org untuk registrar, rysg.info untuk registry).",
+              "en": "Registrars and registry operators can join through each group's own site (rrsg.org for registrars, rysg.info for registries)."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "gnso-rrsg-page",
+                "locator": "Registrar Stakeholder Group",
+                "quote": "More information about the RrSG including how to join can be found at https://www.rrsg.org",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "gnso-rysg-page",
+                "locator": "Registries Stakeholder Group",
+                "quote": "More information about the RySG including how to join can be found at http://www.rysg.info/",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Organisasi nonkomersial, serta individu yang mendaftarkan domain untuk keperluan pribadi nonkomersial, dapat mendaftar ke Non-Commercial Stakeholder Group lewat wiki NCSG.",
+              "en": "Non-commercial organizations, and individuals who register domain names for non-commercial personal use, can apply to the Non-Commercial Stakeholder Group through the NCSG wiki."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "gnso-ncsg-page",
+                "locator": "Noncommercial Stakeholder Group",
+                "quote": "Membership information on how to join the NCSG can be found on the NCSG Wiki that includes a direct link to the NCSG Membership Application.",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "gnso-ncsg-page",
+                "locator": "Noncommercial Stakeholder Group, purpose",
+                "quote": "families or individuals who register domain names for noncommercial personal use",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Kelompok yang belum terwakili dapat mengajukan petisi ke Dewan agar diakui sebagai Constituency baru di Non-Contracted Parties House.",
+              "en": "A group that is not yet represented can petition the Board to be recognized as a new Constituency in the Non-Contracted Parties House."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 11, Sec. 11.5(d)",
+                "quote": "Any group of individuals or entities may petition the Board for recognition as a new or separate Constituency in the Non-Contracted Parties House.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "type": "entity",
+            "id": "gnso"
+          },
+          {
+            "type": "entity",
+            "id": "gnso-stakeholder-groups"
+          },
+          {
+            "type": "term",
+            "id": "stakeholder-group"
+          },
+          {
+            "type": "source",
+            "id": "gnso-volunteer-wg-page"
+          },
+          {
+            "type": "source",
+            "id": "gnso-ncsg-page"
+          }
+        ]
+      },
+      {
+        "id": "fellowship-and-nextgen",
+        "title": {
+          "id": "Fellowship dan NextGen",
+          "en": "Fellowship and NextGen"
+        },
+        "body": {
+          "id": "ICANN punya dua program yang membawa pendatang baru ke rapat publik. Fellowship membantu orang dari komunitas yang kurang terlayani dan kurang terwakili menjadi peserta aktif. Fellow mendapat mentor, pelatihan, dan bantuan perjalanan untuk ICANN Public Meeting. Pelamar harus berusia minimal 21 tahun.\n\nNextGen@ICANN adalah program untuk anak muda, bagi mahasiswa berusia 18 sampai 30 tahun yang tinggal dan belajar di kawasan tempat rapat ICANN berikutnya digelar. Mahasiswa terpilih mendapat pembinaan, bimbingan, dan dukungan perjalanan untuk menghadiri rapat itu.\n\nSetiap rapat punya putaran pendaftaran sendiri, jadi cek halaman program untuk putaran yang sedang berjalan.",
+          "en": "ICANN has two programs that bring newcomers to a public meeting. The Fellowship helps people from underserved and underrepresented communities become active participants. Fellows get a mentor, training and travel assistance for an ICANN Public Meeting. Applicants must be at least 21.\n\nNextGen@ICANN is the youth program, for students aged 18 to 30 who live and study in the region of an upcoming ICANN meeting. Selected students get coaching, guidance and travel support to attend the meeting.\n\nA separate application round opens for each meeting, so check the program page for the current one."
+        },
+        "claims": [
+          {
+            "text": {
+              "id": "Program Fellowship ICANN membantu orang dari komunitas yang kurang terlayani dan kurang terwakili menjadi peserta aktif di ICANN. Fellow mendapat mentor, pelatihan, dan bantuan perjalanan untuk menghadiri ICANN Public Meeting. Pelamar harus berusia minimal 21 tahun, dan setiap pertemuan punya putaran pendaftaran sendiri.",
+              "en": "The ICANN Fellowship Program helps people from underserved and underrepresented communities become active participants in ICANN. Fellows get a mentor, training and travel assistance for an ICANN Public Meeting. Applicants must be at least 21, and a separate application round opens for each meeting."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-fellowship",
+                "locator": "section 'About'",
+                "quote": "The goal of the ICANN Fellowship Program is to strengthen the representation of the multistakeholder model by fostering opportunities for individuals from underserved and underrepresented communities to become active participants in the ICANN community.",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-fellowship",
+                "locator": "section 'About'",
+                "quote": "Travel assistance to attend the meeting is also provided.",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-fellowship",
+                "locator": "section 'Eligibility'",
+                "quote": "Be at least 21 years of age by the time of the application submission",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-fellowship",
+                "locator": "section 'Application Dates & Deadlines'",
+                "quote": "Opening of application round Closing of application round Announcement of selected Fellows",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "NextGen@ICANN adalah program anak muda ICANN untuk mahasiswa berusia 18 sampai 30 tahun yang tinggal dan belajar di kawasan tempat pertemuan ICANN berikutnya digelar. Mahasiswa terpilih mendapat pembinaan, bimbingan, dan dukungan perjalanan untuk menghadiri pertemuan. Setiap pertemuan punya putaran pendaftaran sendiri.",
+              "en": "NextGen@ICANN is ICANN's youth program for students aged 18 to 30 who live and study in the region of an upcoming ICANN meeting. Selected students get coaching, guidance and travel support to attend the meeting. A separate application round opens for each meeting."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-nextgen",
+                "locator": "section 'Eligibility'",
+                "quote": "Enrolled as an undergraduate, graduate, or doctoral student. Between the ages of 18 and 30 at the time of the ICANN meeting.",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-nextgen",
+                "locator": "section 'Eligibility'",
+                "quote": "Currently living and studying in the region of the respective ICANN meeting.",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-nextgen",
+                "locator": "section 'About'",
+                "quote": "we will provide selected students from the ICANN meeting region with coaching, guidance, and travel support",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-nextgen",
+                "locator": "section 'Application Dates & Deadlines'",
+                "quote": "Opening of Application Round Closing of Application Round Announcement of Selected NextGen",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "type": "term",
+            "id": "fellowship"
+          },
+          {
+            "type": "term",
+            "id": "nextgen"
+          },
+          {
+            "type": "source",
+            "id": "icann-fellowship"
+          },
+          {
+            "type": "source",
+            "id": "icann-nextgen"
+          }
+        ],
+        "check": {
+          "question": {
+            "id": "Program mana yang khusus untuk mahasiswa berusia 18 sampai 30 tahun di kawasan tempat rapat ICANN berikutnya?",
+            "en": "Which program is for students aged 18 to 30 in the region of an upcoming ICANN meeting?"
+          },
+          "options": [
+            {
+              "id": "Fellowship.",
+              "en": "The Fellowship."
+            },
+            {
+              "id": "NextGen@ICANN.",
+              "en": "NextGen@ICANN."
+            },
+            {
+              "id": "NomCom.",
+              "en": "The NomCom."
+            }
+          ],
+          "answerIndex": 1,
+          "explanation": {
+            "id": "Syarat Fellowship adalah usia minimal 21 tahun dan berasal dari komunitas yang kurang terlayani. Rentang 18 sampai 30 dan status mahasiswa adalah syarat NextGen.",
+            "en": "The Fellowship requires applicants to be at least 21 and from underserved communities. The 18 to 30 range and student status are NextGen's rules."
+          }
+        }
+      },
+      {
+        "id": "nomcom-application",
+        "title": {
+          "id": "Melamar lewat NomCom",
+          "en": "Applying through the NomCom"
+        },
+        "body": {
+          "id": "Nominating Committee (NomCom) adalah komite independen yang memilih sebagian anggota Dewan ICANN dan Dewan PTI, serta anggota ALAC dan Council ccNSO dan GNSO. Itulah kursi yang bisa kamu lamar.\n\nSiklus NomCom 2026 punya masa pendaftaran kandidat dalam fase Recruitment & Outreach, Desember 2025 sampai Februari 2026. Informasi pendaftaran untuk siklus berikutnya ada di halaman NomCom.\n\nAda aturan yang perlu diketahui. Anggota NomCom tidak bisa dinominasikan untuk posisi apa pun yang diisi NomCom sampai rapat tahunan ICANN yang bertepatan dengan atau menyusul berakhirnya masa tugas mereka.",
+          "en": "The Nominating Committee (NomCom) is an independent committee that selects some members of the ICANN Board and PTI Board, and members of the ALAC and the ccNSO and GNSO Councils. Those are seats you can apply for.\n\nThe 2026 cycle had a candidate application period in its Recruitment & Outreach phase, December 2025 to February 2026. Application information for later cycles is on the NomCom page.\n\nOne rule to know. NomCom members cannot be nominated to any position the NomCom fills until the ICANN annual meeting that coincides with or follows the end of their service."
+        },
+        "claims": [
+          {
+            "text": {
+              "id": "NomCom adalah komite independen yang memilih sebagian anggota Dewan ICANN dan Dewan PTI, serta anggota ALAC dan Council ccNSO dan GNSO.",
+              "en": "The NomCom is an independent committee that selects some members of the ICANN Board and PTI Board, and members of the ALAC and the ccNSO and GNSO Councils."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-nomcom-about",
+                "locator": "About NomCom",
+                "quote": "The Nominating Committee (NomCom) is an independent committee tasked with selecting key ICANN leadership positions, including some members of the ICANN Board of Directors and the Public Technical Identifiers (PTI) Board",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Siklus NomCom 2026 punya masa pendaftaran kandidat pada tahap Recruitment & Outreach, Desember 2025 sampai Februari 2026. Informasi pendaftaran siklus berikutnya ada di halaman NomCom.",
+              "en": "The 2026 NomCom cycle had a candidate application period in its Recruitment & Outreach phase, December 2025 to February 2026. Application information for later cycles is on the NomCom page."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-nomcom-about",
+                "locator": "2026 Nominating Committee Timeline, Phase 2 (Recruitment & Outreach, Dec 2025 - Feb 2026)",
+                "quote": "Application Period",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Anggota NomCom tidak boleh dinominasikan ke posisi apa pun yang diisi NomCom sampai Rapat Tahunan ICANN yang bertepatan dengan atau setelah masa tugasnya di NomCom berakhir. Karyawan dan konsultan berbayar ICANN tidak boleh menjadi anggota NomCom.",
+              "en": "NomCom members cannot be nominated to any position the NomCom fills until the ICANN annual meeting that coincides with or follows the end of their NomCom service. ICANN employees and paid consultants cannot serve on the NomCom."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 8, Sec. 8.8",
+                "quote": "No person who serves on the Nominating Committee in any capacity shall be eligible for nomination by any means to any position on the Board",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "icann-bylaws",
+                "locator": "Art. 8, Sec. 8.9",
+                "quote": "No person who is an employee of or paid consultant to ICANN (including the Ombudsman) shall simultaneously serve in any of the Nominating Committee positions described in Section 8.2.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "type": "entity",
+            "id": "nomcom"
+          },
+          {
+            "type": "entity",
+            "id": "icann-board"
+          },
+          {
+            "type": "source",
+            "id": "icann-nomcom-about"
+          }
+        ]
+      },
+      {
+        "id": "apnic-and-ietf",
+        "title": {
+          "id": "Forum kebijakan APNIC dan IETF",
+          "en": "APNIC policy fora and the IETF"
+        },
+        "body": {
+          "id": "Untuk alamat IP, diskusi kebijakan terbuka berlangsung di Regional Internet Registry. Kebijakan alamat APNIC dikembangkan di Policy SIG. Siapa pun bisa mengusulkan dan membahas kebijakan, sebagian besar lewat milis, dan hasilnya diputuskan di Open Policy Meeting dua kali setahun. Kamu bisa ikut lewat milis Policy SIG dan Open Policy Meeting di konferensi APNIC.\n\nDi Indonesia, National Internet Registry (NIR) yang diakui APNIC adalah IDNIC.\n\nUntuk protokol Internet, IETF tidak punya keanggotaan. Siapa pun bisa bergabung ke milis working group atau mendaftar ke rapat IETF yang diadakan tiga kali setahun.",
+          "en": "For IP addresses, open policy discussion happens in the Regional Internet Registries. APNIC's address policies are developed in the Policy SIG. Anyone can propose and discuss policies, mostly on a mailing list, and outcomes are decided at an Open Policy Meeting twice a year. You can take part through the Policy SIG mailing list and the Open Policy Meeting at APNIC conferences.\n\nIn Indonesia, the National Internet Registry (NIR) recognized by APNIC is IDNIC.\n\nFor Internet protocols, the IETF has no membership. Anyone can join a working group mailing list or register for an IETF meeting, held three times a year."
+        },
+        "claims": [
+          {
+            "text": {
+              "id": "Kebijakan alamat APNIC dibahas di Policy SIG. Siapa pun boleh mengusulkan dan membahas kebijakan, sebagian besar lewat milis, dan hasilnya diputuskan dalam Open Policy Meeting dua kali setahun.",
+              "en": "APNIC's address policies are developed in the Policy SIG. Anyone can propose and discuss policies, mostly on a mailing list, and outcomes are decided at an Open Policy Meeting twice a year."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "apnic-policy-process",
+                "locator": "section 'Who can participate' and 'Discussion venues'",
+                "quote": "Two times each year the SIG holds a face-to-face Open Policy Meeting to decide the outcomes by trying to reach consensus on the policy changes proposed.",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "apnic-policy-process",
+                "locator": "section 'Who can participate'",
+                "quote": "Anyone can propose policies",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Siapa pun bisa ikut membahas kebijakan alamat Asia Pasifik lewat milis Policy SIG APNIC dan Open Policy Meeting dalam konferensi APNIC.",
+              "en": "Anyone can take part in Asia Pacific address policy discussions through APNIC's Policy SIG mailing list and the Open Policy Meeting at APNIC conferences."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "apnic-policy-process",
+                "locator": "section 'Who can participate'",
+                "quote": "Everyone can discuss policy proposals",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "apnic-policy-process",
+                "locator": "section 'Discussion venues'",
+                "quote": "Most of the policy development activity takes place on the Policy SIG mailing list.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Nota kesepahaman (MoU) NRO ditandatangani pada 2003 oleh empat RIR yang ada saat itu (APNIC, ARIN, LACNIC, RIPE NCC). AFRINIC menandatanganinya pada 2005. Di Indonesia, APNIC mencantumkan APJII sebagai National Internet Registry (NIR).",
+              "en": "The NRO MoU was signed in 2003 by the four RIRs that existed then (APNIC, ARIN, LACNIC, RIPE NCC). AFRINIC signed in 2005. In Indonesia, APNIC lists APJII as the National Internet Registry (NIR)."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "nro-about",
+                "locator": "section 'The Five RIR Members'",
+                "quote": "The NRO MoU was signed in 2003 by the four existing RIRs",
+                "verifiedAt": "2026-10-20"
+              },
+              {
+                "sourceId": "apnic-nirs",
+                "locator": "section 'National Internet Registries (NIRs)'",
+                "quote": "There are seven NIRs that serve their respective Internet communities in local languages: APJII (ID) CNNIC (CN) IRINN (IN)",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          },
+          {
+            "text": {
+              "id": "Tidak perlu mendaftar sebagai anggota: cukup bergabung ke milis working group atau mendaftar ke pertemuan IETF.",
+              "en": "No membership is needed: sign up to a working group mailing list or register for an IETF meeting."
+            },
+            "kind": "fact",
+            "citations": [
+              {
+                "sourceId": "ietf-introduction",
+                "locator": "section 'Participants'",
+                "quote": "Anyone can participate by signing up to a working group mailing list (more on that below), or registering for an IETF meeting.",
+                "verifiedAt": "2026-10-20"
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "type": "entity",
+            "id": "rirs"
+          },
+          {
+            "type": "entity",
+            "id": "ietf"
+          },
+          {
+            "type": "source",
+            "id": "apnic-policy-process"
+          },
+          {
+            "type": "source",
+            "id": "ietf-introduction"
+          }
+        ],
+        "check": {
+          "question": {
+            "id": "Siapa yang bisa mengusulkan kebijakan alamat di APNIC?",
+            "en": "Who can propose an address policy in APNIC?"
+          },
+          "options": [
+            {
+              "id": "Hanya anggota APNIC yang membayar iuran.",
+              "en": "Only paying APNIC members."
+            },
+            {
+              "id": "Siapa pun, sebagian besar lewat milis.",
+              "en": "Anyone, mostly on a mailing list."
+            },
+            {
+              "id": "Hanya pemerintah lewat GAC.",
+              "en": "Only governments through the GAC."
+            }
+          ],
+          "answerIndex": 1,
+          "explanation": {
+            "id": "Policy SIG APNIC terbuka: siapa pun bisa mengusulkan dan membahas, dan hasilnya diputuskan di Open Policy Meeting.",
+            "en": "The APNIC Policy SIG is open: anyone can propose and discuss, and outcomes are decided at the Open Policy Meeting."
+          }
+        }
       }
     ]
   }

@@ -1,163 +1,194 @@
-import type { ReactElement } from "react";
-import { entities, relationships, entityById } from "@/lib/content";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import type { ReactElement } from "react";
+import { ClaimText } from "@/components/Claim";
+import { NotesList } from "@/components/NotesList";
+import { entities, getEntity, getTerm, relationshipsOf } from "@/lib/content";
+import { pageMetadata } from "@/lib/metadata";
+import { Notes } from "@/lib/notes";
+import { FAMILIES, RELATIONSHIPS } from "@/lib/relationships";
+import { locales, t, toLocale } from "@/i18n";
+import { reportUrl } from "@/i18n/config";
+
+type Params = Promise<{ locale: string; id: string }>;
 
 export function generateStaticParams(): Array<{ locale: string; id: string }> {
-  const locales = ["id", "en"];
   return entities.flatMap((e) => locales.map((locale) => ({ locale, id: e.id })));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string; id: string }> }): Promise<Metadata> {
-  const { locale: loc, id } = await params;
-  const locale = loc === "en" ? "en" : "id";
-  const entity = entities.find((e) => e.id === id);
-  if (!entity) return { title: "Not found | ICANN Explorer" };
-  return {
-    title: `${entity.acronym}: ${entity.name.en} | ICANN Explorer`,
-    description: entity.oneLiner.text.en,
-    alternates: {
-      canonical: `/${locale}/organizations/${id}/`,
-      languages: { id: `/id/organizations/${id}/`, en: `/en/organizations/${id}/` },
-    },
-  };
+export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+  const { locale: raw, id } = await params;
+  const locale = toLocale(raw);
+  const entity = getEntity(id);
+  if (!entity) return {};
+  return pageMetadata(locale, `/organizations/${id}/`, {
+    title: `${entity.acronym}: ${entity.name[locale]}`,
+    description: entity.oneLiner.text[locale],
+  });
 }
 
-export default async function OrganizationProfile({
-  params,
-}: {
-  params: Promise<{ locale: string; id: string }>;
-}): Promise<ReactElement> {
-  const { locale: loc, id } = await params;
-  const locale: "id" | "en" = loc === "en" ? "en" : "id";
-  const entity = entityById(id);
+export default async function OrganizationPage({ params }: { params: Params }): Promise<ReactElement> {
+  const { locale: raw, id } = await params;
+  const locale = toLocale(raw);
+  const entity = getEntity(id);
   if (!entity) notFound();
 
-  const rels = relationships.filter((r) => r.from === id || r.to === id);
+  const notes = new Notes();
+  const rels = relationshipsOf(id);
+  const connections = FAMILIES.map((family) => ({
+    family,
+    items: rels
+      .filter((r) => RELATIONSHIPS[r.type].family === family)
+      .map((r) => {
+        const outgoing = r.from === id;
+        const other = getEntity(outgoing ? r.to : r.from);
+        const info = RELATIONSHIPS[r.type];
+        return { r, other, phrase: (outgoing ? info.label : info.inverse)[locale] };
+      })
+      .filter((c) => c.other),
+  })).filter((g) => g.items.length > 0);
+  const relatedTerms = entity.relatedTermIds.map(getTerm).filter((x) => x !== undefined);
+
+  // Number the footnotes in reading order before rendering.
+  [
+    entity.oneLiner,
+    entity.whyItExists,
+    ...entity.whatItDoes,
+    entity.whoIsIn,
+    entity.example,
+    ...(entity.getInvolved ?? []),
+    ...connections.flatMap((g) => g.items.map((c) => c.r.explanation)),
+  ].forEach((c) => notes.cite(c));
 
   return (
-    <article className="page profile">
-      <nav aria-label="Breadcrumb" className="breadcrumb">
-        <a href={`/${locale}/organizations/`}>{locale === "id" ? "Organisasi" : "Organizations"}</a>
+    <article className={`page profile kind-${entity.kind}`}>
+      <nav className="breadcrumb" aria-label="Breadcrumb">
+        <Link href={`/${locale}/organizations/`}>{t(locale, "profile.all")}</Link>
       </nav>
-      <h1>
-        {entity.acronym} - {entity.name[locale]}
-      </h1>
-      {entity.scope === "external" && (
-        <p className="profile-external-tag">{locale === "id" ? "Di luar ICANN" : "Outside ICANN"}</p>
-      )}
 
-      <p className="panel-oneliner">{entity.oneLiner.text[locale]}</p>
-
-      <section aria-labelledby="sec-why">
-        <h2 id="sec-why">{locale === "id" ? "Kenapa ada" : "Why it exists"}</h2>
-        <ul>
-          {entity.whyItExists.map((c, i) => (
-            <ClaimLine
-              key={i}
-              text={c.text[locale]}
-              sourceId={c.citations[0]?.sourceId}
-              verifiedAt={c.citations[0]?.verifiedAt}
-              locale={locale}
-            />
-          ))}
-        </ul>
-      </section>
-
-      <section aria-labelledby="sec-what">
-        <h2>{locale === "id" ? "Apa yang dilakukan" : "What it does"}</h2>
-        <ul>
-          {entity.whatItDoes.map((c, i) => (
-            <ClaimLine key={i} text={c.text[locale]} sourceId={c.citations[0]?.sourceId} verifiedAt={c.citations[0]?.verifiedAt} locale={locale} />
-          ))}
-        </ul>
-      </section>
-
-      <section aria-labelledby="sec-example">
-        <h2>{locale === "id" ? "Contoh" : "Example"}</h2>
-        <p>{entity.example.text[locale]}</p>
-      </section>
-
-      {entity.getInvolved && entity.getInvolved.length > 0 && (
-        <section aria-labelledby="sec-involve">
-          <h2>{locale === "id" ? "Cara ikut" : "How to get involved"}</h2>
-          <ul>
-            {entity.getInvolved.map((c, i) => (
-              <ClaimLine key={i} text={c.text[locale]} sourceId={c.citations[0]?.sourceId} verifiedAt={c.citations[0]?.verifiedAt} locale={locale} />
-            ))}
-          </ul>
-        </section>
-      )}
-
-      <section aria-labelledby="sec-connects">
-        <h2>{locale === "id" ? "Cara terhubung" : "How it connects"}</h2>
-        <ul>
-          {rels.map((r) => {
-            const other = r.from === id ? r.to : r.from;
-            const otherEntity = entities.find((e) => e.id === other);
-            return (
-              <li key={r.id}>
-                <a href={`/${locale}/organizations/${other}/`}>{otherEntity?.acronym ?? other}</a>: {r.label[locale]}
-              </li>
-            );
-          })}
-        </ul>
-      </section>
-
-      <section aria-labelledby="sec-terms">
-        <h2>{locale === "id" ? "Istilah terkait" : "Related terms"}</h2>
-        <ul className="chip-row">
-          {entity.relatedTermIds.map((tid) => (
-            <li key={tid}>
-              <a href={`/${locale}/glossary/#term-${tid}`}>{tid}</a>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section aria-labelledby="sec-official">
-        <h2>{locale === "id" ? "Tautan resmi" : "Official links"}</h2>
-        <p>
-          <a href={entity.officialUrl} rel="noopener noreferrer" target="_blank">
-            {entity.officialUrl}
-          </a>
+      <header className="profile-head">
+        <p className="profile-kind">{t(locale, `kind.${entity.kind}`)}</p>
+        <h1>
+          <span className="profile-acronym">{entity.acronym}</span>
+          {entity.acronym !== entity.name[locale] && <span className="profile-name">{entity.name[locale]}</span>}
+        </h1>
+        <p className="lede">
+          <ClaimText claim={entity.oneLiner} notes={notes} locale={locale} />
         </p>
-        <p className="last-reviewed">
-          {locale === "id" ? "Tinjauan terakhir" : "Last reviewed"}: {entity.lastReviewed}
-        </p>
-        <p>
-          <a
-            href={`https://github.com/glatinone/icann-explorer/issues/new?template=content-error.yml&title=${encodeURIComponent(`[Content error] /${locale}/organizations/${id}/`)}`}
-          >
-            {locale === "id" ? "Laporkan kesalahan di halaman ini" : "Report an error on this page"}
-          </a>
-        </p>
-      </section>
+      </header>
+
+      <div className="profile-body">
+        <div className="profile-main">
+          <section aria-labelledby="why">
+            <h2 id="why">{t(locale, "profile.why")}</h2>
+            <p>
+              <ClaimText claim={entity.whyItExists} notes={notes} locale={locale} />
+            </p>
+          </section>
+
+          <section aria-labelledby="what">
+            <h2 id="what">{t(locale, "profile.what")}</h2>
+            <ul className="claim-list">
+              {entity.whatItDoes.map((c, i) => (
+                <li key={i}>
+                  <ClaimText claim={c} notes={notes} locale={locale} />
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section aria-labelledby="who">
+            <h2 id="who">{t(locale, "profile.who")}</h2>
+            <p>
+              <ClaimText claim={entity.whoIsIn} notes={notes} locale={locale} />
+            </p>
+          </section>
+
+          <section aria-labelledby="example" className="example">
+            <h2 id="example">{t(locale, "profile.example")}</h2>
+            <p>
+              <ClaimText claim={entity.example} notes={notes} locale={locale} />
+            </p>
+          </section>
+
+          {entity.getInvolved && entity.getInvolved.length > 0 && (
+            <section aria-labelledby="involve">
+              <h2 id="involve">{t(locale, "profile.involve")}</h2>
+              <ul className="claim-list">
+                {entity.getInvolved.map((c, i) => (
+                  <li key={i}>
+                    <ClaimText claim={c} notes={notes} locale={locale} />
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          {connections.length > 0 && (
+            <section aria-labelledby="connections">
+              <h2 id="connections">{t(locale, "profile.connections")}</h2>
+              {connections.map(({ family, items }) => (
+                <div key={family} className={`connection-group family-${family}`}>
+                  <h3>
+                    <span className="family-swatch" aria-hidden="true" />
+                    {t(locale, `family.${family}`)}
+                  </h3>
+                  <ul>
+                    {items.map(({ r, other, phrase }) => (
+                      <li key={r.id}>
+                        <p className="connection-line">
+                          {phrase}{" "}
+                          <Link href={`/${locale}/organizations/${other!.id}/`}>
+                            <b>{other!.acronym}</b>
+                          </Link>
+                        </p>
+                        <p className="connection-explanation">
+                          <ClaimText claim={r.explanation} notes={notes} locale={locale} />
+                        </p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </section>
+          )}
+        </div>
+
+        <aside className="profile-aside">
+          <dl>
+            <dt>{t(locale, "profile.official")}</dt>
+            <dd>
+              <a href={entity.officialUrl} rel="noopener noreferrer" target="_blank">
+                {entity.officialUrl.replace(/^https:\/\/(www\.)?/, "").replace(/\/$/, "")}
+              </a>
+            </dd>
+            <dd>
+              <Link href={`/${locale}/map/?node=${entity.id}`}>{t(locale, "profile.viewOnMap")} →</Link>
+            </dd>
+            {relatedTerms.length > 0 && (
+              <>
+                <dt>{t(locale, "profile.terms")}</dt>
+                <dd>
+                  <ul className="term-links">
+                    {relatedTerms.map((term) => (
+                      <li key={term.id}>
+                        <Link href={`/${locale}/glossary/${term.id}/`}>{term.acronym ?? term.term[locale]}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </dd>
+              </>
+            )}
+          </dl>
+        </aside>
+      </div>
+
+      <NotesList notes={notes} locale={locale} />
+
+      <p className="report-link">
+        <a href={reportUrl(`/${locale}/organizations/${id}/`)}>{t(locale, "profile.report")}</a>
+      </p>
     </article>
-  );
-}
-
-function ClaimLine({
-  text,
-  sourceId,
-  verifiedAt,
-  locale,
-}: {
-  text: string;
-  sourceId?: string;
-  verifiedAt?: string;
-  locale: "id" | "en";
-}): ReactElement {
-  return (
-    <li>
-      {text}
-      {sourceId && (
-        <sup>
-          <a href={`/${locale}/about/#source-${sourceId}`} title={`${sourceId} (${verifiedAt ?? ""})`}>
-            [{sourceId.slice(0, 12)}]
-          </a>
-        </sup>
-      )}
-    </li>
   );
 }

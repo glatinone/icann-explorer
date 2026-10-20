@@ -1,42 +1,41 @@
+import Link from "next/link";
+import type { Metadata } from "next";
 import type { ReactElement } from "react";
-import { entities } from "@/lib/content";
-import type { Locale } from "@/i18n";
+import { entitiesByKind } from "@/lib/content";
+import { pageMetadata } from "@/lib/metadata";
+import { t, toLocale } from "@/i18n";
 
-const GROUPS: Array<{ kinds: string[]; id: string; en: string }> = [
-  { kinds: ["supporting-organization"], id: "Supporting Organizations", en: "Supporting Organizations" },
-  { kinds: ["advisory-committee"], id: "Komite Penasihat", en: "Advisory Committees" },
-  { kinds: ["board", "icann-org"], id: "Dewan & organisasi", en: "Board & org" },
-  { kinds: ["committee", "mechanism", "stakeholder-group", "regional-organization"], id: "Komite & mekanisme", en: "Committees & mechanisms" },
-  { kinds: ["affiliate"], id: "Afiliasi ICANN", en: "ICANN affiliate" },
-  { kinds: ["external"], id: "Di luar ICANN", en: "Outside ICANN" },
-];
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const locale = toLocale((await params).locale);
+  return pageMetadata(locale, "/organizations/", { title: t(locale, "orgs.title"), description: t(locale, "orgs.lede") });
+}
 
 export default async function OrganizationsPage({ params }: { params: Promise<{ locale: string }> }): Promise<ReactElement> {
-  const { locale: loc } = await params;
-  const locale: Locale = loc === "en" ? "en" : "id";
+  const locale = toLocale((await params).locale);
   return (
     <div className="page">
-      <h1>{locale === "id" ? "Organisasi" : "Organizations"}</h1>
-      {GROUPS.map((group) => {
-        const items = entities.filter((e) => group.kinds.includes(e.kind));
-        if (items.length === 0) return null;
-        return (
-          <section key={group.en} aria-labelledby={`org-group-${group.en.replace(/\W+/g, "-")}`}>
-            <h2 id={`org-group-${group.en.replace(/\W+/g, "-")}`}>{locale === "id" ? group.id : group.en}</h2>
-            <div className="card-grid">
-              {items.map((e) => (
-                <article className="card" key={e.id}>
-                  <h3>
-                    <a href={`/${locale}/organizations/${e.id}/`}>{e.acronym}</a>
-                  </h3>
-                  <p>{e.name[locale]}</p>
-                  <p className="card-oneliner">{e.oneLiner.text[locale]}</p>
-                </article>
-              ))}
-            </div>
-          </section>
-        );
-      })}
+      <header className="page-head">
+        <h1>{t(locale, "orgs.title")}</h1>
+        <p className="lede">{t(locale, "orgs.lede")}</p>
+      </header>
+      {entitiesByKind().map(({ kind, entities }) => (
+        <section key={kind} className="org-group" aria-labelledby={`g-${kind}`}>
+          <h2 id={`g-${kind}`} className="group-label">
+            {t(locale, `group.${kind}`)}
+          </h2>
+          <ul className="org-list">
+            {entities.map((e) => (
+              <li key={e.id}>
+                <Link href={`/${locale}/organizations/${e.id}/`} className={`org-card kind-${e.kind}`}>
+                  <span className="org-acronym">{e.acronym}</span>
+                  <span className="org-name">{e.name[locale]}</span>
+                  <span className="org-oneliner">{e.oneLiner.text[locale]}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
     </div>
   );
 }

@@ -1,168 +1,198 @@
-
 /**
- * Pure content-checking logic (no I/O), so it can be unit-tested directly.
- * Returns an array of human-readable issue strings. Empty = pass.
+ * Content checks beyond the zod schemas: referential integrity, provenance, and the
+ * relationship modeling rules. Pure (no I/O) so it can be unit-tested directly.
+ * Returns human-readable issues; an empty array means the content passes.
  */
+import { z } from "zod";
 import {
-  claim as claimSchema,
   entitySchema,
-  learningPathSchema,
   layoutSchema,
+  learningPathSchema,
   relationshipSchema,
   sourceSchema,
   termSchema,
+  type Claim,
+  type Entity,
+  type Layout,
+  type LearningPath,
+  type Relationship,
+  type Source,
+  type Term,
 } from "./schema";
-import type { Claim, Entity, LearningPath, Relationship, Source, Term, Layout } from "./schema";
-import { RELATIONSHIP_REGISTRY } from "./relationships";
+import { RELATIONSHIPS } from "./relationships";
 
-export interface ContentInput {
+export interface RawContent {
+  sources: unknown;
+  entities: unknown;
+  relationships: unknown;
+  terms: unknown;
+  paths: unknown;
+  layout: unknown;
+}
+
+export interface Content {
   sources: Source[];
   entities: Entity[];
   relationships: Relationship[];
   terms: Term[];
   paths: LearningPath[];
-  layout?: Layout | null;
+  layout: Layout;
 }
 
-const issues: string[] = [];
-function issue(file: string, path: string, message: string): void {
-  issues.push(`${file} ${path}: ${message}`);
+export interface ValidationResult {
+  content: Content | null;
+  issues: string[];
 }
 
-function schemaIssue(file: string, path: string, detail: string): void {
-  issue(file, path, `schema violation: ${detail}`);
+function formatZod(file: string, error: z.ZodError): string[] {
+  return error.issues.map((i) => `${file} ${i.path.join(".") || "$"}: ${i.message}`);
 }
 
-function checkEach<T>(
-  file: string,
-  items: T[],
-  schema: { safeParse(v: unknown): { success: boolean; data?: T; error?: { issues: Array<{ path: (string | number)[]; message: string }> } } },
-  label: string,
-): T[] {
-  const out: T[] = [];
-  for (const item of items) {
-    const result = schema.safeParse(item);
-    if (result.success) out.push(result.data as T);
-    else schemaIssue(file, `${label}`, result.error!.issues.map((x) => `${x.path.join(".")}: ${x.message}`).join("; "));
-  }
-  return out;
-}
+export function validateContent(raw: RawContent, today = new Date().toISOString().slice(0, 10)): ValidationResult {
+  const issues: string[] = [];
+  const parse = <T>(file: string, schema: z.ZodType<T>, value: unknown): T | null => {
+    const result = schema.safeParse(value);
+    if (result.success) return result.data;
+    issues.push(...formatZod(file, result.error));
+    return null;
+  };
 
-const sourceById = new Map<string, Source>();
-export function validateContent(input: ContentInput): string[] {
-  issues.length = 0;
-  const { sources, entities, relationships, terms, paths, layout } = input;
-  sourceById.clear();
-  for (const s of sources) sourceById.set(s.id, s);
+  const sources = parse("sources.json", z.array(sourceSchema), raw.sources);
+  const entities = parse("entities.json", z.array(entitySchema), raw.entities);
+  const relationships = parse("relationships.json", z.array(relationshipSchema), raw.relationships);
+  const terms = parse("terms.json", z.array(termSchema), raw.terms);
+  const paths = parse("paths.json", z.array(learningPathSchema), raw.paths);
+  const layout = parse("layout.json", layoutSchema, raw.layout);
+  if (!sources || !entities || !relationships || !terms || !paths || !layout) return { content: null, issues };
 
-  const parsedSources = checkEach("sources.json", sources, sourceSchema, "source");
-  const parsedEntities = checkEach("entities.json", entities, entitySchema, "entity");
-  const parsedRelationships = checkEach("relationships.json", relationships, relationshipSchema, "relationship");
-  const parsedTerms = checkEach("terms.json", terms, termSchema, "term");
-  const parsedPaths = checkEach("paths.json", paths, learningPathSchema, "path");
+  const add = (where: string, message: string): void => {
+    issues.push(`${where}: ${message}`);
+  };
 
-  if (layout) {
-    const parsed = layoutSchema.safeParse(layout);
-    if (!parsed.success) {
-      issue("layout.json", "$", parsed.error.issues.map((i) => `${i.path.join(".")}: ${i.message}`).join("; "));
+  for (const [file, items] of [
+    ["sources.json", sources],
+    ["entities.json", entities],
+    ["relationships.json", relationships],
+    ["terms.json", terms],
+    ["paths.json", paths],
+  ] as const) {
+    const seen = new Set<string>();
+    for (const { id } of items) {
+      if (seen.has(id)) add(`${file} ${id}`, "duplicate id");
+      seen.add(id);
     }
   }
 
-  const entityIds = new Set(parsedEntities.map((e) => e.id));
-  const termIds = new Set(parsedTerms.map((t) => t.id));
-  function checkClaim(claimObj: unknown, file: string, path: string): void {
-    const parsed = claimSchema.safeParse(claimObj);
-    if (!parsed.success) {
-      issue(file, path, parsed.error.issues.map((x) => `${x.path.join(".")}: ${x.message}`).join("; "));
-      return;
-    }
-    const c = parsed.data as Claim;
-    if (c.citations.length === 0) {
-      issue(file, path, "claim has no citations");
-      return;
-    }
-    for (const [i, cit] of c.citations.entries()) {
-      const src = sourceById.get(cit.sourceId);
-      if (!src) {
-        issue(file, `${path}.citations[${i}]`, `unknown sourceId "${cit.sourceId}"`);
-        continue;
+  const sourceById = new Map(sources.map((s) => [s.id, s]));
+  const entityById = new Map(entities.map((e) => [e.id, e]));
+  const termIds = new Set(terms.map((t) => t.id));
+  const usedSources = new Set<string>();
+
+  const checkClaim = (where: string, claim: Claim): void => {
+    let hasStrongSource = false;
+    claim.citations.forEach((c, i) => {
+      const source = sourceById.get(c.sourceId);
+      if (!source) {
+        add(`${where}.citations[${i}]`, `unknown source "${c.sourceId}"`);
+        return;
       }
-      if (c.kind === "fact" && (src.tier < 1 || src.tier > 3)) {
-        issue(file, `${path}.citations[${i}]`, `fact rests on Tier ${src.tier} source "${cit.sourceId}" (needs Tier 1-3)`);
-      }
+      usedSources.add(source.id);
+      if (source.tier <= 3) hasStrongSource = true;
+      if (c.verifiedAt > today) add(`${where}.citations[${i}]`, `verifiedAt ${c.verifiedAt} is in the future`);
+    });
+    if (claim.kind === "fact" && !hasStrongSource) add(where, "a fact needs at least one Tier 1-3 citation");
+  };
+
+  for (const e of entities) {
+    const base = `entities.json ${e.id}`;
+    checkClaim(`${base}.oneLiner`, e.oneLiner);
+    checkClaim(`${base}.whyItExists`, e.whyItExists);
+    e.whatItDoes.forEach((c, i) => checkClaim(`${base}.whatItDoes[${i}]`, c));
+    checkClaim(`${base}.whoIsIn`, e.whoIsIn);
+    checkClaim(`${base}.example`, e.example);
+    e.getInvolved?.forEach((c, i) => checkClaim(`${base}.getInvolved[${i}]`, c));
+    for (const t of e.relatedTermIds) if (!termIds.has(t)) add(base, `unknown term "${t}"`);
+    if (!layout.positions[e.id]) add(base, "has no position in layout.json");
+  }
+
+  const pairs = new Set<string>();
+  for (const r of relationships) {
+    const where = `relationships.json ${r.id}`;
+    checkClaim(`${where}.explanation`, r.explanation);
+    const from = entityById.get(r.from);
+    const to = entityById.get(r.to);
+    if (!from) add(where, `unknown entity "${r.from}"`);
+    if (!to) add(where, `unknown entity "${r.to}"`);
+    if (!from || !to) continue;
+    if (r.from === r.to) add(where, "an entity cannot relate to itself");
+
+    const info = RELATIONSHIPS[r.type];
+    if (!info.allowed.some(([a, b]) => a === from.scope && b === to.scope)) {
+      add(where, `"${r.type}" is not allowed from ${from.scope} to ${to.scope}`);
     }
+    if (r.type === "reports-to" && from.kind !== "icann-org") {
+      add(where, "only ICANN org may report to anything; SOs, ACs and community groups never do");
+    }
+    const pair = [r.from, r.to].sort().join("|") + `|${info.family}`;
+    if (info.family === "accountability" && pairs.has(pair)) add(where, "two accountability relationships for one pair");
+    pairs.add(pair);
   }
 
-  for (const e of parsedEntities) {
-    const base = `entity:${e.id}`;
-    checkClaim(e.oneLiner, "entities.json", `${base}.oneLiner`);
-    e.whyItExists.forEach((c, i) => checkClaim(c, "entities.json", `${base}.whyItExists[${i}]`));
-    e.whatItDoes.forEach((c, i) => checkClaim(c, "entities.json", `${base}.whatItDoes[${i}]`));
-    checkClaim(e.example, "entities.json", `${base}.example`);
-    (e.getInvolved ?? []).forEach((c, i) => checkClaim(c, "entities.json", `${base}.getInvolved[${i}]`));
+  for (const t of terms) {
+    const where = `terms.json ${t.id}`;
+    checkClaim(`${where}.definition`, t.definition);
+    for (const id of t.relatedEntityIds) if (!entityById.has(id)) add(where, `unknown entity "${id}"`);
+    for (const id of t.relatedTermIds) if (!termIds.has(id)) add(where, `unknown term "${id}"`);
   }
 
-  const entityById = new Map(parsedEntities.map((e) => [e.id, e]));
-
-  for (const r of parsedRelationships) {
-    if (!entityById.has(r.from)) issue("relationships.json", r.id, `unknown from-entity "${r.from}"`);
-    if (!entityById.has(r.to)) issue("relationships.json", r.id, `unknown to-entity "${r.to}"`);
-    const info = RELATIONSHIP_REGISTRY[r.type as keyof typeof RELATIONSHIP_REGISTRY];
-    if (!info) {
-      issue("relationships.json", r.id, `unknown relationship type "${r.type}"`);
-    } else {
-      const fromEntity = entityById.get(r.from);
-      const toEntity = entityById.get(r.to);
-      if (fromEntity && toEntity) {
-        const allowed = info.allowed.some(([a, b]) => a === fromEntity.scope && b === toEntity.scope);
-        if (!allowed) {
-          issue("relationships.json", r.id, `relationship type "${r.type}" does not allow ${fromEntity.scope} -> ${toEntity.scope}`);
+  for (const p of paths) {
+    p.steps.forEach((step, i) => {
+      const where = `paths.json ${p.id}.steps[${i}]`;
+      step.claims?.forEach((c, j) => checkClaim(`${where}.claims[${j}]`, c));
+      for (const link of step.links) {
+        if (link.type === "entity" && !entityById.has(link.id)) add(where, `unknown entity "${link.id}"`);
+        if (link.type === "term" && !termIds.has(link.id)) add(where, `unknown term "${link.id}"`);
+        if (link.type === "source") {
+          if (!sourceById.has(link.id)) add(where, `unknown source "${link.id}"`);
+          else usedSources.add(link.id);
         }
       }
-      checkClaim(r.explanation, "relationships.json", r.id);
-    }
-    if (r.type === "reports-to") {
-      const from = entityById.get(r.from);
-      if (from && (from.kind === "supporting-organization" || from.kind === "advisory-committee")) {
-        issue("relationships.json", r.id, `SO/AC must not "reports-to" anyone (found ${r.from} -> ${r.to})`);
-      }
-    }
-    if (r.type === "part-of") {
-      const from = entityById.get(r.from);
-      const to = entityById.get(r.to);
-      if (from && to && from.scope === "external" && to.scope === "icann-internal") {
-        issue("relationships.json", r.id, `external entity "${r.from}" cannot be part-of an ICANN-internal entity`);
-      }
-    }
-  }
-
-  for (const t of parsedTerms) {
-    checkClaim(t.definition, "terms.json", `term:${t.id}`);
-    for (const id of t.relatedEntityIds) {
-      if (!entityIds.has(id)) issue("terms.json", `term:${t.id}.relatedEntityIds`, `unknown entity "${id}"`);
-    }
-    for (const id of t.relatedTermIds) {
-      if (!termIds.has(id)) issue("terms.json", `term:${t.id}.relatedTermIds`, `unknown term "${id}"`);
-    }
-  }
-
-  for (const p of parsedPaths) {
-    p.steps.forEach((step, i) => {
-      (step.claims ?? []).forEach((c: unknown, j: number) => checkClaim(c, "paths.json", `${p.id}.steps[${i}].claims[${j}]`));
     });
   }
 
-  function duplicateCheck(items: Array<{ id: string }>, file: string): void {
-    const seen = new Set<string>();
-    for (const item of items) {
-      if (seen.has(item.id)) issue(file, item.id, "duplicate id");
-      seen.add(item.id);
-    }
+  for (const id of Object.keys(layout.positions)) {
+    if (!entityById.has(id)) add("layout.json", `position for unknown entity "${id}"`);
   }
-  duplicateCheck(parsedSources, "sources.json");
-  duplicateCheck(parsedEntities, "entities.json");
-  duplicateCheck(parsedRelationships, "relationships.json");
-  duplicateCheck(parsedTerms, "terms.json");
+  for (const s of sources) if (!usedSources.has(s.id)) add(`sources.json ${s.id}`, "source is never cited");
 
-  return [...issues];
+  return { content: { sources, entities, relationships, terms, paths, layout }, issues };
+}
+
+/** Drops needs-review items and anything that points at them, so the site only shows published content. */
+export function publishedOnly(content: Content): Content {
+  const entities = content.entities.filter((e) => e.status === "published");
+  const entityIds = new Set(entities.map((e) => e.id));
+  const terms = content.terms.filter((t) => t.status === "published");
+  const termIds = new Set(terms.map((t) => t.id));
+  return {
+    ...content,
+    entities: entities.map((e) => ({ ...e, relatedTermIds: e.relatedTermIds.filter((id) => termIds.has(id)) })),
+    relationships: content.relationships.filter(
+      (r) => r.status === "published" && entityIds.has(r.from) && entityIds.has(r.to),
+    ),
+    terms: terms.map((t) => ({
+      ...t,
+      relatedEntityIds: t.relatedEntityIds.filter((id) => entityIds.has(id)),
+      relatedTermIds: t.relatedTermIds.filter((id) => termIds.has(id)),
+    })),
+    paths: content.paths.map((p) => ({
+      ...p,
+      steps: p.steps.map((s) => ({
+        ...s,
+        links: s.links.filter(
+          (l) => (l.type !== "entity" || entityIds.has(l.id)) && (l.type !== "term" || termIds.has(l.id)),
+        ),
+      })),
+    })),
+  };
 }

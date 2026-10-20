@@ -1,0 +1,26 @@
+name: Weekly source check
+
+# Official pages change. This re-reads every cited source and fails if a quote no longer appears in it,
+# which is the signal to re-verify that claim.
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Monday 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sources:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm check:quotes
+      - run: pnpm build
+      - run: pnpm check:links

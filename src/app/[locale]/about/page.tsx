@@ -1,81 +1,112 @@
+import type { Metadata } from "next";
 import type { ReactElement } from "react";
 import { sources } from "@/lib/content";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
+import { formatDate, t, toLocale } from "@/i18n";
+import { repoUrl } from "@/i18n/config";
+
+/** Long-form page copy. Kept here rather than in the UI dictionaries because it is prose, not interface. */
+const COPY = {
+  lede: {
+    en: "ICANN Explorer is a free, bilingual guide for people meeting ICANN for the first time. It is an independent, unofficial project: it is not affiliated with or endorsed by ICANN, and it does not speak for any ICANN body.",
+    id: "ICANN Explorer adalah panduan gratis dalam dua bahasa untuk orang yang baru mengenal ICANN. Ini proyek independen dan tidak resmi: tidak berafiliasi dengan ICANN, tidak didukung oleh ICANN, dan tidak mewakili badan ICANN mana pun.",
+  },
+  whyTitle: { en: "Why it exists", id: "Kenapa proyek ini dibuat" },
+  why: {
+    en: "It started after ICANN87, where the author attended as a Fellow. The hard part for newcomers was not motivation. It was the wall of acronyms and not knowing which group mattered for which topic. The official material is good but spread over many sites, and none of it shows the relationships on one page. This site does that, then sends you back to the official programs.",
+    id: "Proyek ini lahir setelah ICANN87, tempat penulisnya hadir sebagai Fellow. Bagi pendatang baru, masalahnya bukan kurang semangat, tapi tembok akronim dan bingung kelompok mana yang relevan untuk topik apa. Materi resminya bagus, tetapi tersebar di banyak situs dan tidak ada yang menampilkan hubungan antarkelompok dalam satu halaman. Situs ini mengisi celah itu, lalu mengarahkan kamu kembali ke program resmi.",
+  },
+  methodTitle: { en: "How the content is checked", id: "Cara konten diperiksa" },
+  method: [
+    {
+      en: "Every factual sentence carries a numbered source. The source list on each page gives the document, the exact article or section, a short verbatim quote, and the date someone checked it.",
+      id: "Setiap kalimat fakta punya nomor sumber. Daftar sumber di setiap halaman menyebut dokumennya, pasal atau bagian yang tepat, kutipan singkat apa adanya, dan tanggal pemeriksaannya.",
+    },
+    {
+      en: "Sources are ranked. ICANN's Bylaws, charters and Board resolutions come first, then official ICANN pages, then the official sites of outside organizations (only for facts about themselves). Wikipedia, news and blogs are never enough on their own.",
+      id: "Sumber diberi peringkat. Bylaws ICANN, piagam, dan resolusi Dewan berada di urutan pertama, lalu halaman resmi ICANN, lalu situs resmi organisasi luar (hanya untuk fakta tentang organisasi itu sendiri). Wikipedia, berita, dan blog tidak pernah cukup sebagai satu-satunya sumber.",
+    },
+    {
+      en: "Simplified explanations are marked with a dotted underline, so you can tell our reading from what the source says.",
+      id: "Penjelasan yang kami sederhanakan diberi garis bawah titik-titik, supaya kamu bisa membedakan tafsiran kami dari isi sumbernya.",
+    },
+    {
+      en: "The map draws each kind of relationship differently. Advice is never drawn like a reporting line, and outside organizations are kept outside ICANN's box.",
+      id: "Peta menggambar setiap jenis hubungan secara berbeda. Nasihat tidak pernah digambar seperti garis komando, dan organisasi luar tetap berada di luar kotak ICANN.",
+    },
+  ],
+  errorsTitle: { en: "Found a mistake?", id: "Menemukan kesalahan?" },
+  errors: {
+    en: "Every page has a link that opens a pre-filled GitHub issue. Corrections need a source, and the higher-ranked source wins.",
+    id: "Setiap halaman punya tautan yang membuka issue GitHub yang sudah terisi. Koreksi perlu disertai sumber, dan sumber dengan peringkat lebih tinggi yang dipakai.",
+  },
+  sourcesTitle: { en: "All sources", id: "Semua sumber" },
+  tier: {
+    en: ["", "Governing documents", "Official ICANN pages", "Outside organizations", "Secondary"],
+    id: ["", "Dokumen tata kelola", "Halaman resmi ICANN", "Organisasi luar", "Sekunder"],
+  },
+  accessed: { en: "accessed", id: "diakses" },
+  report: { en: "Open an issue on GitHub", id: "Buka issue di GitHub" },
+};
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale: loc } = await params;
-  const locale = loc === "en" ? "en" : "id";
-  return {
-    title: locale === "id" ? "Tentang & Sumber | ICANN Explorer" : "About & Sources | ICANN Explorer",
-    alternates: { canonical: `/${locale}/about/`, languages: { id: "/id/about/", en: "/en/about/" } },
-  };
+  const locale = toLocale((await params).locale);
+  return pageMetadata(locale, "/about/", { title: t(locale, "about.title"), description: COPY.lede[locale] });
 }
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }): Promise<ReactElement> {
-  const { locale: loc } = await params;
-  const locale: "id" | "en" = loc === "en" ? "en" : "id";
-  const t = (en: string, idn: string) => (locale === "id" ? idn : en);
+  const locale = toLocale((await params).locale);
+  const byTier = [1, 2, 3, 4]
+    .map((tier) => ({ tier, list: sources.filter((s) => s.tier === tier).sort((a, b) => a.title.localeCompare(b.title)) }))
+    .filter((g) => g.list.length > 0);
 
   return (
-    <div className="page">
-      <h1>{locale === "id" ? "Tentang & Sumber" : "About & Sources"}</h1>
+    <article className="page prose-page">
+      <header className="page-head">
+        <h1>{t(locale, "about.title")}</h1>
+        <p className="lede">{COPY.lede[locale]}</p>
+      </header>
 
-      <section aria-labelledby="about-what">
-        <h2 id="about-what">{locale === "id" ? "Apa ini" : "What this is"}</h2>
+      <section aria-labelledby="why">
+        <h2 id="why">{COPY.whyTitle[locale]}</h2>
+        <p>{COPY.why[locale]}</p>
+      </section>
+
+      <section aria-labelledby="method">
+        <h2 id="method">{COPY.methodTitle[locale]}</h2>
+        {COPY.method.map((p, i) => (
+          <p key={i}>{p[locale]}</p>
+        ))}
+      </section>
+
+      <section aria-labelledby="errors">
+        <h2 id="errors">{COPY.errorsTitle[locale]}</h2>
         <p>
-          {t(
-            "ICANN Explorer is an interactive, bilingual guide to the ICANN ecosystem for newcomers. It is independent and unofficial: it is not affiliated with or endorsed by ICANN.",
-            "ICANN Explorer adalah panduan interaktif untuk memahami ekosistem ICANN. Proyek ini independen dan tidak resmi.",
-          )}
-        </p>
-        <p>
-          {/* TODO(Kiell): write your own 2-3 sentence "why this project exists" story here (ICANN87 Fellow perspective). */}
-          {t(
-            "TODO(Kiell): tell your ICANN87 Fellow story here, in your own words.",
-            "TODO(Kiell): tulis cerita pribadimu soal kenapa proyek ini ada.",
-          )}
+          {COPY.errors[locale]} <a href={`${repoUrl}/issues/new?template=content-error.yml`}>{COPY.report[locale]}</a>.
         </p>
       </section>
 
-      <section aria-labelledby="about-method">
-        <h2>{locale === "id" ? "Metodologi" : "Methodology"}</h2>
-        <p>
-          {t(
-            "Every factual claim on this site has its own citation with the date it was verified. Facts need a Tier 1-3 source: ICANN's own governing documents first, then ICANN body pages, then other established organizations. Interpretations are marked as such. When sources disagree, the higher-trust source wins and the conflict is recorded.",
-            "Setiap klaim penting punya sitasi sendiri dengan tanggal verifikasi. Fakta butuh sumber Tier 1-3. Interpretasi ditandai berbeda dari fakta.",
-          )}
-        </p>
-        <p>
-          {t(
-            "The map is modeled by relationship type, not as a single hierarchy. Advisory relationships never look like reporting lines.",
-            "Peta dimodelkan per jenis relasi, bukan satu hierarki.",
-          )}
-        </p>
+      <section aria-labelledby="sources">
+        <h2 id="sources">{COPY.sourcesTitle[locale]}</h2>
+        {byTier.map(({ tier, list }) => (
+          <div key={tier} className="source-tier">
+            <h3 className="group-label">{COPY.tier[locale][tier]}</h3>
+            <ul className="source-list">
+              {list.map((s) => (
+                <li key={s.id} id={`source-${s.id}`}>
+                  <a href={s.url} rel="noopener noreferrer" target="_blank">
+                    {s.title}
+                  </a>
+                  <span className="note-meta">
+                    {s.publisher}
+                    {s.version ? `, ${s.version}` : ""} · {COPY.accessed[locale]} {formatDate(locale, s.accessed)}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </section>
-
-      <section aria-labelledby="about-sources">
-        <h2>{locale === "id" ? "Sumber" : "Sources"}</h2>
-        <ul className="sources-list">
-          {sources.map((s) => (
-            <li key={s.id} id={`source-${s.id}`}>
-              <a href={s.url} rel="noopener noreferrer" target="_blank">
-                {s.title}
-              </a>{" "}
-              - {s.publisher} (Tier {s.tier}, {t("checked", "diperiksa")} {s.accessed})
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section aria-labelledby="about-errors">
-        <h2>{locale === "id" ? "Melaporkan kesalahan" : "Reporting errors"}</h2>
-        <p>
-          {t(
-            "Found a mistake? Open an issue on GitHub or use the Report an error link in the footer.",
-            "Menemukan kesalahan? Buka issue di GitHub atau pakai tautan Laporkan kesalahan di footer.",
-          )}
-        </p>
-      </section>
-    </div>
+    </article>
   );
 }

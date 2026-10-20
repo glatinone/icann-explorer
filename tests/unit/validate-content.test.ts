@@ -1,155 +1,108 @@
-import { describe, it, expect } from "vitest";
-import type { Entity, Relationship, Source } from "@/lib/schema";
-import { validateContent, type ContentInput } from "@/lib/validate";
+/* eslint-disable @typescript-eslint/no-explicit-any -- these tests poke at deep JSON fixtures on purpose */
+import { describe, expect, it } from "vitest";
+import entities from "../../content/entities.json";
+import layout from "../../content/layout.json";
+import paths from "../../content/paths.json";
+import relationships from "../../content/relationships.json";
+import sources from "../../content/sources.json";
+import terms from "../../content/terms.json";
+import { publishedOnly, validateContent, type RawContent } from "@/lib/validate";
 
-const tier1: Source = {
-  id: "bylaws",
-  title: "ICANN Bylaws",
-  url: "https://www.icann.org/resources/pages/governance/bylaws-en",
-  publisher: "ICANN",
-  tier: 1,
-  languages: ["en"],
-  accessed: "2026-10-18",
-};
-
-function entity(over: Partial<Entity>): Entity {
-  return {
-    id: "gnso",
-    kind: "supporting-organization",
-    scope: "icann-internal",
-    acronym: "GNSO",
-    name: { id: "Organisasi Pendukung GNSO", en: "GNSO Supporting Organization" },
-    oneLiner: {
-      text: { id: "Satu kalimat", en: "One line." },
-      kind: "fact",
-      citations: [{ sourceId: "bylaws", verifiedAt: "2026-10-18" }],
-      translation: { original: "en", reviewed: true },
-    },
-    whyItExists: [],
-    whatItDoes: [],
-    example: {
-      text: { id: "Contoh", en: "Example." },
-      kind: "fact",
-      citations: [{ sourceId: "bylaws", verifiedAt: "2026-10-18" }],
-      translation: { original: "en", reviewed: true },
-    },
-    officialUrl: "https://gnso.icann.org/",
-    relatedTermIds: [],
-    status: "published",
-    lastReviewed: "2026-10-18",
-    ...over,
-  };
+/** A fresh, mutable copy of the real content for each test. */
+function content(): {
+  sources: Array<Record<string, unknown>>;
+  entities: Array<Record<string, any>>;
+  relationships: Array<Record<string, any>>;
+  terms: Array<Record<string, any>>;
+  paths: Array<Record<string, any>>;
+  layout: Record<string, any>;
+} {
+  return structuredClone({ sources, entities, relationships, terms, paths, layout });
 }
 
-function relation(over: Partial<Relationship>): Relationship {
-  return {
-    id: "gnso-reports-to-board",
-    from: "gnso",
-    to: "icann-board",
-    type: "reports-to",
-    label: { id: "bertanggung jawab kepada", en: "reports to" },
-    explanation: {
-      text: { id: "Penjelasan.", en: "Explanation." },
-      kind: "fact",
-      citations: [{ sourceId: "bylaws", verifiedAt: "2026-10-18" }],
-      translation: { original: "en", reviewed: true },
-    },
-    status: "published",
-    ...over,
-  };
-}
+const issuesOf = (raw: RawContent): string[] => validateContent(raw, "2026-12-31").issues;
 
-function baseInput(): ContentInput {
-  return {
-    sources: [tier1],
-    entities: [entity({}), entity({ id: "icann-board", kind: "board", scope: "icann-internal" })],
-    relationships: [],
-    terms: [],
-    paths: [],
-    layout: null,
-  };
-}
-
-describe("validateContent", () => {
-  it("passes a clean skeleton", () => {
-    expect(validateContent(baseInput())).toEqual([]);
+describe("the shipped content", () => {
+  it("passes every check", () => {
+    expect(issuesOf(content())).toEqual([]);
   });
 
-  it("rejects an SO that reports-to the Board", () => {
-    const input = baseInput();
-    input.relationships = [relation({})];
-    const issues = validateContent(input);
-    expect(issues.some((i) => i.includes('SO/AC must not "reports-to"'))).toBe(true);
+  it("has a map position for every entity", () => {
+    for (const e of entities) expect(layout.positions, e.id).toHaveProperty(e.id);
   });
 
-  it("rejects an external entity that is part-of an ICANN-internal entity", () => {
-    const input = baseInput();
-    input.entities = [
-      ...input.entities,
-      entity({ id: "ietf", kind: "external", scope: "external", acronym: "IETF" }),
-    ];
-    input.relationships = [
-      relation({
-        id: "ietf-part-of-icann",
-        from: "ietf",
-        to: "gnso",
-        type: "part-of",
-      }),
-    ];
-    const issues = validateContent(input);
-    expect(issues.some((i) => i.includes("cannot be part-of an ICANN-internal entity"))).toBe(true);
+  it("models the Empowered Community with exactly its five Decisional Participants", () => {
+    const participants = relationships
+      .filter((r) => r.to === "empowered-community" && r.type === "participates-in")
+      .map((r) => r.from)
+      .sort();
+    expect(participants).toEqual(["alac", "aso", "ccnso", "gac", "gnso"]);
+  });
+});
+
+describe("validateContent rejects", () => {
+  it("an SO that reports to the Board", () => {
+    const c = content();
+    const r = structuredClone(c.relationships[0]);
+    Object.assign(r, { id: "gnso--reports-to--icann-board", from: "gnso", to: "icann-board", type: "reports-to" });
+    c.relationships.push(r);
+    expect(issuesOf(c).some((i) => i.includes("only ICANN org may report"))).toBe(true);
   });
 
-  it("rejects a fact that only has a Tier 4 citation", () => {
-    const tier4: Source = { ...tier1, id: "blog", tier: 4, title: "A blog post" };
-    const input = baseInput();
-    input.sources = [tier1, tier4];
-    input.entities = [
-      entity({
-        oneLiner: {
-          text: { id: "Klaim.", en: "Claim." },
-          kind: "fact",
-          citations: [{ sourceId: "blog", verifiedAt: "2026-10-18" }],
-          translation: { original: "en", reviewed: true },
-        },
-      }),
-    ];
-    const issues = validateContent(input);
-    expect(issues.some((i) => i.includes("needs Tier 1-3"))).toBe(true);
+  it("an external organization that is part of ICANN", () => {
+    const c = content();
+    const r = structuredClone(c.relationships[0]);
+    Object.assign(r, { id: "ietf--part-of--gnso", from: "ietf", to: "gnso", type: "part-of" });
+    c.relationships.push(r);
+    expect(issuesOf(c).some((i) => i.includes('"part-of" is not allowed from external'))).toBe(true);
   });
 
-  it("rejects an unknown sourceId in a citation", () => {
-    const input = baseInput();
-    input.entities = [
-      entity({
-        oneLiner: {
-          text: { id: "Klaim.", en: "Claim." },
-          kind: "fact",
-          citations: [{ sourceId: "nope", verifiedAt: "2026-10-18" }],
-          translation: { original: "en", reviewed: true },
-        },
-      }),
-    ];
-    const issues = validateContent(input);
-    expect(issues.some((i) => i.includes('unknown sourceId "nope"'))).toBe(true);
+  it("a fact that rests only on a Tier 4 source", () => {
+    const c = content();
+    c.sources.push({ id: "a-blog", title: "A blog", url: "https://example.com/", publisher: "Someone", tier: 4, languages: ["en"], accessed: "2026-10-20" });
+    c.entities[0].oneLiner.kind = "fact";
+    c.entities[0].oneLiner.citations = [{ sourceId: "a-blog", locator: "para 1", verifiedAt: "2026-10-20" }];
+    expect(issuesOf(c).some((i) => i.includes("needs at least one Tier 1-3"))).toBe(true);
   });
 
-  it("rejects a non-ASCII entity id", () => {
-    const input = baseInput();
-    input.entities = [
-      entity({ id: "günso" }),
-      entity({ id: "icann-board", kind: "board", scope: "icann-internal" }),
-    ];
-    const issues = validateContent(input);
-    expect(issues.some((i) => i.includes("schema violation"))).toBe(true);
+  it("a citation without a locator", () => {
+    const c = content();
+    delete c.entities[0].oneLiner.citations[0].locator;
+    expect(issuesOf(c).length).toBeGreaterThan(0);
   });
 
-  it("rejects a claim missing the Indonesian text", () => {
-    const input = baseInput();
-    const bad = entity({});
-    (bad.oneLiner as { text: { id: string; en: string } }).text = { id: "", en: "Only English." };
-    input.entities = [bad, entity({ id: "icann-board", kind: "board", scope: "icann-internal" })];
-    const issues = validateContent(input);
-    expect(issues.some((i) => i.includes("Indonesian text is required"))).toBe(true);
+  it("a citation verified in the future", () => {
+    const c = content();
+    c.entities[0].oneLiner.citations[0].verifiedAt = "2099-01-01";
+    expect(issuesOf(c).some((i) => i.includes("in the future"))).toBe(true);
+  });
+
+  it("a claim missing its Indonesian text", () => {
+    const c = content();
+    c.entities[0].oneLiner.text.id = "";
+    expect(issuesOf(c).some((i) => i.includes("Indonesian text is required"))).toBe(true);
+  });
+
+  it("a relationship id that doesn't match its endpoints", () => {
+    const c = content();
+    c.relationships[0].id = "something--advises--else";
+    expect(issuesOf(c).length).toBeGreaterThan(0);
+  });
+
+  it("a link to an unknown term", () => {
+    const c = content();
+    c.entities[0].relatedTermIds.push("no-such-term");
+    expect(issuesOf(c).some((i) => i.includes('unknown term "no-such-term"'))).toBe(true);
+  });
+});
+
+describe("publishedOnly", () => {
+  it("drops needs-review entities and every relationship that touches them", () => {
+    const { content: parsed } = validateContent(content(), "2026-12-31");
+    const c = structuredClone(parsed!);
+    c.entities = c.entities.map((e) => (e.id === "gnso" ? { ...e, status: "needs-review" as const } : e));
+    const out = publishedOnly(c);
+    expect(out.entities.find((e) => e.id === "gnso")).toBeUndefined();
+    expect(out.relationships.some((r) => r.from === "gnso" || r.to === "gnso")).toBe(false);
   });
 });

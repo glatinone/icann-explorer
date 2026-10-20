@@ -3,10 +3,7 @@ export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "id";
 
 export const siteName = "ICANN Explorer";
-
-/** One config constant for the feedback / discussions link. TODO(Kiell): set the final URL. */
-export const feedbackUrl =
-  "https://github.com/glatinone/icann-explorer/discussions/new";
+export const repoUrl = "https://github.com/glatinone/icann-explorer";
 
 export function isLocale(value: string): value is Locale {
   return (locales as readonly string[]).includes(value);
@@ -14,4 +11,10 @@ export function isLocale(value: string): value is Locale {
 
 export function otherLocale(locale: Locale): Locale {
   return locale === "id" ? "en" : "id";
+}
+
+/** Prefilled GitHub issue for a content error on a given page path. */
+export function reportUrl(pagePath: string): string {
+  const title = encodeURIComponent(`[Content] ${pagePath}`);
+  return `${repoUrl}/issues/new?template=content-error.yml&title=${title}`;
 }

@@ -1,7 +1,4 @@
-import type { RelationshipType, entityScope } from "./schema";
-import type { z } from "zod";
-
-type EntityScope = z.infer<typeof entityScope>;
+import type { EntityScope, LocalizedText, RelationshipType } from "./schema";
 
 export type RelationshipFamily =
   | "policy"
@@ -12,93 +9,101 @@ export type RelationshipFamily =
   | "membership"
   | "context";
 
+export type Marker = "triangle" | "chevron" | "diamond" | "circle" | "none";
+
 export interface RelationshipTypeInfo {
   family: RelationshipFamily;
-  /** Which endpoint scopes this type may connect. Keys are ("icann-internal" | "icann-affiliate" | "external"). */
+  /** Scope pairs [from, to] this type may connect. The validator rejects anything else. */
   allowed: Array<[EntityScope, EntityScope]>;
-  label: { id: string; en: string };
+  label: LocalizedText;
+  /** Same relation read from the other end, for "connected to" lists. */
+  inverse: LocalizedText;
 }
 
-/**
- * The relationship registry: every relationship type maps to one of 7 visual families,
- * with the endpoint scopes it is allowed to connect. The validator rejects any
- * relationship whose endpoints fall outside the allowed scope pairs.
- */
-export const RELATIONSHIP_REGISTRY: Record<RelationshipType, RelationshipTypeInfo> = {
+const internal: [EntityScope, EntityScope] = ["icann-internal", "icann-internal"];
+
+export const RELATIONSHIPS: Record<RelationshipType, RelationshipTypeInfo> = {
   "reports-to": {
     family: "accountability",
-    allowed: [["icann-internal", "icann-internal"], ["icann-internal", "icann-affiliate"]],
-    label: { id: "bertanggung jawab kepada", en: "reports to" },
-  },
-  oversees: {
-    family: "accountability",
-    allowed: [["icann-internal", "icann-internal"]],
-    label: { id: "mengawasi", en: "oversees" },
-  },
-  "develops-policy-for": {
-    family: "policy",
-    allowed: [["icann-internal", "icann-internal"]],
-    label: { id: "mengembangkan kebijakan untuk", en: "develops policy for" },
-  },
-  advises: {
-    family: "advice",
-    allowed: [["icann-internal", "icann-internal"], ["external", "icann-internal"]],
-    label: { id: "memberi nasihat kepada", en: "advises" },
-  },
-  implements: {
-    family: "implementation",
-    allowed: [["icann-internal", "icann-internal"]],
-    label: { id: "menerapkan", en: "implements" },
-  },
-  "performs-functions-for": {
-    family: "implementation",
-    allowed: [["icann-internal", "icann-internal"], ["icann-affiliate", "icann-internal"]],
-    label: { id: "menjalankan fungsi untuk", en: "performs functions for" },
-  },
-  "selects-members-of": {
-    family: "selection",
-    allowed: [["icann-internal", "icann-internal"]],
-    label: { id: "memilih anggota", en: "selects members of" },
-  },
-  "appoints-liaison-to": {
-    family: "selection",
-    allowed: [["icann-internal", "icann-internal"], ["icann-internal", "icann-affiliate"], ["icann-internal", "external"]],
-    label: { id: "mengirim liaison ke", en: "appoints liaison to" },
+    allowed: [internal],
+    label: { en: "reports to", id: "bertanggung jawab kepada" },
+    inverse: { en: "is reported to by", id: "menerima laporan dari" },
   },
   "exercises-powers-over": {
     family: "accountability",
-    allowed: [["icann-internal", "icann-internal"]],
-    label: { id: "memiliki kewenangan atas", en: "exercises powers over" },
+    allowed: [internal],
+    label: { en: "holds powers over", id: "punya kewenangan atas" },
+    inverse: { en: "is held accountable by", id: "dapat dikoreksi oleh" },
+  },
+  "develops-policy-for": {
+    family: "policy",
+    allowed: [internal],
+    label: { en: "recommends policy to", id: "merekomendasikan kebijakan ke" },
+    inverse: { en: "receives policy from", id: "menerima rekomendasi kebijakan dari" },
+  },
+  advises: {
+    family: "advice",
+    allowed: [internal],
+    label: { en: "advises", id: "memberi nasihat kepada" },
+    inverse: { en: "is advised by", id: "menerima nasihat dari" },
+  },
+  implements: {
+    family: "implementation",
+    allowed: [internal],
+    label: { en: "implements decisions of", id: "menjalankan keputusan" },
+    inverse: { en: "decisions implemented by", id: "keputusannya dijalankan oleh" },
+  },
+  "performs-functions-for": {
+    family: "implementation",
+    allowed: [
+      ["icann-affiliate", "icann-internal"],
+      ["icann-affiliate", "external"],
+    ],
+    label: { en: "performs functions for", id: "menjalankan fungsi untuk" },
+    inverse: { en: "has functions performed by", id: "fungsinya dijalankan oleh" },
+  },
+  "selects-members-of": {
+    family: "selection",
+    allowed: [internal, ["external", "icann-internal"]],
+    label: { en: "selects members of", id: "memilih anggota" },
+    inverse: { en: "has members selected by", id: "sebagian anggotanya dipilih oleh" },
+  },
+  "appoints-liaison-to": {
+    family: "selection",
+    allowed: [internal, ["external", "icann-internal"]],
+    label: { en: "sends a liaison to", id: "mengirim liaison ke" },
+    inverse: { en: "has a liaison from", id: "punya liaison dari" },
   },
   "part-of": {
     family: "membership",
-    allowed: [["icann-internal", "icann-internal"], ["icann-affiliate", "icann-affiliate"], ["icann-affiliate", "icann-internal"]],
-    label: { id: "bagian dari", en: "part of" },
+    allowed: [internal, ["icann-affiliate", "icann-affiliate"]],
+    label: { en: "is part of", id: "bagian dari" },
+    inverse: { en: "includes", id: "mencakup" },
   },
   "participates-in": {
     family: "membership",
-    allowed: [
-      ["icann-internal", "icann-internal"],
-      ["icann-affiliate", "icann-internal"],
-      ["external", "icann-internal"],
-    ],
-    label: { id: "berpartisipasi dalam", en: "participates in" },
+    allowed: [internal, ["external", "icann-internal"]],
+    label: { en: "takes part in", id: "ikut serta dalam" },
+    inverse: { en: "includes", id: "melibatkan" },
   },
   "related-to": {
     family: "context",
     allowed: [
-      ["icann-internal", "icann-internal"],
+      internal,
       ["icann-internal", "icann-affiliate"],
       ["icann-internal", "external"],
+      ["icann-affiliate", "icann-internal"],
       ["icann-affiliate", "external"],
-      ["external", "external"],
+      ["external", "icann-internal"],
       ["external", "icann-affiliate"],
+      ["external", "external"],
     ],
-    label: { id: "berkaitan dengan", en: "related to" },
+    label: { en: "is related to", id: "berkaitan dengan" },
+    inverse: { en: "is related to", id: "berkaitan dengan" },
   },
 };
 
-export const RELATIONSHIP_FAMILIES: RelationshipFamily[] = [
+export const FAMILIES: RelationshipFamily[] = [
   "policy",
   "advice",
   "accountability",
@@ -108,20 +113,23 @@ export const RELATIONSHIP_FAMILIES: RelationshipFamily[] = [
   "context",
 ];
 
-export function relationshipInfo(type: RelationshipType): RelationshipTypeInfo {
-  return RELATIONSHIP_REGISTRY[type];
-}
+/** Families shown on the map before the reader touches the filters. */
+export const DEFAULT_FAMILIES: RelationshipFamily[] = ["policy", "advice", "accountability", "implementation"];
 
-/** Visual family used by the map: line pattern, arrowhead, and label come from here. */
-export const FAMILY_STYLE: Record<
-  RelationshipFamily,
-  { id: string; en: string; pattern: "solid" | "dashed" | "dotted" | "dash-dot" | "long-dash"; arrow: "filled" | "open" | "none" }
-> = {
-  policy: { id: "Kebijakan", en: "Policy", pattern: "solid", arrow: "filled" },
-  advice: { id: "Nasihat", en: "Advice", pattern: "dashed", arrow: "open" },
-  accountability: { id: "Akuntabilitas", en: "Accountability", pattern: "dotted", arrow: "filled" },
-  implementation: { id: "Penerapan", en: "Implementation", pattern: "long-dash", arrow: "filled" },
-  selection: { id: "Penunjukan", en: "Selection", pattern: "dash-dot", arrow: "open" },
-  membership: { id: "Keanggotaan", en: "Membership", pattern: "solid", arrow: "none" },
-  context: { id: "Konteks", en: "Context", pattern: "long-dash", arrow: "open" },
+/**
+ * How each family is drawn. Families differ by dash pattern and arrowhead, not only by color,
+ * so they stay distinguishable in grayscale.
+ */
+export const FAMILY_STYLE: Record<RelationshipFamily, { dash: string; width: number; marker: Marker }> = {
+  policy: { dash: "", width: 2.25, marker: "triangle" },
+  advice: { dash: "9 6", width: 2, marker: "chevron" },
+  accountability: { dash: "", width: 3.5, marker: "triangle" },
+  implementation: { dash: "14 4 2 4", width: 1.75, marker: "diamond" },
+  selection: { dash: "2 5", width: 2, marker: "circle" },
+  membership: { dash: "", width: 1.25, marker: "none" },
+  context: { dash: "3 4", width: 1.25, marker: "none" },
 };
+
+export function familyOf(type: RelationshipType): RelationshipFamily {
+  return RELATIONSHIPS[type].family;
+}

@@ -1,146 +1,64 @@
 {
   "zones": [
     {
-      "id": "zone-board",
-      "label": {
-        "en": "Board & org",
-        "id": "Dewan & organisasi"
-      },
-      "x": 40,
-      "y": 40,
-      "w": 1320,
-      "h": 150,
+      "id": "zone-powers",
+      "label": { "en": "Community powers", "id": "Kekuasaan komunitas" },
+      "caption": { "en": "check and staff the Board", "id": "mengoreksi dan mengisi Dewan" },
+      "x": 460, "y": 20, "w": 320, "h": 130,
       "style": "internal"
     },
     {
       "id": "zone-sos",
-      "label": {
-        "en": "Supporting Organizations: develop policy",
-        "id": "Supporting Organizations: mengembangkan kebijakan"
-      },
-      "x": 40,
-      "y": 220,
-      "w": 820,
-      "h": 210,
+      "label": { "en": "Supporting Organizations", "id": "Supporting Organizations" },
+      "caption": { "en": "develop policy", "id": "menyusun kebijakan" },
+      "x": 20, "y": 170, "w": 420, "h": 300,
+      "style": "internal"
+    },
+    {
+      "id": "zone-core",
+      "label": { "en": "Board and staff", "id": "Dewan dan staf" },
+      "caption": { "en": "decide and implement", "id": "memutuskan dan menjalankan" },
+      "x": 460, "y": 170, "w": 320, "h": 300,
       "style": "internal"
     },
     {
       "id": "zone-acs",
-      "label": {
-        "en": "Advisory Committees: give advice",
-        "id": "Advisory Committees: memberi nasihat"
-      },
-      "x": 900,
-      "y": 220,
-      "w": 460,
-      "h": 220,
-      "style": "internal"
-    },
-    {
-      "id": "zone-committees",
-      "label": {
-        "en": "Committees & mechanisms",
-        "id": "Komite & mekanisme"
-      },
-      "x": 900,
-      "y": 460,
-      "w": 460,
-      "h": 120,
+      "label": { "en": "Advisory Committees", "id": "Advisory Committees" },
+      "caption": { "en": "give advice", "id": "memberi nasihat" },
+      "x": 800, "y": 170, "w": 420, "h": 300,
       "style": "internal"
     },
     {
       "id": "zone-affiliate",
-      "label": {
-        "en": "ICANN affiliate",
-        "id": "Afiliasi ICANN"
-      },
-      "x": 40,
-      "y": 400,
-      "w": 820,
-      "h": 110,
+      "label": { "en": "ICANN affiliate", "id": "Afiliasi ICANN" },
+      "x": 460, "y": 495, "w": 320, "h": 120,
       "style": "affiliate"
     },
     {
       "id": "zone-external",
-      "label": {
-        "en": "Outside ICANN: related, independent",
-        "id": "Di luar ICANN: terkait, independen"
-      },
-      "x": 40,
-      "y": 660,
-      "w": 1320,
-      "h": 190,
+      "label": { "en": "Outside ICANN", "id": "Di luar ICANN" },
+      "caption": { "en": "independent organizations", "id": "organisasi independen" },
+      "x": 20, "y": 640, "w": 1200, "h": 115,
       "style": "external"
     }
   ],
   "positions": {
-    "icann-board": {
-      "x": 500,
-      "y": 300
-    },
-    "icann-org": {
-      "x": 780,
-      "y": 300
-    },
-    "gnso": {
-      "x": 120,
-      "y": 500
-    },
-    "ccnso": {
-      "x": 300,
-      "y": 300
-    },
-    "aso": {
-      "x": 420,
-      "y": 300
-    },
-    "alac": {
-      "x": 1000,
-      "y": 300
-    },
-    "gac": {
-      "x": 300,
-      "y": 300
-    },
-    "ssac": {
-      "x": 480,
-      "y": 300
-    },
-    "rssac": {
-      "x": 660,
-      "y": 300
-    },
-    "nomcom": {
-      "x": 960,
-      "y": 300
-    },
-    "empowered-community": {
-      "x": 1160,
-      "y": 300
-    },
-    "gnso-stakeholder-groups": {
-      "x": 120,
-      "y": 460
-    },
-    "ralos": {
-      "x": 480,
-      "y": 480
-    },
-    "pti": {
-      "x": 760,
-      "y": 480
-    },
-    "rirs": {
-      "x": 220,
-      "y": 720
-    },
-    "ietf": {
-      "x": 660,
-      "y": 760
-    },
-    "root-server-operators": {
-      "x": 980,
-      "y": 760
-    }
+    "empowered-community": { "x": 545, "y": 92 },
+    "nomcom": { "x": 695, "y": 92 },
+    "icann-board": { "x": 620, "y": 245 },
+    "icann-org": { "x": 620, "y": 410 },
+    "gnso": { "x": 330, "y": 245 },
+    "gnso-stakeholder-groups": { "x": 125, "y": 245 },
+    "ccnso": { "x": 330, "y": 330 },
+    "aso": { "x": 330, "y": 415 },
+    "alac": { "x": 910, "y": 245 },
+    "ralos": { "x": 1115, "y": 245 },
+    "gac": { "x": 910, "y": 330 },
+    "ssac": { "x": 910, "y": 415 },
+    "rssac": { "x": 1115, "y": 330 },
+    "pti": { "x": 620, "y": 560 },
+    "rirs": { "x": 330, "y": 700 },
+    "ietf": { "x": 800, "y": 700 },
+    "root-server-operators": { "x": 1115, "y": 700 }
   }
 }

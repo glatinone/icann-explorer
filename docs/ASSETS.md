@@ -1,12 +1,11 @@
-# Daftar aset
+# Assets and licenses
 
-Setiap font, ikon, dan gambar yang dipakai harus tercatat di sini dengan lisensi yang kompatibel.
-
-| Aset | Sumber | Lisensi | Dipakai di |
+| Asset | Source | License | Used for |
 | --- | --- | --- | --- |
-| System font stack (ui-sans-serif, system-ui, Segoe UI, Roboto) | Sistem operasi | Publik (bundle OS) | Seluruh situs; tidak ada font custom yang di-download |
-| React Flow (@xyflow/react) | npm | MIT | Peta interaktif (fase P2) |
-| Ikon | Tidak ada ikon custom/font ikon; gunakan teks dan bentuk CSS | - | - |
-| OG image `public/og/og-id.png`, `public/og/og-en.png` | Dibuat sendiri lewat `scripts/gen-og.mjs` (Playwright render) | Apache-2.0/MIT (kode repo), konten CC BY 4.0 | Metadata open graph /id dan /en (1200×630) |
+| Source Serif 4 | Google Fonts, self-hosted via `next/font` | SIL Open Font License 1.1 | Headings |
+| Source Sans 3 | Google Fonts, self-hosted via `next/font` | SIL Open Font License 1.1 | Body text, map labels |
+| Icons (search glass, arrows, line samples) | Drawn inline as SVG in this repo | MIT (repo code) | Interface |
+| `public/icon.svg` | Made for this project | MIT (repo code) | Favicon |
+| `public/og/og-*.png` | Rendered by `scripts/gen-og.mjs` | CC BY 4.0 | Social previews |
 
-Catatan: fase P0 tidak menambahkan font atau ikon eksternal. Semua aset baru wajib ditambahkan di sini sebelum dipakai di build.
+No ICANN logos, marks or brand colors are used. Add any new font, icon or image here before it ships.
