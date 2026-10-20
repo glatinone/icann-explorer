@@ -8,7 +8,7 @@ import { otherLocale, type Locale } from "@/i18n/config";
  * Swaps only the locale segment and keeps the rest of the path, the query (map selection)
  * and the hash (path step). The href works without JS; the click handler adds query and hash.
  */
-export function LanguageToggle({ locale, label, short }: { locale: Locale; label: string; short: string }): ReactElement {
+export function LanguageToggle({ locale, label }: { locale: Locale; label: string }): ReactElement {
   const target = otherLocale(locale);
   const pathname = usePathname() ?? `/${locale}/`;
   const href = pathname.replace(new RegExp(`^/${locale}(?=/|$)`), `/${target}`);

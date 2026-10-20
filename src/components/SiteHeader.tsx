@@ -37,7 +37,7 @@ export function SiteHeader({ locale }: { locale: Locale }): ReactElement {
               path: t(locale, "search.group.path"),
             }}
           />
-          <LanguageToggle locale={locale} label={t(locale, "lang.switch")} short={t(locale, "lang.short")} />
+          <LanguageToggle locale={locale} label={t(locale, "lang.switch")} />
         </div>
       </div>
     </header>
