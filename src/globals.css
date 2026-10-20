@@ -426,8 +426,21 @@ kbd {
     padding-bottom: var(--s-1);
   }
   .brand {
-    flex: 1;
+    flex: 1 1 100%;
     min-width: 0;
+    padding-right: 7rem;
+  }
+  .brand-name {
+    white-space: nowrap;
+  }
+  .brand-note {
+    flex-basis: auto;
+    margin-right: -7rem;
+    margin-top: var(--s-3);
+    white-space: nowrap;
+    font-size: 0.625rem;
+    padding: 0.25rem 0.45rem;
+    width: fit-content;
   }
   .site-nav {
     order: 3;
@@ -436,6 +449,8 @@ kbd {
     scrollbar-width: none;
     margin: 0 calc(var(--gutter) * -1);
     padding: 0 var(--gutter) var(--s-2);
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 40px), transparent);
+    mask-image: linear-gradient(to right, #000 calc(100% - 40px), transparent);
   }
   .site-nav ul {
     flex-wrap: nowrap;
@@ -443,8 +458,13 @@ kbd {
   .site-nav a {
     white-space: nowrap;
   }
+  .site-header-inner {
+    position: relative;
+  }
   .header-tools {
-    margin-left: auto;
+    position: absolute;
+    top: var(--s-3);
+    right: var(--gutter);
   }
 }
 
@@ -2095,6 +2115,15 @@ body:has(.map-page) .site-footer-inner {
   fill: var(--muted);
 }
 
+/* labels sit above the edges; a background-colored halo knocks the lines out behind the text */
+.zone-label,
+.zone-caption {
+  stroke: var(--bg);
+  stroke-width: 5px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
 .zone-caption {
   font-size: 13px;
   fill: var(--subtle);
@@ -2183,7 +2212,7 @@ body:has(.map-page) .site-footer-inner {
 
 .node-kind {
   text-anchor: middle;
-  font-size: 11.5px;
+  font-size: 11px;
   fill: var(--subtle);
 }
 

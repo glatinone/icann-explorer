@@ -123,14 +123,6 @@ export function MapCanvas({
         {data.zones.map((z) => (
           <g key={z.id} className={`zone zone-${z.style}`} aria-hidden="true">
             <rect x={z.x} y={z.y} width={z.w} height={z.h} rx={14} />
-            <text x={z.x + 16} y={z.y + 24} className="zone-label">
-              {z.label}
-            </text>
-            {z.caption && (
-              <text x={z.x + 16} y={z.y + 41} className="zone-caption">
-                {z.caption}
-              </text>
-            )}
           </g>
         ))}
 
@@ -164,6 +156,21 @@ export function MapCanvas({
           })}
         </g>
 
+        <g className="zone-labels" aria-hidden="true">
+          {data.zones.map((z) => (
+            <g key={z.id}>
+              <text x={z.x + 16} y={z.y + 24} className="zone-label">
+                {z.label}
+              </text>
+              {z.caption && (
+                <text x={z.x + 16} y={z.y + 41} className="zone-caption">
+                  {z.caption}
+                </text>
+              )}
+            </g>
+          ))}
+        </g>
+
         <g className="nodes">
           {data.nodes.map((node) => {
             const isSelected = selection.node === node.id;
@@ -195,7 +202,12 @@ export function MapCanvas({
                 <text y={-3} className="node-acronym">
                   {node.acronym}
                 </text>
-                <text y={15} className="node-kind">
+                <text
+                  y={15}
+                  className="node-kind"
+                  textLength={node.kindLabel.length * 6 > NODE_W - 24 ? NODE_W - 24 : undefined}
+                  lengthAdjust="spacingAndGlyphs"
+                >
                   {node.kindLabel}
                 </text>
               </g>
