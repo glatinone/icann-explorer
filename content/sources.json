@@ -431,18 +431,6 @@
     "accessed": "2026-10-20"
   },
   {
-    "id": "gac-icann86-communique",
-    "title": "GAC Communique, ICANN86 Seville (listing page)",
-    "url": "https://gac.icann.org/contentMigrated/icann86-seville-communique",
-    "publisher": "ICANN GAC",
-    "tier": 2,
-    "languages": [
-      "en"
-    ],
-    "version": "15 June 2026",
-    "accessed": "2026-10-20"
-  },
-  {
     "id": "ssac-page",
     "title": "Security and Stability Advisory Committee (SSAC)",
     "url": "https://www.icann.org/en/ssac",
@@ -745,6 +733,51 @@
     "languages": [
       "en"
     ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "board-resolutions-2026-05-03",
+    "title": "Approved Resolutions, Regular Meeting of the ICANN Board, 3 May 2026",
+    "url": "https://www.icann.org/en/board-activities-and-meetings/materials/approved-resolutions-regular-meeting-of-the-icann-board-03-05-2026-en",
+    "publisher": "ICANN Board",
+    "tier": 1,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "board-resolutions-2017-12-13",
+    "title": "Adopted Board Resolutions, Special Meeting of the ICANN Board, 13 December 2017",
+    "url": "https://www.icann.org/en/board-activities-and-meetings/materials/approved-resolutions-special-meeting-of-the-icann-board-13-12-2017-en",
+    "publisher": "ICANN Board",
+    "tier": 1,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "iana-root-db-id",
+    "title": ".id Top-Level Domain (IANA Root Zone Database)",
+    "url": "https://www.iana.org/domains/root/db/id.html",
+    "publisher": "IANA",
+    "tier": 3,
+    "languages": [
+      "en"
+    ],
+    "accessed": "2026-10-20"
+  },
+  {
+    "id": "gac-advice-2023-03-20-igo",
+    "title": "GAC Itemized Advice 2023-03-20: IGO protections (ICANN76 Cancun Communique)",
+    "url": "https://gac.icann.org/advice/itemized/202303-20-igo-protections",
+    "publisher": "ICANN GAC",
+    "tier": 2,
+    "languages": [
+      "en"
+    ],
+    "version": "20 March 2023",
     "accessed": "2026-10-20"
   }
 ]
