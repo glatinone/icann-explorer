@@ -20,7 +20,12 @@ export function LanguageToggle({ locale, label, short }: { locale: Locale; label
 
   return (
     <a href={href} onClick={onClick} hrefLang={target} lang={target} className="lang-toggle" aria-label={label} title={label}>
-      {short}
+      <span className={`lang-opt${locale === "en" ? " is-current" : ""}`} aria-hidden="true">
+        EN
+      </span>
+      <span className={`lang-opt${locale === "id" ? " is-current" : ""}`} aria-hidden="true">
+        ID
+      </span>
     </a>
   );
 }

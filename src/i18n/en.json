@@ -89,6 +89,7 @@
   "profile.report": "Report an error on this page",
   "profile.all": "All organizations",
   "claim.interpretation": "Our simplified reading",
+  "toc.title": "On this page",
   "notes.title": "Sources",
   "notes.verified": "checked {date}",
   "notes.cite": "Source {n}",

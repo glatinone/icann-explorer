@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import type { ReactElement } from "react";
 import { ClaimText } from "@/components/Claim";
 import { NotesList } from "@/components/NotesList";
+import { OnThisPage } from "@/components/OnThisPage";
 import { entities, getEntity, getTerm, relationshipsOf } from "@/lib/content";
 import { pageMetadata } from "@/lib/metadata";
 import { Notes } from "@/lib/notes";
@@ -28,7 +29,11 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   });
 }
 
-export default async function OrganizationPage({ params }: { params: Params }): Promise<ReactElement> {
+export default async function OrganizationPage({
+  params,
+}: {
+  params: Params;
+}): Promise<ReactElement> {
   const { locale: raw, id } = await params;
   const locale = toLocale(raw);
   const entity = getEntity(id);
@@ -61,6 +66,20 @@ export default async function OrganizationPage({ params }: { params: Params }): 
     ...connections.flatMap((g) => g.items.map((c) => c.r.explanation)),
   ].forEach((c) => notes.cite(c));
 
+  const toc = [
+    { id: "why", label: t(locale, "profile.why") },
+    { id: "what", label: t(locale, "profile.what") },
+    { id: "who", label: t(locale, "profile.who") },
+    { id: "example", label: t(locale, "profile.example") },
+    ...(entity.getInvolved && entity.getInvolved.length > 0
+      ? [{ id: "involve", label: t(locale, "profile.involve") }]
+      : []),
+    ...(connections.length > 0
+      ? [{ id: "connections", label: t(locale, "profile.connections") }]
+      : []),
+    { id: "notes-title", label: t(locale, "notes.title") },
+  ];
+
   return (
     <article className={`page profile kind-${entity.kind}`}>
       <nav className="breadcrumb" aria-label="Breadcrumb">
@@ -71,7 +90,9 @@ export default async function OrganizationPage({ params }: { params: Params }): 
         <p className="profile-kind">{t(locale, `kind.${entity.kind}`)}</p>
         <h1>
           <span className="profile-acronym">{entity.acronym}</span>
-          {entity.acronym !== entity.name[locale] && <span className="profile-name">{entity.name[locale]}</span>}
+          {entity.acronym !== entity.name[locale] && (
+            <span className="profile-name">{entity.name[locale]}</span>
+          )}
         </h1>
         <p className="lede">
           <ClaimText claim={entity.oneLiner} notes={notes} locale={locale} />
@@ -156,31 +177,38 @@ export default async function OrganizationPage({ params }: { params: Params }): 
         </div>
 
         <aside className="profile-aside">
-          <dl>
-            <dt>{t(locale, "profile.official")}</dt>
-            <dd>
-              <a href={entity.officialUrl} rel="noopener noreferrer" target="_blank">
-                {entity.officialUrl.replace(/^https:\/\/(www\.)?/, "").replace(/\/$/, "")}
-              </a>
-            </dd>
-            <dd>
-              <Link href={`/${locale}/map/?node=${entity.id}`}>{t(locale, "profile.viewOnMap")} →</Link>
-            </dd>
-            {relatedTerms.length > 0 && (
-              <>
-                <dt>{t(locale, "profile.terms")}</dt>
-                <dd>
-                  <ul className="term-links">
-                    {relatedTerms.map((term) => (
-                      <li key={term.id}>
-                        <Link href={`/${locale}/glossary/${term.id}/`}>{term.acronym ?? term.term[locale]}</Link>
-                      </li>
-                    ))}
-                  </ul>
-                </dd>
-              </>
-            )}
-          </dl>
+          <div className="profile-aside-inner">
+            <OnThisPage title={t(locale, "toc.title")} items={toc} />
+            <dl>
+              <dt>{t(locale, "profile.official")}</dt>
+              <dd>
+                <a href={entity.officialUrl} rel="noopener noreferrer" target="_blank">
+                  {entity.officialUrl.replace(/^https:\/\/(www\.)?/, "").replace(/\/$/, "")}
+                </a>
+              </dd>
+              <dd>
+                <Link href={`/${locale}/map/?node=${entity.id}`}>
+                  {t(locale, "profile.viewOnMap")} →
+                </Link>
+              </dd>
+              {relatedTerms.length > 0 && (
+                <>
+                  <dt>{t(locale, "profile.terms")}</dt>
+                  <dd>
+                    <ul className="term-links">
+                      {relatedTerms.map((term) => (
+                        <li key={term.id}>
+                          <Link href={`/${locale}/glossary/${term.id}/`}>
+                            {term.acronym ?? term.term[locale]}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </dd>
+                </>
+              )}
+            </dl>
+          </div>
         </aside>
       </div>
 

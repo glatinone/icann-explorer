@@ -17,6 +17,7 @@ export function SiteHeader({ locale }: { locale: Locale }): ReactElement {
     <header className="site-header">
       <div className="site-header-inner">
         <Link href={`/${locale}/`} className="brand">
+          <span className="brand-mark" aria-hidden="true" />
           <span className="brand-name">ICANN Explorer</span>
           <span className="brand-note">{t(locale, "site.unofficial")}</span>
         </Link>

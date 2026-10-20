@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import type { ReactElement } from "react";
 import { ClaimText } from "@/components/Claim";
 import { EntityChip } from "@/components/EntityChip";
+import { OnThisPage } from "@/components/OnThisPage";
 import { NotesList } from "@/components/NotesList";
 import { getEntity, getTerm, terms } from "@/lib/content";
 import { pageMetadata } from "@/lib/metadata";
@@ -22,7 +23,10 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const locale = toLocale(raw);
   const term = getTerm(id);
   if (!term) return {};
-  return pageMetadata(locale, `/glossary/${id}/`, { title: term.term[locale], description: term.definition.text[locale] });
+  return pageMetadata(locale, `/glossary/${id}/`, {
+    title: term.term[locale],
+    description: term.definition.text[locale],
+  });
 }
 
 export default async function TermPage({ params }: { params: Params }): Promise<ReactElement> {
@@ -36,6 +40,14 @@ export default async function TermPage({ params }: { params: Params }): Promise<
   const relatedEntities = term.relatedEntityIds.map(getEntity).filter((e) => e !== undefined);
   const relatedTerms = term.relatedTermIds.map(getTerm).filter((x) => x !== undefined);
 
+  const toc = [
+    ...(relatedEntities.length > 0
+      ? [{ id: "rel-entities", label: t(locale, "glossary.entities") }]
+      : []),
+    ...(relatedTerms.length > 0 ? [{ id: "rel-terms", label: t(locale, "glossary.terms") }] : []),
+    { id: "notes-title", label: t(locale, "notes.title") },
+  ];
+
   return (
     <article className="page term-page">
       <nav className="breadcrumb" aria-label="Breadcrumb">
@@ -44,38 +56,49 @@ export default async function TermPage({ params }: { params: Params }): Promise<
       <header className="page-head">
         <h1>
           {term.term[locale]}
-          {term.acronym && term.acronym !== term.term[locale] && <abbr className="term-acronym">{term.acronym}</abbr>}
+          {term.acronym && term.acronym !== term.term[locale] && (
+            <abbr className="term-acronym">{term.acronym}</abbr>
+          )}
         </h1>
         <p className="lede">
           <ClaimText claim={term.definition} notes={notes} locale={locale} />
         </p>
       </header>
 
-      {relatedEntities.length > 0 && (
-        <section aria-labelledby="rel-entities">
-          <h2 id="rel-entities">{t(locale, "glossary.entities")}</h2>
-          <ul className="chip-list">
-            {relatedEntities.map((e) => (
-              <li key={e.id}>
-                <EntityChip entity={e} locale={locale} />
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+      <div className="profile-body">
+        <div className="profile-main">
+          {relatedEntities.length > 0 && (
+            <section aria-labelledby="rel-entities">
+              <h2 id="rel-entities">{t(locale, "glossary.entities")}</h2>
+              <ul className="chip-list">
+                {relatedEntities.map((e) => (
+                  <li key={e.id}>
+                    <EntityChip entity={e} locale={locale} />
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
 
-      {relatedTerms.length > 0 && (
-        <section aria-labelledby="rel-terms">
-          <h2 id="rel-terms">{t(locale, "glossary.terms")}</h2>
-          <ul className="term-links">
-            {relatedTerms.map((r) => (
-              <li key={r.id}>
-                <Link href={`/${locale}/glossary/${r.id}/`}>{r.term[locale]}</Link>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+          {relatedTerms.length > 0 && (
+            <section aria-labelledby="rel-terms">
+              <h2 id="rel-terms">{t(locale, "glossary.terms")}</h2>
+              <ul className="term-links">
+                {relatedTerms.map((r) => (
+                  <li key={r.id}>
+                    <Link href={`/${locale}/glossary/${r.id}/`}>{r.term[locale]}</Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+        </div>
+        <aside className="profile-aside">
+          <div className="profile-aside-inner">
+            <OnThisPage title={t(locale, "toc.title")} items={toc} />
+          </div>
+        </aside>
+      </div>
 
       <NotesList notes={notes} locale={locale} />
       <p className="report-link">

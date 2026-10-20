@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Source_Sans_3, Source_Serif_4 } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import type { ReactElement, ReactNode } from "react";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -7,8 +7,8 @@ import { locales, t, toLocale } from "@/i18n";
 import { pageMetadata } from "@/lib/metadata";
 import "../../globals.css";
 
-const sans = Source_Sans_3({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
-const serif = Source_Serif_4({ subsets: ["latin"], variable: "--font-serif", display: "swap" });
+const sans = Geist({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
+const mono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap" });
 
 export function generateStaticParams(): Array<{ locale: string }> {
   return locales.map((locale) => ({ locale }));
@@ -16,8 +16,8 @@ export function generateStaticParams(): Array<{ locale: string }> {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f5f3ee" },
-    { media: "(prefers-color-scheme: dark)", color: "#141516" },
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#09090b" },
   ],
 };
 
@@ -35,7 +35,7 @@ export default async function LocaleLayout({
 }): Promise<ReactElement> {
   const locale = toLocale((await params).locale);
   return (
-    <html lang={locale} className={`${sans.variable} ${serif.variable}`}>
+    <html lang={locale} className={`${sans.variable} ${mono.variable}`}>
       <body>
         <a href="#main" className="skip-link">
           {t(locale, "site.skip")}

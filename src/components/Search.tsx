@@ -89,7 +89,7 @@ export function Search({ locale, labels }: { locale: Locale; labels: Labels }): 
           <path d="M11 11l3.5 3.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
         </svg>
         <span>{labels.open}</span>
-        <kbd>Ctrl K</kbd>
+        <kbd aria-hidden="true">Ctrl K</kbd>
       </button>
       <dialog
         ref={dialogRef}
