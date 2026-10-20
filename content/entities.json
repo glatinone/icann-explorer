@@ -153,11 +153,23 @@
     },
     "example": {
       "text": {
-        "id": "Pada 30 Oktober 2025, saat Rapat Umum Tahunan ICANN84 di Dublin, ICANN mengumumkan Tripti Sinha dipilih kembali sebagai Chair Dewan dan Sajid Rahman sebagai Vice Chair. Tiga anggota Dewan baru juga mulai menjabat pada rapat itu.",
-        "en": "On 30 October 2025, at the ICANN84 Annual General Meeting in Dublin, ICANN announced that Tripti Sinha was reappointed Board Chair and Sajid Rahman was appointed Vice Chair. Three new Board members were also seated at that meeting."
+        "id": "Pada 3 Mei 2026 Dewan ICANN mengesahkan Resolusi 2026.05.03.14: Dewan mengizinkan Presiden dan CEO memberi kontribusi satu kali sebesar US$1.000.000 kepada Internet Governance Forum (IGF) pada tahun fiskal 2026. Dasarnya, ICANN diperkirakan punya dana surplus dibanding belanja operasionalnya. Pada 30 Oktober 2025, saat ICANN84 di Dublin, ICANN juga mengumumkan Tripti Sinha dipilih kembali sebagai Chair Dewan dan Sajid Rahman sebagai Vice Chair.",
+        "en": "On 3 May 2026 the ICANN Board passed Resolution 2026.05.03.14: it authorized the President and CEO to make a one-time US$1,000,000 contribution to the Internet Governance Forum (IGF) in fiscal year 2026. The stated basis is that ICANN was forecast to have surplus funding compared with its operating expenses. Separately, on 30 October 2025, at ICANN84 in Dublin, ICANN announced that Tripti Sinha was reappointed Board Chair and Sajid Rahman was appointed Vice Chair."
       },
       "kind": "fact",
       "citations": [
+        {
+          "sourceId": "board-resolutions-2026-05-03",
+          "locator": "Resolved 2026.05.03.14",
+          "quote": "the Board authorizes the President and CEO, or his designee(s), to provide a one-time, US$1,000,000 contribution to the IGF in FY26",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "board-resolutions-2026-05-03",
+          "locator": "Item 1.e, first Whereas",
+          "quote": "ICANN is forecasted to have surplus funding as compared to operational expenses at the end of its fiscal year ending on 30 June 2026 (FY26)",
+          "verifiedAt": "2026-10-20"
+        },
         {
           "sourceId": "icann-board-leadership-release-2025",
           "locator": "Press release, first paragraph",
@@ -979,8 +991,8 @@
     },
     "example": {
       "text": {
-        "id": "Kebijakan pemensiunan ccTLD (ccPDP3). Anggota ccNSO mendukungnya pada 2021: dari 172 anggota, 100 memberi suara dan 94 setuju. Dewan ICANN mengadopsinya pada 22 September 2022 (Resolusi 2022.09.22.09). Kebijakan ini mengatur penghapusan ccTLD yang dipensiunkan dari root zone lima tahun setelah pemberitahuan.",
-        "en": "The ccTLD retirement policy (ccPDP3). ccNSO members supported it in 2021: of 172 members, 100 voted and 94 were in favor. The ICANN Board adopted it on 22 September 2022 (Resolution 2022.09.22.09). The policy sets removal of a retiring ccTLD from the root zone five years after notice."
+        "id": "Kebijakan pemensiunan ccTLD (ccPDP3). Anggota ccNSO mendukungnya pada 2021: dari 172 anggota, 100 memberi suara dan 94 setuju. Dewan ICANN mengadopsinya pada 22 September 2022 (Resolusi 2022.09.22.09). Kebijakan ini mengatur penghapusan ccTLD yang dipensiunkan dari root zone lima tahun setelah pemberitahuan. Contoh lain yang dekat dengan pembaca Indonesia adalah .id. Basis data Root Zone IANA mengklasifikasikannya sebagai country-code top-level domain, dengan manajer Perkumpulan Pengelola Nama Domain Internet Indonesia (PANDI). Basis data yang sama mencantumkan laporan redelegasi .ID kepada PANDI tertanggal 24 Mei 2013.",
+        "en": "The ccTLD retirement policy (ccPDP3). ccNSO members supported it in 2021: of 172 members, 100 voted and 94 were in favor. The ICANN Board adopted it on 22 September 2022 (Resolution 2022.09.22.09). The policy sets removal of a retiring ccTLD from the root zone five years after notice. A closer example for Indonesian readers is .id. The IANA Root Zone Database classifies it as a country-code top-level domain, with Perkumpulan Pengelola Nama Domain Internet Indonesia (PANDI) as manager. The same entry lists the report on the redelegation of .ID to PANDI, dated 24 May 2013."
       },
       "kind": "fact",
       "citations": [
@@ -1000,6 +1012,24 @@
           "sourceId": "ccnso-retirement-public-comment-page",
           "locator": "Summary of the policy, Notice of Removal",
           "quote": "the ccTLD shall be removed from the Root Zone five years from the date of the notice.",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "iana-root-db-id",
+          "locator": "Category",
+          "quote": "Country-code top-level domain",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "iana-root-db-id",
+          "locator": "Manager",
+          "quote": "Manager Perkumpulan Pengelola Nama Domain Internet Indonesia (PANDI)",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "iana-root-db-id",
+          "locator": "Related Information",
+          "quote": "Report on the Redelegation of the .ID domain representing Indonesia to Perkumpulan Pengelola Nama Domain Internet Indonesia (2013-05-24)",
           "verifiedAt": "2026-10-20"
         }
       ]
@@ -1794,21 +1824,33 @@
     },
     "example": {
       "text": {
-        "id": "Contoh keluaran GAC adalah Communique ICANN86 Seville. Situs GAC mencatat tanggal resminya 15 Juni 2026 dan topik yang dibahas, antara lain DNS Abuse dan Domain Name Registration Data.",
-        "en": "One example of GAC output is the ICANN86 Seville Communique. The GAC site lists its official date as 15 June 2026 and the topics discussed, including DNS Abuse and Domain Name Registration Data."
+        "id": "Pada 20 Maret 2023, lewat Communique ICANN76 Cancun, GAC menyampaikan Consensus Advice kepada Dewan tentang perlindungan nama dan akronim organisasi antarpemerintah (IGO). GAC meminta Dewan melanjutkan persetujuan rekomendasi EPDP tentang Specific Curative Rights Protections, dan mempertahankan moratorium pendaftaran akronim IGO sebagai nama domain di gTLD baru sampai rekomendasi itu diterapkan penuh. Halaman GAC mencatat status konsensusnya: Consensus met.",
+        "en": "On 20 March 2023, through the ICANN76 Cancun Communique, the GAC gave the Board Consensus Advice on protecting the names and acronyms of intergovernmental organizations (IGOs). It advised the Board to proceed with approving the EPDP recommendations on Specific Curative Rights Protections, and to maintain the moratorium on registering IGO acronyms as domain names in new gTLDs until those recommendations are fully implemented. The GAC page records the consensus status as: Consensus met."
       },
       "kind": "fact",
       "citations": [
         {
-          "sourceId": "gac-icann86-communique",
-          "locator": "Communique page, listing details",
-          "quote": "official date: 15 June 2026",
+          "sourceId": "gac-advice-2023-03-20-igo",
+          "locator": "Advice header",
+          "quote": "20 Mar 2023 via : ICANN76 Cancun Communique",
           "verifiedAt": "2026-10-20"
         },
         {
-          "sourceId": "gac-icann86-communique",
-          "locator": "Communique page, Topics Discussed",
-          "quote": "Topics Discussed: Applicant Support Program Capacity Building DNS Abuse Domain Name Registration Data",
+          "sourceId": "gac-advice-2023-03-20-igo",
+          "locator": "Advice header",
+          "quote": "Consensus met",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "gac-advice-2023-03-20-igo",
+          "locator": "Advice a.i",
+          "quote": "The GAC advises the Board: i. To proceed with the approval of the recommendations of the EPDP on Specific Curative Rights Protections for implementation",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "gac-advice-2023-03-20-igo",
+          "locator": "Advice a.ii",
+          "quote": "To maintain the current moratorium on the registration of IGO acronyms as domain names in New gTLDs presently in place until the full implementation of the recommendations of the EPDP on Specific Curative Rights Protections.",
           "verifiedAt": "2026-10-20"
         }
       ]
@@ -2763,8 +2805,8 @@
     ],
     "whoIsIn": {
       "text": {
-        "id": "ICANN adalah satu-satunya member PTI dan memilih direktur PTI sesuai anggaran dasar dan bylaws PTI. Dewan PTI menggabungkan direktur yang ditunjuk ICANN dengan direktur dari komunitas. Nominating Committee menominasikan dua direktur PTI.",
-        "en": "ICANN is PTI's sole member and elects PTI's directors under PTI's articles and bylaws. The PTI Board combines directors appointed by ICANN with directors drawn from the community. The Nominating Committee nominates two PTI directors."
+        "id": "ICANN adalah satu-satunya member PTI dan memilih direktur PTI sesuai anggaran dasar dan bylaws PTI. Dewan PTI menggabungkan direktur yang ditunjuk ICANN dengan direktur dari komunitas. Nominating Committee menominasikan dua direktur PTI. Resolusi Dewan ICANN tanggal 13 Desember 2017 menyebut Sec. 5.2.1 Bylaws PTI mengizinkan Dewan PTI punya lima direktur.",
+        "en": "ICANN is PTI's sole member and elects PTI's directors under PTI's articles and bylaws. The PTI Board combines directors appointed by ICANN with directors drawn from the community. The Nominating Committee nominates two PTI directors. An ICANN Board resolution of 13 December 2017 states that Section 5.2.1 of the PTI Bylaws authorizes the PTI Board to have five Directors."
       },
       "kind": "fact",
       "citations": [
@@ -2784,6 +2826,12 @@
           "sourceId": "icann-bylaws",
           "locator": "Art. 8, Sec. 8.1",
           "quote": "for nominating two directors of PTI (in accordance with the articles of incorporation and bylaws of PTI)",
+          "verifiedAt": "2026-10-20"
+        },
+        {
+          "sourceId": "board-resolutions-2017-12-13",
+          "locator": "PTI Governance Items, PTI Board - Directors (Whereas clauses)",
+          "quote": "the PTI Bylaws, at Section 5.2.1, authorizes the PTI Board to have five Directors.",
           "verifiedAt": "2026-10-20"
         }
       ]
