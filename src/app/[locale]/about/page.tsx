@@ -13,8 +13,8 @@ const COPY = {
   },
   whyTitle: { en: "Why it exists", id: "Kenapa proyek ini dibuat" },
   why: {
-    en: "It started after ICANN87, where the author attended as a Fellow. The hard part for newcomers was not motivation. It was the wall of acronyms and not knowing which group mattered for which topic. The official material is good but spread over many sites, and none of it shows the relationships on one page. This site does that, then sends you back to the official programs.",
-    id: "Proyek ini lahir setelah ICANN87, tempat penulisnya hadir sebagai Fellow. Bagi pendatang baru, masalahnya bukan kurang semangat, tapi tembok akronim dan bingung kelompok mana yang relevan untuk topik apa. Materi resminya bagus, tetapi tersebar di banyak situs dan tidak ada yang menampilkan hubungan antarkelompok dalam satu halaman. Situs ini mengisi celah itu, lalu mengarahkan kamu kembali ke program resmi.",
+    en: "I came to ICANN87 as a Fellow. What slowed me down was not a lack of interest. It was the wall of acronyms (GNSO, ALAC, ccNSO, SSAC) and not knowing which group handled which topic. ICANN's own material for beginners is good, but it is spread over many pages, and none of them shows how the groups connect. I built this site so the next newcomer can see that picture in a few minutes and then go on to the official programs.",
+    id: "Saya datang ke ICANN87 sebagai Fellow. Yang bikin saya lambat paham bukan kurang minat, tapi tembok akronim (GNSO, ALAC, ccNSO, SSAC) dan bingung kelompok mana yang mengurus topik apa. Materi pemula dari ICANN sendiri sebenarnya bagus, tapi tersebar di banyak halaman dan tidak ada yang memperlihatkan hubungan antarkelompoknya. Situs ini saya buat supaya pendatang berikutnya bisa melihat gambaran itu dalam beberapa menit, lalu lanjut ke program resminya.",
   },
   methodTitle: { en: "How the content is checked", id: "Cara konten diperiksa" },
   method: [
