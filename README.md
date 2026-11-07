@@ -56,4 +56,10 @@ Next.js 15 static export (no server, no database, no tracking), React 19, TypeSc
 
 ## License
 
-Code: MIT. Content: CC BY 4.0. See `LICENSE`.
+The code is licensed under the MIT License, see [`LICENSE`](LICENSE).
+
+The content (the educational text, the structured data in `content/` and the interface strings in `src/i18n/`) is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/), unless a file says otherwise. You may share and adapt it with attribution to the ICANN Explorer project.
+
+ICANN Explorer is an independent, unofficial educational project, not affiliated with or endorsed by ICANN.
+
+<!-- TODO(Kiell): confirm CC BY 4.0 for the content license before public launch -->

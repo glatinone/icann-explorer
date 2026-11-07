@@ -2,6 +2,10 @@
  * Fetches every cited source and checks that each citation's `quote` appears in it, word for word
  * (ignoring case, punctuation and whitespace). Network-dependent, so it runs on demand, not in CI.
  *
+ * Exits 1 only on real drift: a quote no longer on its page, or a source that is gone (HTTP 404/410,
+ * i.e. the page moved). Transient trouble (timeouts, DNS/TLS resets, 5xx, 429 after retries) is
+ * reported as UNREACHABLE, a warning annotation in GitHub Actions, and does not fail the run.
+ *
  *   node scripts/check-quotes.mjs            # report
  *   node scripts/check-quotes.mjs --json     # machine-readable list of misses
  */
@@ -35,13 +39,23 @@ const normalize = (s) =>
 
 const pageText = new Map();
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-// One request at a time per run, with backoff on 429: icann.org rate-limits bursts.
+// One request at a time per run, with backoff on 429/5xx/timeouts: icann.org rate-limits bursts.
+const GONE = new Set([404, 410]);
+const isTransient = (status) => status === 408 || status === 429 || status >= 500;
 let queue = Promise.resolve();
 function politeFetch(url) {
   const run = queue.then(async () => {
     for (let attempt = 0; ; attempt++) {
-      const r = await fetch(url, { headers: { "user-agent": "Mozilla/5.0 (ICANN Explorer quote check)" }, redirect: "follow" });
-      if (r.status !== 429 || attempt === 4) return r;
+      try {
+        const r = await fetch(url, {
+          headers: { "user-agent": "Mozilla/5.0 (ICANN Explorer quote check)" },
+          redirect: "follow",
+          signal: AbortSignal.timeout(30_000),
+        });
+        if (!isTransient(r.status) || attempt === 4) return r;
+      } catch (e) {
+        if (attempt === 4) throw e;
+      }
       await sleep(4000 * (attempt + 1));
     }
   });
@@ -54,12 +68,13 @@ async function textOf(url) {
       url,
       politeFetch(url)
         .then(async (r) => {
+          if (GONE.has(r.status)) return { gone: `HTTP ${r.status}` };
           if (!r.ok) throw new Error(`HTTP ${r.status}`);
           const html = await r.text();
           const decoded = html.replace(/\u([0-9a-f]{4})/gi, (_, h) => String.fromCharCode(parseInt(h, 16)));
           return normalize(decoded.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " "));
         })
-        .catch((e) => ({ error: String(e.message ?? e) })),
+        .catch((e) => ({ error: String(e.cause?.code ?? e.message ?? e) })),
     );
   }
   return pageText.get(url);
@@ -67,6 +82,7 @@ async function textOf(url) {
 
 const misses = [];
 const unreachable = new Map();
+const gone = new Map();
 let checked = 0;
 await Promise.all(
   citations
@@ -77,7 +93,8 @@ await Promise.all(
       const url = c.url ?? source.url;
       const text = await textOf(url);
       if (typeof text !== "string") {
-        unreachable.set(url, text.error);
+        if (text.gone) gone.set(url, text.gone);
+        else unreachable.set(url, text.error);
         return;
       }
       checked++;
@@ -85,11 +102,27 @@ await Promise.all(
     }),
 );
 
+const gha = process.env.GITHUB_ACTIONS === "true";
 if (process.argv.includes("--json")) {
-  console.log(JSON.stringify({ checked, misses, unreachable: Object.fromEntries(unreachable) }, null, 2));
+  console.log(
+    JSON.stringify({ checked, misses, gone: Object.fromEntries(gone), unreachable: Object.fromEntries(unreachable) }, null, 2),
+  );
 } else {
-  console.log(`${checked} quotes checked, ${misses.length} not found, ${unreachable.size} source(s) unreachable.`);
-  for (const m of misses) console.log(`  MISS ${m.where} [${m.sourceId}]\n       "${m.quote}"`);
-  for (const [url, err] of unreachable) console.log(`  UNREACHABLE ${url}: ${err}`);
+  console.log(
+    `${checked} quotes checked, ${misses.length} not found, ${gone.size} source(s) gone, ${unreachable.size} source(s) unreachable.`,
+  );
+  for (const m of misses) {
+    console.log(`  MISS ${m.where} [${m.sourceId}]\n       "${m.quote}"`);
+    if (gha) console.log(`::error title=Quote not found::${m.where} [${m.sourceId}] "${m.quote}" no longer appears on ${m.url}`);
+  }
+  for (const [url, status] of gone) {
+    console.log(`  GONE ${url}: ${status}`);
+    if (gha) console.log(`::error title=Source gone::${url} returned ${status}; find where the page moved and update sources.json`);
+  }
+  for (const [url, err] of unreachable) {
+    console.log(`  UNREACHABLE ${url}: ${err}`);
+    if (gha) console.log(`::warning title=Source unreachable (transient)::${url}: ${err}`);
+  }
 }
-process.exitCode = misses.length > 0 ? 1 : 0;
+// Fail only on real drift. Transient network trouble is reported above but never fails the run.
+process.exitCode = misses.length > 0 || gone.size > 0 ? 1 : 0;

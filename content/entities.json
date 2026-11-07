@@ -1642,22 +1642,22 @@
     },
     "example": {
       "text": {
-        "id": "APRALO punya tim kepemimpinan yang dipublikasikan: Ketua Amrita Choudhury, dua Wakil Ketua, serta dua anggota ALAC dari APRALO (Satish Babu dan Aftab Siddiqui) dan seorang Wakil Ketua ALAC (Justine Chew). Ini contoh bagaimana satu RALO mengisi kursi ALAC dan peran pimpinan.",
-        "en": "APRALO publishes its leadership team: Chair Amrita Choudhury, two Vice-Chairs, two ALAC members from APRALO (Satish Babu and Aftab Siddiqui) and an ALAC Vice Chair (Justine Chew). It is a concrete case of one RALO filling its ALAC seats."
+        "id": "APRALO punya tim kepemimpinan yang dipublikasikan: Ketua Aris Ignacio, Wakil Ketua Shah Zahidur Rahman, dua anggota ALAC dari APRALO (Abdulrahman Abotaleb dan Aftab Siddiqui), seorang Wakil Ketua Bersama ALAC (Amrita Choudhury) dan delegasi NomCom untuk wilayah ini (Satish Babu). Ini contoh bagaimana satu RALO mengisi kursi ALAC dan peran pimpinan.",
+        "en": "APRALO publishes its leadership team: Chair Aris Ignacio, Vice Chair Shah Zahidur Rahman, two ALAC members from APRALO (Abdulrahman Abotaleb and Aftab Siddiqui), an ALAC Co-Vice-Chair (Amrita Choudhury) and the region's NomCom delegate (Satish Babu). It is a concrete case of one RALO filling its ALAC seats."
       },
       "kind": "fact",
       "citations": [
         {
           "sourceId": "atlarge-apralo",
           "locator": "section 'APRALO Leadership'",
-          "quote": "Amrita Choudhury , Chair",
-          "verifiedAt": "2026-10-20"
+          "quote": "Aris Ignacio , Chair",
+          "verifiedAt": "2026-11-07"
         },
         {
           "sourceId": "atlarge-apralo",
           "locator": "section 'APRALO Leadership'",
-          "quote": "Satish Babu , ALAC Member",
-          "verifiedAt": "2026-10-20"
+          "quote": "Abdulrahman Abotaleb , ALAC Member",
+          "verifiedAt": "2026-11-07"
         }
       ]
     },
