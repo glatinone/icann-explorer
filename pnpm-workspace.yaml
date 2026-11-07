@@ -3,3 +3,4 @@ allowBuilds:
   unrs-resolver: true
 overrides:
   postcss: ">=8.5.23"
+  "@typescript-eslint/typescript-estree>minimatch": ^11.0.1
